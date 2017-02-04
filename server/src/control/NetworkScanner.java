@@ -18,7 +18,7 @@ public class NetworkScanner extends Thread {
 	private static final Logger LOG = Logger.getLogger(NetworkScanner.class);
 	private static final String[] cmds = new String[] { "sudo", "arp-scan", "-l", };
 	private static final ArrayList<String> macs = new ArrayList<>();
-	private static final int MAX_FAILURES = 20;
+	private static final int MAX_FAILURES = 30;
 	private static final long SLEEP = 3500;
 	private Server server;
 	private int failures = 0;
