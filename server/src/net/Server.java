@@ -17,7 +17,11 @@ import control.SerialScanner;
 import data.Button;
 import data.Message;
 import data.Message.MessageType;
-
+/**
+ * 
+ * @author Florian
+ *
+ */
 public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	private static final long serialVersionUID = 2772132741229895918L;

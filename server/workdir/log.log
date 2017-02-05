@@ -1,0 +1,139 @@
+2017-02-05 19:10:36 INFO  Main:19 - Starting server
+2017-02-05 19:10:37 INFO  Server:29 - Starting registry
+2017-02-05 19:10:37 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-05 19:10:37 INFO  Server:35 - Detected IP: 192.168.178.17
+2017-02-05 19:10:37 INFO  Sender:42 - Detected OS: mac os x
+2017-02-05 19:10:37 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-05 19:10:37 INFO  Pinger:22 - Starting pinger
+2017-02-05 19:10:37 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-05 19:10:38 INFO  Main:24 - === STARTED ===
+2017-02-05 19:11:20 INFO  Server:110 - Registering Client 192.168.178.17, # 0
+2017-02-05 19:11:20 INFO  Server:120 - Client 192.168.178.17 successful registered
+2017-02-05 19:11:21 DEBUG Pinger:30 - Ping to 192.168.178.17: 3ms
+2017-02-05 19:11:22 DEBUG Pinger:30 - Ping to 192.168.178.17: 0ms
+2017-02-05 19:11:23 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:01 INFO  Main:19 - Starting server
+2017-02-05 19:12:01 INFO  Server:29 - Starting registry
+2017-02-05 19:12:01 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-05 19:12:01 INFO  Server:35 - Detected IP: 192.168.178.17
+2017-02-05 19:12:01 INFO  Sender:42 - Detected OS: mac os x
+2017-02-05 19:12:01 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-05 19:12:01 INFO  Pinger:22 - Starting pinger
+2017-02-05 19:12:01 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-05 19:12:02 INFO  Main:24 - === STARTED ===
+2017-02-05 19:12:13 INFO  Server:110 - Registering Client 192.168.178.17, # 0
+2017-02-05 19:12:13 INFO  Server:120 - Client 192.168.178.17 successful registered
+2017-02-05 19:12:13 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:12:14 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:15 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:16 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:17 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:18 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:19 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:12:20 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:21 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:22 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:23 DEBUG Pinger:30 - Ping to 192.168.178.17: 3ms
+2017-02-05 19:12:24 DEBUG Sender:77 - B0 0D 33 5b 00 0f
+2017-02-05 19:12:24 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:24 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:24 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:25 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:25 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:25 DEBUG Sender:77 - B0 0D 33 8c 00 0f
+2017-02-05 19:12:25 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:12:26 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:26 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:26 DEBUG Sender:77 - B0 0D 33 c6 00 0f
+2017-02-05 19:12:26 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:26 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:26 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:26 DEBUG Sender:77 - B0 0D 33 7d 00 0f
+2017-02-05 19:12:27 DEBUG Sender:77 - B0 0D 33 56 00 0f
+2017-02-05 19:12:27 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:27 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:27 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:28 DEBUG Pinger:30 - Ping to 192.168.178.17: 3ms
+2017-02-05 19:12:29 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:30 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:31 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:32 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:33 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:34 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:35 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:36 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:37 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:38 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:39 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:40 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:40 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:40 DEBUG Sender:77 - B0 0D 33 56 00 0f
+2017-02-05 19:12:40 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:41 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:41 DEBUG Sender:77 - B0 0D 33 8c 00 0f
+2017-02-05 19:12:41 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:41 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:41 DEBUG Sender:77 - B0 0D 33 c6 00 0f
+2017-02-05 19:12:41 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:41 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:42 INFO  Server:50 - Notifying clients with Message: Color changed
+2017-02-05 19:12:42 DEBUG Sender:77 - B0 0D 33 f3 00 0f
+2017-02-05 19:12:42 DEBUG Server:56 - Notify Client 192.168.178.17
+2017-02-05 19:12:42 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:43 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:44 DEBUG Sender:77 - B0 0D 33 f3 18 0e
+2017-02-05 19:12:44 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:45 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:46 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:12:47 DEBUG Pinger:30 - Ping to 192.168.178.17: 3ms
+2017-02-05 19:12:48 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:49 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:50 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:51 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:52 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:53 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:54 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:55 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:55 DEBUG Sender:77 - B0 0D 33 f3 e0 0e
+2017-02-05 19:12:56 DEBUG Sender:77 - B0 0D 33 f3 e0 0e
+2017-02-05 19:12:56 DEBUG Sender:77 - B0 0D 33 f3 30 0e
+2017-02-05 19:12:56 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:57 DEBUG Sender:77 - B0 0D 33 f3 48 0e
+2017-02-05 19:12:57 DEBUG Sender:77 - B0 0D 33 f3 60 0e
+2017-02-05 19:12:57 DEBUG Sender:77 - B0 0D 33 f3 68 0e
+2017-02-05 19:12:57 DEBUG Sender:77 - B0 0D 33 f3 78 0e
+2017-02-05 19:12:57 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:12:58 DEBUG Pinger:30 - Ping to 192.168.178.17: 0ms
+2017-02-05 19:12:59 DEBUG Sender:77 - B0 0D 33 f3 78 0c
+2017-02-05 19:12:59 DEBUG Sender:77 - B0 0D 33 f3 78 0d
+2017-02-05 19:12:59 DEBUG Sender:77 - B0 0D 33 f3 78 0b
+2017-02-05 19:12:59 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:00 DEBUG Sender:77 - B0 0D 33 f3 7a 05
+2017-02-05 19:13:00 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:01 DEBUG Sender:77 - B0 0D 33 f3 7a 15
+2017-02-05 19:13:01 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:02 DEBUG Sender:77 - B0 0D 33 f3 7a 06
+2017-02-05 19:13:02 DEBUG Sender:77 - B0 0D 33 f3 7a 15
+2017-02-05 19:13:02 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:13:03 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:03 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:04 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:05 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:05 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:05 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:05 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:06 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:06 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:06 DEBUG Sender:77 - B0 0D 33 f3 7a 13
+2017-02-05 19:13:06 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:07 DEBUG Sender:77 - B0 0D 33 f3 7a 15
+2017-02-05 19:13:07 DEBUG Sender:77 - B0 0D 33 f3 7a 17
+2017-02-05 19:13:07 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:08 DEBUG Sender:77 - B0 0D 33 f3 7a 0a
+2017-02-05 19:13:08 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:09 DEBUG Sender:77 - B0 0D 33 f3 7b 07
+2017-02-05 19:13:09 DEBUG Pinger:30 - Ping to 192.168.178.17: 2ms
+2017-02-05 19:13:10 DEBUG Pinger:30 - Ping to 192.168.178.17: 0ms
+2017-02-05 19:13:11 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:12 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
+2017-02-05 19:13:13 WARN  Pinger:33 - Unable to ping Client 192.168.178.17, gets removed
