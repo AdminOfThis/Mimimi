@@ -137,3 +137,370 @@
 2017-02-05 19:13:11 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
 2017-02-05 19:13:12 DEBUG Pinger:30 - Ping to 192.168.178.17: 1ms
 2017-02-05 19:13:13 WARN  Pinger:33 - Unable to ping Client 192.168.178.17, gets removed
+2017-02-08 19:44:29 INFO  Main:19 - Starting server
+2017-02-08 19:44:29 INFO  Server:36 - Starting registry
+2017-02-08 19:44:29 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:44:29 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:44:29 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:44:29 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:44:29 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:44:29 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:45:11 INFO  Main:19 - Starting server
+2017-02-08 19:45:11 INFO  Server:36 - Starting registry
+2017-02-08 19:45:11 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:45:11 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:45:11 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:45:11 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:45:11 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:45:11 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:45:12 INFO  Main:24 - === STARTED ===
+2017-02-08 19:46:41 INFO  Main:19 - Starting server
+2017-02-08 19:46:41 INFO  Server:36 - Starting registry
+2017-02-08 19:46:41 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:46:41 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:46:41 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:46:41 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:46:41 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:46:41 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:46:41 INFO  Timer:29 - Starting Timer
+2017-02-08 19:46:42 INFO  Main:24 - === STARTED ===
+2017-02-08 19:47:11 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:12 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:13 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:14 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:15 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:16 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:17 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:41 INFO  Main:19 - Starting server
+2017-02-08 19:47:41 INFO  Server:36 - Starting registry
+2017-02-08 19:47:41 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:47:42 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:47:42 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:47:42 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:47:42 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:47:42 INFO  Timer:29 - Starting Timer
+2017-02-08 19:47:42 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:47:43 INFO  Main:24 - === STARTED ===
+2017-02-08 19:47:52 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:53 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:54 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:55 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:56 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:57 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:58 INFO  Timer:47 - Executing alarm
+2017-02-08 19:47:59 INFO  Timer:47 - Executing alarm
+2017-02-08 19:48:13 INFO  Main:19 - Starting server
+2017-02-08 19:48:13 INFO  Server:36 - Starting registry
+2017-02-08 19:48:13 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:48:13 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:48:13 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:48:13 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:48:13 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:48:13 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:48:13 INFO  Timer:29 - Starting Timer
+2017-02-08 19:48:14 INFO  Main:24 - === STARTED ===
+2017-02-08 19:48:23 INFO  Timer:47 - Executing alarm
+2017-02-08 19:48:56 INFO  Main:19 - Starting server
+2017-02-08 19:48:56 INFO  Server:36 - Starting registry
+2017-02-08 19:48:57 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:48:57 INFO  Server:42 - Detected IP: 192.168.0.240
+2017-02-08 19:48:57 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:48:57 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:48:57 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:48:57 INFO  Timer:29 - Starting Timer
+2017-02-08 19:48:57 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:48:58 INFO  Main:24 - === STARTED ===
+2017-02-08 19:49:07 INFO  Timer:47 - Executing alarm
+2017-02-08 19:50:07 INFO  Timer:47 - Executing alarm
+2017-02-08 19:51:07 INFO  Timer:47 - Executing alarm
+2017-02-08 19:52:07 INFO  Timer:47 - Executing alarm
+2017-02-08 19:55:27 INFO  Main:19 - Starting server
+2017-02-08 19:55:27 INFO  Server:37 - Starting registry
+2017-02-08 19:55:27 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:55:28 INFO  Server:43 - Detected IP: 192.168.0.240
+2017-02-08 19:55:28 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:55:28 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:55:28 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:55:28 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:55:28 INFO  Timer:29 - Starting Timer
+2017-02-08 19:55:29 INFO  Main:24 - === STARTED ===
+2017-02-08 19:55:38 INFO  Timer:47 - Executing alarm
+2017-02-08 19:55:38 DEBUG Sender:77 - B0 0D 33 00 00 01
+2017-02-08 19:55:38 DEBUG Sender:77 - B0 0D 33 00 00 11
+2017-02-08 19:57:01 INFO  Main:19 - Starting server
+2017-02-08 19:57:01 INFO  Server:37 - Starting registry
+2017-02-08 19:57:01 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 19:57:01 INFO  Server:43 - Detected IP: 192.168.0.240
+2017-02-08 19:57:01 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 19:57:01 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 19:57:01 INFO  Pinger:22 - Starting pinger
+2017-02-08 19:57:01 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 19:57:01 INFO  Timer:29 - Starting Timer
+2017-02-08 19:57:02 INFO  Main:24 - === STARTED ===
+2017-02-08 19:57:11 INFO  Timer:47 - Executing alarm
+2017-02-08 19:57:14 DEBUG Sender:77 - B0 0D 33 00 00 01
+2017-02-08 19:57:15 DEBUG Sender:77 - B0 0D 33 00 00 11
+2017-02-08 23:02:20 INFO  Main:19 - Starting server
+2017-02-08 23:02:20 INFO  Server:38 - Starting registry
+2017-02-08 23:02:20 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 23:02:21 INFO  Server:44 - Detected IP: 192.168.0.240
+2017-02-08 23:02:21 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:02:21 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:02:21 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:02:21 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:02:21 INFO  Timer:27 - Starting Timer
+2017-02-08 23:16:16 INFO  Main:19 - Starting server
+2017-02-08 23:16:17 INFO  Server:38 - Starting registry
+2017-02-08 23:16:17 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 23:16:17 INFO  Server:44 - Detected IP: 192.168.0.240
+2017-02-08 23:16:17 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:16:17 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:16:17 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:16:17 INFO  Timer:27 - Starting Timer
+2017-02-08 23:16:17 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:16:18 INFO  Main:24 - === STARTED ===
+2017-02-08 23:16:24 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:16:24 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:16:25 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:16:26 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:27 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:16:28 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:29 DEBUG Pinger:30 - Ping to 192.168.0.240: 3ms
+2017-02-08 23:16:30 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:16:31 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:32 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:33 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:34 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:16:35 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:36 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:37 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:38 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:39 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:16:40 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:16:41 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:42 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:16:43 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:16:45 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:17:03 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:17:03 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:17:04 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:17:05 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:17:06 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:07 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:08 DEBUG Pinger:30 - Ping to 192.168.0.240: 3ms
+2017-02-08 23:17:09 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:10 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:11 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:12 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:13 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:14 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:15 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:16 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:17 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:18 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:19 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:20 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:21 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:22 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:23 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:24 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:25 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:26 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:27 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:28 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:29 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:30 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:17:31 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:17:53 INFO  Main:19 - Starting server
+2017-02-08 23:17:54 INFO  Server:38 - Starting registry
+2017-02-08 23:17:54 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 23:17:54 INFO  Server:44 - Detected IP: 192.168.0.240
+2017-02-08 23:17:54 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:17:54 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:17:54 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:17:54 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:17:54 INFO  Timer:27 - Starting Timer
+2017-02-08 23:17:55 INFO  Main:24 - === STARTED ===
+2017-02-08 23:18:01 INFO  Main:19 - Starting server
+2017-02-08 23:18:02 INFO  Server:38 - Starting registry
+2017-02-08 23:18:02 INFO  Server:47 - Unable to register RMI-Module
+2017-02-08 23:18:02 ERROR Server:48 - java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+2017-02-08 23:18:02 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:18:02 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:18:02 WARN  ServerFinder:35 - Unable to start Broadcast Socket on Port 1100
+2017-02-08 23:18:02 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:18:02 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:18:02 INFO  Timer:27 - Starting Timer
+2017-02-08 23:18:03 INFO  Main:24 - === STARTED ===
+2017-02-08 23:18:06 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:18:06 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:18:07 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:18:08 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:09 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:10 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:11 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:12 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:13 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:14 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:15 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:17 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:18:19 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:18:19 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:18:20 DEBUG Pinger:30 - Ping to 192.168.0.240: 87ms
+2017-02-08 23:18:21 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:22 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:23 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:24 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:18:25 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:27 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:18:41 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:18:41 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:18:41 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:42 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:43 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:44 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:45 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:46 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:47 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:48 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:49 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:50 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:51 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:52 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:53 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:54 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:55 DEBUG Sender:77 - B0 0D 33 62 00 0f
+2017-02-08 23:18:55 INFO  Server:60 - Notifying clients with Message: Color changed
+2017-02-08 23:18:55 DEBUG Server:66 - Notify Client 192.168.0.240
+2017-02-08 23:18:55 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:56 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:57 INFO  Server:60 - Notifying clients with Message: Color changed
+2017-02-08 23:18:57 DEBUG Sender:77 - B0 0D 33 38 00 0f
+2017-02-08 23:18:57 DEBUG Server:66 - Notify Client 192.168.0.240
+2017-02-08 23:18:57 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:18:58 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:18:59 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:19:00 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:19:01 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:19:02 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:19:04 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:19:07 INFO  Timer:44 - Executing alarm
+2017-02-08 23:19:07 DEBUG Sender:77 - B0 0D 33 38 00 01
+2017-02-08 23:19:07 DEBUG Sender:77 - B0 0D 33 38 00 11
+2017-02-08 23:19:20 INFO  Timer:44 - Executing alarm
+2017-02-08 23:19:20 DEBUG Sender:77 - B0 0D 33 38 00 01
+2017-02-08 23:19:20 DEBUG Sender:77 - B0 0D 33 38 00 11
+2017-02-08 23:27:05 INFO  Main:19 - Starting server
+2017-02-08 23:27:05 INFO  Server:38 - Starting registry
+2017-02-08 23:27:05 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 23:27:05 INFO  Server:44 - Detected IP: 192.168.0.240
+2017-02-08 23:27:05 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:27:05 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:27:05 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:27:05 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:27:05 INFO  Timer:27 - Starting Timer
+2017-02-08 23:27:06 INFO  Main:24 - === STARTED ===
+2017-02-08 23:27:25 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:27:25 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:27:26 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:27:27 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:27:28 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:27:29 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:27:30 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:27:31 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:27:32 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:27:33 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:27:34 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:27:35 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:27:36 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:27:37 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:27:39 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:29:45 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:29:45 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:29:46 DEBUG Pinger:30 - Ping to 192.168.0.240: 35ms
+2017-02-08 23:29:47 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:48 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:29:49 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:50 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:51 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:52 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:53 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:29:54 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:29:56 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:32:10 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:32:10 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:32:11 DEBUG Pinger:30 - Ping to 192.168.0.240: 8ms
+2017-02-08 23:32:12 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:13 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:14 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:15 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:16 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:17 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:18 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:19 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:21 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:32:41 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:32:41 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:32:41 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:42 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:43 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:44 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:45 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:46 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:47 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:48 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:50 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:32:57 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:32:57 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:32:57 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:32:58 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:32:59 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:33:00 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:33:01 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:33:02 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:33:03 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:33:04 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:33:05 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:33:06 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:33:08 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed
+2017-02-08 23:40:02 INFO  Main:19 - Starting server
+2017-02-08 23:40:02 INFO  Server:38 - Starting registry
+2017-02-08 23:40:02 INFO  ServerFinder:38 - Starting broadcastserver
+2017-02-08 23:40:02 INFO  Server:44 - Detected IP: 192.168.0.240
+2017-02-08 23:40:02 INFO  Sender:42 - Detected OS: windows 10
+2017-02-08 23:40:02 WARN  Sender:44 - !!!=== Will only simulate Sender ===!!!
+2017-02-08 23:40:02 INFO  Pinger:22 - Starting pinger
+2017-02-08 23:40:02 INFO  SerialScanner:29 - Starting serial scanner
+2017-02-08 23:40:02 INFO  Timer:27 - Starting Timer
+2017-02-08 23:40:03 INFO  Main:24 - === STARTED ===
+2017-02-08 23:40:05 INFO  Server:120 - Registering Client 192.168.0.240, # 0
+2017-02-08 23:40:05 INFO  Server:130 - Client 192.168.0.240 successful registered
+2017-02-08 23:40:05 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:06 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:07 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:08 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:09 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:10 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:11 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:12 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:13 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:14 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:15 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:16 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:17 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:18 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:19 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:20 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:21 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
+2017-02-08 23:40:22 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:23 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:24 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:25 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:26 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:27 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:28 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:29 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
+2017-02-08 23:40:30 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:31 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-02-08 23:40:33 WARN  Pinger:33 - Unable to ping Client 192.168.0.240, gets removed

@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
+import data.Alarm;
 import data.Button;
 
 public interface ServerInterface extends Remote {
@@ -27,4 +28,16 @@ public interface ServerInterface extends Remote {
     public void addNetworkDevice(String mac) throws RemoteException;
 
     public ArrayList<String> getNetworkDevices() throws RemoteException;
+
+	/**
+	 * Adds an alarm to the server which gets executed in Time by the Timer
+	 * 
+	 * @param alarm
+	 * @throws RemoteException
+	 */
+	public void addAlarm(Alarm alarm) throws RemoteException;
+
+	public void removeAlarm(Alarm alarm) throws RemoteException;
+
+	public ArrayList<Alarm> getAlarmList() throws RemoteException;
 }
