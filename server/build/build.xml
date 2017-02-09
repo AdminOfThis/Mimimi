@@ -40,7 +40,7 @@
 		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
 		<echo>creating jar</echo>
 
-		<jar jarfile="${dist}/mimimi_${DSTAMP}.jar"  basedir="${build}">
+		<jar jarfile="${dist}/mimimi_${DSTAMP}_${TSTAMP].jar"  basedir="${build}">
 			
 			<manifest>
 				<attribute name="Main-Class" value="${jar.mainclass}" />

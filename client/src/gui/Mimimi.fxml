@@ -4,7 +4,6 @@
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckMenuItem?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -399,16 +398,16 @@
                                  <children>
                                     <Label text="Startdate:" />
                                     <DatePicker fx:id="alarmDate" promptText="Startdate" showWeekNumbers="true" GridPane.columnIndex="1" />
-                                    <Label text="Repeat:" GridPane.rowIndex="1" />
-                                    <ChoiceBox fx:id="alarmCombo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label text="Repeat:" GridPane.rowIndex="2" />
+                                    <ComboBox fx:id="alarmCombo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                     <Button fx:id="addAlarm" mnemonicParsing="false" onAction="#addAlarm" text="Add Alarm" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                                     <Button fx:id="removeAlarm" mnemonicParsing="false" onAction="#removeAlarm" text="Remove Alarm" GridPane.rowIndex="3" />
-                                    <Label text="Time:" GridPane.rowIndex="2" />
-                                    <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                    <Label text="Time:" GridPane.rowIndex="1" />
+                                    <HBox spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <children>
-                                          <ChoiceBox />
+                                          <ComboBox fx:id="hours" />
                                           <Label text=":" />
-                                          <ChoiceBox />
+                                          <ComboBox fx:id="minutes" />
                                        </children>
                                     </HBox>
                                  </children>

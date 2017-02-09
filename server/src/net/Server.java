@@ -53,6 +53,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		}
 		new Pinger(this);
 		new SerialScanner(this);
+		timer = new Timer(this);
 	}
 
 	public void notifyClients(Message message) {
@@ -157,6 +158,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public void addAlarm(Alarm alarm) throws RemoteException {
+		LOG.info("Alarm added");
 		timer.addAlarm(alarm);
 	}
 
@@ -178,5 +180,23 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	@Override
 	public ArrayList<String> getNetworkDevices() throws RemoteException {
 		return scanner.getNetworkDevices();
+	}
+
+	public void updateAlarms() {
+		for (ClientInterface client : clients.keySet()) {
+			new Thread() {
+
+				@Override
+				public void run() {
+					LOG.debug("Updating Alarms on Clients" + clients.get(client));
+					try {
+						client.updateAlarms(timer.getAlarmList());
+					}
+					catch (RemoteException e) {
+						LOG.error("Unable to notify Client " + client);
+					}
+				};
+			}.start();
+		}
 	}
 }

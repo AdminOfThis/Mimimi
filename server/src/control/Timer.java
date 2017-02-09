@@ -24,7 +24,7 @@ public class Timer extends Thread {
 
 	@Override
 	public void run() {
-		LOG.info("Starting Timer");
+		LOG.info("Starting timer");
 		while (!finish) {
 			checkAlarms();
 			try {
@@ -37,6 +37,7 @@ public class Timer extends Thread {
 	}
 
 	private void checkAlarms() {
+		boolean update = false;
 		for (Alarm alarm : alarmList) {
 			// search for alarms to execute
 			if (alarm.isTimeToExecute()) {
@@ -47,27 +48,32 @@ public class Timer extends Thread {
 				case ONCE:
 					removeList.add(alarm);
 					break;
-				case DAILY:
+				case HOUR:
+					alarm.add(GregorianCalendar.HOUR, 1);
+					break;
+				case DAY:
 					alarm.add(GregorianCalendar.DAY_OF_YEAR, 1);
 					break;
-				case WEEKLY:
+				case WEEK:
 					alarm.add(GregorianCalendar.WEEK_OF_YEAR, 1);
 					break;
-				case MONTHLY:
+				case MONTH:
 					alarm.add(GregorianCalendar.MONTH, 1);
 					break;
-				case YEARLY:
+				case YEAR:
 					alarm.add(GregorianCalendar.YEAR, 1);
 					break;
-				default:
-					break;
 				}
+				update = true;
 			}
 		}
-		alarmList.removeAll(removeList);
-		alarmList.addAll(addList);
-		removeList.clear();
-		addList.clear();
+		if (addList.size() > 0 || removeList.size() > 0 || update) {
+			alarmList.removeAll(removeList);
+			alarmList.addAll(addList);
+			removeList.clear();
+			addList.clear();
+			server.updateAlarms();
+		}
 	}
 
 	public void addAlarm(Alarm alarm) {

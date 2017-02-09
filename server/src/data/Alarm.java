@@ -7,7 +7,7 @@ public class Alarm extends GregorianCalendar {
 	private static final long serialVersionUID = 376334195670122678L;
 
 	public enum Mode {
-		ONCE, DAILY, WEEKLY, MONTHLY, YEARLY
+		ONCE, HOUR, DAY, WEEK, MONTH, YEAR
 	};
 
 	private Mode mode;
@@ -29,5 +29,11 @@ public class Alarm extends GregorianCalendar {
 
 	public void setMode(Mode mode) {
 		this.mode = mode;
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.get(GregorianCalendar.YEAR) + "";
 	}
 }

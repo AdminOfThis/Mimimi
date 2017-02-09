@@ -2,7 +2,9 @@ package gui;
 
 import java.net.URL;
 import java.rmi.RemoteException;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
@@ -18,7 +20,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.CheckMenuItem;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
@@ -56,13 +58,15 @@ public class GUIController extends Client implements Initializable {
 	private SplitMenuButton modeButton;
 	/* Alarm Section */
 	@FXML
-	private ListView<String> alarmList;
+	private ListView<Alarm> alarmList;
 	@FXML
 	private javafx.scene.control.Button addAlarm, removeAlarm;
 	@FXML
 	private DatePicker alarmDate;
 	@FXML
-	private ChoiceBox<Mode> alarmCombo;
+	private ComboBox<Mode> alarmCombo;
+	@FXML
+	private ComboBox<Integer> hours, minutes;
 	@FXML
 	private ListView<Message> list;
 	private int color = 0;
@@ -163,17 +167,23 @@ public class GUIController extends Client implements Initializable {
 	}
 
 	private void initAlarm() {
+		alarmList.setCellFactory(e -> new AlarmCell());
 		alarmCombo.getItems().addAll(Mode.values());
 		try {
 			ArrayList<Alarm> alarmList = server.getAlarmList();
-			for (Alarm a : alarmList) {
-				this.alarmList.getItems().add(a.toString());
-			}
+			this.alarmList.getItems().addAll(alarmList);
 		}
 		catch (RemoteException e) {
 			LOG.error("Unable to get Alarms from Server", e);
 		}
-		addAlarm.disableProperty().bind(alarmCombo.valueProperty().isNull().or(alarmDate.valueProperty().isNull()));
+		addAlarm.disableProperty().bind(alarmCombo.valueProperty().isNull().or(alarmDate.valueProperty().isNull()).or(hours.valueProperty().isNull()).or(minutes.valueProperty().isNull()));
+		removeAlarm.disableProperty().bind(alarmList.getSelectionModel().selectedItemProperty().isNull());
+		for (int hours = 0; hours <= 23; hours++) {
+			this.hours.getItems().add(hours);
+		}
+		for (int minutes = 0; minutes <= 59; minutes++) {
+			this.minutes.getItems().add(minutes);
+		}
 	}
 
 	private void updateColor(int value, boolean send) {
@@ -372,11 +382,41 @@ public class GUIController extends Client implements Initializable {
 	@FXML
 	private void addAlarm(ActionEvent e) {
 		// TODO
-// Mode mode = alarmCombo.getValue();
-// LocalDate cal = alarmDate.getValue();
-// Alarm alarm = new Alarm();
+		Mode mode = alarmCombo.getValue();
+		LocalDate cal = alarmDate.getValue();
+		GregorianCalendar date = new GregorianCalendar();
+		date.set(GregorianCalendar.YEAR, cal.getYear());
+		date.set(GregorianCalendar.MONTH, cal.getMonthValue() - 1);
+		date.set(GregorianCalendar.DAY_OF_MONTH, cal.getDayOfMonth());
+		date.set(GregorianCalendar.HOUR_OF_DAY, hours.getValue());
+		date.set(GregorianCalendar.MINUTE, minutes.getValue());
+		date.set(GregorianCalendar.SECOND, 0);
+		Alarm alarm = new Alarm(date, mode);
+		try {
+			server.addAlarm(alarm);
+			alarmCombo.setValue(null);
+			alarmDate.setValue(null);
+			hours.setValue(null);
+			minutes.setValue(null);
+		}
+		catch (RemoteException e1) {
+			LOG.error("Unable to set alarm on server", e1);
+		}
 	}
 
 	@FXML
-	private void removeAlarm(ActionEvent e) {}
+	private void removeAlarm(ActionEvent e) {
+		Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
+		try {
+			server.removeAlarm(alarm);
+		}
+		catch (RemoteException e1) {
+			LOG.error("Cannot reach server to remove alarm", e1);
+		}
+	}
+
+	@Override
+	public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
+		this.alarmList.getItems().setAll(alarmList);
+	}
 }
