@@ -158,7 +158,6 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public void addAlarm(Alarm alarm) throws RemoteException {
-		LOG.info("Alarm added");
 		timer.addAlarm(alarm);
 	}
 

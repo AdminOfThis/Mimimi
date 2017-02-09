@@ -42,7 +42,7 @@ public class Timer extends Thread {
 			// search for alarms to execute
 			if (alarm.isTimeToExecute()) {
 				// TODO
-				LOG.info("Executing alarm " + alarm.toString());
+				LOG.info("Executing alarm: " + alarm.toString());
 				server.alarm(alarm);
 				switch (alarm.getMode()) {
 				case ONCE:
@@ -78,10 +78,12 @@ public class Timer extends Thread {
 
 	public void addAlarm(Alarm alarm) {
 		addList.add(alarm);
+		LOG.info("Alarm added: " + alarm.toString());
 	}
 
 	public void removeAlarm(Alarm alarm) {
 		removeList.add(alarm);
+		LOG.info("Alarm removed: " + alarm.toString());
 	}
 
 	public ArrayList<Alarm> getAlarmList() {
