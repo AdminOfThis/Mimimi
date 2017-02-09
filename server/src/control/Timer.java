@@ -42,7 +42,7 @@ public class Timer extends Thread {
 			// search for alarms to execute
 			if (alarm.isTimeToExecute()) {
 				// TODO
-				LOG.info("Executing alarm");
+				LOG.info("Executing alarm " + alarm.toString());
 				server.alarm(alarm);
 				switch (alarm.getMode()) {
 				case ONCE:

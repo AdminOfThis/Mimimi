@@ -1,5 +1,7 @@
 package data;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Alarm extends GregorianCalendar {
@@ -33,7 +35,8 @@ public class Alarm extends GregorianCalendar {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return this.get(GregorianCalendar.YEAR) + "";
+		Date date = getTime();
+		SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+		return formatter.format(date) + " (" + getMode().toString() + ")";
 	}
 }
