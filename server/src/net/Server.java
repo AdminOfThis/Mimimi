@@ -11,14 +11,14 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
 
-import control.NetworkScanner;
 import control.Sender;
-import control.SerialScanner;
-import control.Timer;
 import data.Alarm;
 import data.Button;
 import data.Message;
 import data.Message.MessageType;
+import modules.NetworkScanner;
+import modules.SerialScanner;
+import modules.Timer;
 
 /**
  * 
@@ -146,7 +146,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		}
 	}
 
-	public void alarm(Alarm alarm) {
+	public void executeAlarm(Alarm alarm) {
 		try {
 			sender.sendButton(Button.ALL_ON);
 			sender.sendButton(Button.ALL_WHITE);
