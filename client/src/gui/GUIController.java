@@ -417,6 +417,7 @@ public class GUIController extends Client implements Initializable {
 
 	@Override
 	public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
+		LOG.info("Received new alarms List from server");
 		this.alarmList.getItems().setAll(alarmList);
 	}
 }

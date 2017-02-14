@@ -57,7 +57,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	public void notifyClients(Message message) {
-		LOG.info("Notifying clients with Message: " + message.getText());
+		LOG.info("Notifying clients: " + message.getText());
 		for (ClientInterface client : clients.keySet()) {
 			new Thread() {
 

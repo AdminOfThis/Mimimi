@@ -76,7 +76,7 @@ public class NetworkScanner extends Module {
 	private void disconnected() throws RemoteException {
 		LOG.info("Device disconnected");
 		getServer().sendButton(Button.ALL_OFF);
-		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device disconnected"));
+		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
 	}
 
 	private void connected() throws RemoteException {
