@@ -5,29 +5,19 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 import data.Alarm;
-import data.Button;
+import data.LightState;
 
 public interface ServerInterface extends Remote {
 
-    public int createClientID() throws RemoteException;
+	public int createClientID() throws RemoteException;
 
-    public boolean clientRegister(int index) throws RemoteException;
+	public boolean clientRegister(int index) throws RemoteException;
 
-    public void send(String data) throws RemoteException;
+	public void update(LightState state) throws RemoteException;
 
-    public void sendButton(Button button) throws RemoteException;
+	public void addNetworkDevice(String mac) throws RemoteException;
 
-    public void sendColor(int color) throws RemoteException;
-
-    public void sendBrightness(int brightness) throws RemoteException;
-
-    public void modeNext() throws RemoteException;
-
-    public void mode(int mode) throws RemoteException;
-
-    public void addNetworkDevice(String mac) throws RemoteException;
-
-    public ArrayList<String> getNetworkDevices() throws RemoteException;
+	public ArrayList<String> getNetworkDevices() throws RemoteException;
 
 	/**
 	 * Adds an alarm to the server which gets executed in Time by the Timer

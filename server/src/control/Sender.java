@@ -10,6 +10,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.log4j.Logger;
 
 import data.Button;
+import data.LightState;
 
 public class Sender {
 
@@ -21,11 +22,11 @@ public class Sender {
 	private static Sender instance;
 	private boolean isLinux;
 	private Thread thread;
-	private Queue<String> queue = new LinkedBlockingQueue<>();
-	private int brightness = 0;
-	private int color = 0;
-	private Button button = Button.NONE;
-	private int mode = 0x00;
+	private Queue<LightState> queue = new LinkedBlockingQueue<>();
+	private int currentBrightness = 19;
+	private int currentColor = 0;
+	private Button currentButton = Button.NONE;
+	private int currentMode = 0x00;
 	private int currentGroup = 0;
 	private Process proc;
 	private OutputStreamWriter writer;
@@ -46,13 +47,10 @@ public class Sender {
 		} else {
 			isLinux = true;
 		}
-		if (isLinux) {
-			initProcess();
-		}
+		if (isLinux) {}
 	}
 
-	public void send(String rawData) {
-		queue.add(rawData);
+	private void checkAndStartSendThread() {
 		if (thread == null) {
 			thread = new Thread(new Runnable() {
 
@@ -63,17 +61,21 @@ public class Sender {
 							Thread.yield();
 							continue;
 						}
-						if (queue.peek().length() != 8) {
-							LOG.warn("Wrong DATA length, need 4Bytes and 3 spacings between: " + queue.peek());
-							queue.poll();
-						}
 						try {
-							// Could build process only once and hold it for livetime
 							if ((proc == null || !proc.isAlive()) && isLinux) {
 								LOG.info("Starting Sender");
-								initProcess();
+								LOG.debug("Building new process");
+								ProcessBuilder pb = new ProcessBuilder(ARGS);
+								try {
+									proc = pb.start();
+									OutputStream outStream = proc.getOutputStream();
+									writer = new OutputStreamWriter(outStream);
+								}
+								catch (IOException e) {
+									LOG.error(e);
+								}
 							}
-							String cmd = "B" + Integer.toHexString(mode) + " " + REMOTE_ID + " " + queue.poll().trim();
+							String cmd = buildCommand(queue.poll());
 							LOG.debug(cmd);
 							if (isLinux()) {
 								for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
@@ -98,37 +100,11 @@ public class Sender {
 		}
 	}
 
-	private void initProcess() {
-		LOG.debug("Building new process");
-		ProcessBuilder pb = new ProcessBuilder(ARGS);
-		try {
-			proc = pb.start();
-			OutputStream outStream = proc.getOutputStream();
-			writer = new OutputStreamWriter(outStream);
+	private String buildCommand(final LightState poll) {
+		Button button = poll.getButton();
+		if (button != null) {
+			this.currentButton = button;
 		}
-		catch (IOException e) {
-			LOG.error(e);
-		}
-	}
-
-	public void send() {
-		String col = Integer.toHexString(color);
-		if (col.length() < 2) {
-			col = "0" + col;
-		}
-		String bright = Integer.toHexString(brightness + currentGroup);
-		if (bright.length() < 2) {
-			bright = "0" + bright;
-		}
-		String btn = Integer.toHexString(button.getCmd());
-		if (btn.length() < 2) {
-			btn = "0" + btn;
-		}
-		send(col + " " + bright + " " + btn);
-	}
-
-	public void sendButton(Button button) throws RemoteException {
-		this.button = button;
 		switch (button) {
 		case ALL_ON:
 			currentGroup = 0;
@@ -148,20 +124,45 @@ public class Sender {
 		default:
 			break;
 		}
-		send();
+		String buttonString = Integer.toHexString(currentButton.getCmd());
+		if (buttonString.length() < 2) {
+			buttonString = "0" + buttonString;
+		}
+		buttonString = buttonString.toUpperCase();
+		int color = poll.getColor();
+		if (color >= 0) {
+			this.currentColor = (color + 0x1B) % 255;
+			this.currentMode = 0;
+		}
+		String colorString = Integer.toHexString(currentColor);
+		if (colorString.length() < 2) {
+			colorString = "0" + colorString;
+		}
+		colorString = colorString.toUpperCase();
+		int brightness = poll.getBrightness();
+		if (brightness >= 0) {
+			this.currentBrightness = brightness;
+		}
+		String brightString = Integer.toHexString(parseToBrightness(currentBrightness) + currentGroup);
+		if (brightString.length() < 2) {
+			brightString = "0" + brightString;
+		}
+		brightString = brightString.toUpperCase();
+		int mode = poll.getMode();
+		if (mode >= 0) {
+			this.currentMode = mode;
+		}
+		return "B" + Integer.toHexString(currentMode) + " " + REMOTE_ID + " " + colorString + " " + brightString + " " + buttonString;
 	}
 
-	public void sendColor(int color) throws RemoteException {
-		this.color = (color + 0x1B) % 255;
-		this.button = Button.COLOR_WHEEL;
-		this.mode = 0x00;
-		send();
+	public void update(LightState state) {
+		queue.add(state);
+		checkAndStartSendThread();
 	}
 
-	public void sendBrightness(int brightness) throws RemoteException {
-		this.brightness = parseToBrightness(brightness);
-		this.button = Button.BRIGHTNESS;
-		send();
+	public void queueFirst(LightState state) {
+		queue.clear();
+		queue.add(state);
 	}
 
 	private int parseToBrightness(int round) {
@@ -170,23 +171,6 @@ public class Sender {
 			newRound = newRound + 256;
 		}
 		return Math.abs(newRound);
-	}
-
-	public void modeNext() throws RemoteException {
-		mode++;
-		if (mode > 0x08) {
-			mode = 0x00;
-		}
-		this.button = Button.MODE;
-		send();
-	}
-
-	public void mode(int mode) throws RemoteException {
-		if (mode <= 0x08) {
-			this.mode = mode;
-			this.button = Button.MODE;
-			send();
-		}
 	}
 
 	public boolean isLinux() {

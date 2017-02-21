@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 import data.Alarm;
 import data.Alarm.Mode;
 import data.Button;
+import data.LightState;
+import data.LightState.FIELD;
 import data.Message;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -113,7 +115,7 @@ public class GUIController extends Client implements Initializable {
 			@Override
 			public void handle(MouseEvent event) {
 				try {
-					server.sendBrightness((int) Math.round(sliderBright.getValue()));
+					server.update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
 				}
 				catch (RemoteException e) {
 					LOG.error(e);
@@ -125,7 +127,7 @@ public class GUIController extends Client implements Initializable {
 			@Override
 			public void handle(KeyEvent event) {
 				try {
-					server.sendBrightness((int) Math.round(sliderBright.getValue()));
+					server.update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
 				}
 				catch (RemoteException e) {
 					LOG.error(e);
@@ -196,7 +198,7 @@ public class GUIController extends Client implements Initializable {
 				}
 			}
 			if (send) {
-				server.sendColor(value);
+				server.update(new LightState(value));
 			}
 			color = value;
 		}
@@ -263,7 +265,7 @@ public class GUIController extends Client implements Initializable {
 
 	private void sendBtn(Button btn) {
 		try {
-			server.sendButton(btn);
+			server.update(new LightState(btn));
 		}
 		catch (RemoteException e) {
 			LOG.error(e);
@@ -290,7 +292,7 @@ public class GUIController extends Client implements Initializable {
 		try {
 			MenuItem node = (MenuItem) e.getSource();
 			int count = modeButton.getItems().indexOf(node);
-			server.mode(count);
+			server.update(new LightState(FIELD.MODE, count));
 		}
 		catch (Exception ex) {
 			LOG.error(ex);
@@ -391,7 +393,7 @@ public class GUIController extends Client implements Initializable {
 		date.set(GregorianCalendar.HOUR_OF_DAY, hours.getValue());
 		date.set(GregorianCalendar.MINUTE, minutes.getValue());
 		date.set(GregorianCalendar.SECOND, 0);
-		Alarm alarm = new Alarm(date, mode);
+		Alarm alarm = new Alarm(date, mode, new LightState(FIELD.COLOR, 0));
 		try {
 			server.addAlarm(alarm);
 			alarmCombo.setValue(null);

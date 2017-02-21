@@ -8,6 +8,8 @@ import org.apache.log4j.Logger;
 
 import com.fazecast.jSerialComm.SerialPort;
 
+import data.LightState;
+import data.LightState.FIELD;
 import net.Server;
 
 public class SerialScanner extends Module {
@@ -67,12 +69,12 @@ public class SerialScanner extends Module {
 		try {
 			int newColor = Integer.parseInt(cmd[0]);
 			if (color != newColor) {
-				getServer().sendColor(newColor);
+				getServer().update(new LightState(newColor));
 				color = newColor;
 			}
 			int newBright = Integer.parseInt(cmd[1].trim());
 			if (brightness != newBright) {
-				getServer().sendBrightness(newBright);
+				getServer().update(new LightState(FIELD.BRIGHTNESS, newBright));
 				brightness = newBright;
 			}
 		}

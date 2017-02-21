@@ -13,9 +13,8 @@ import org.apache.log4j.Logger;
 
 import control.Sender;
 import data.Alarm;
-import data.Button;
+import data.LightState;
 import data.Message;
-import data.Message.MessageType;
 import modules.NetworkScanner;
 import modules.SerialScanner;
 import modules.Timer;
@@ -76,36 +75,11 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	@Override
-	public void send(String data) throws RemoteException {
-		sender.send();
-	}
-
-	@Override
-	public void sendButton(Button button) throws RemoteException {
-		sender.sendButton(button);
-	}
-
-	@Override
-	public void sendColor(int color) throws RemoteException {
-		sender.sendColor(color);
-		Message message = new Message(MessageType.LIGHT_COLOR, "Color changed");
-		message.setValue(color);
-		notifyClients(message);
-	}
-
-	@Override
-	public void sendBrightness(int brightness) throws RemoteException {
-		sender.sendBrightness(brightness);
-	}
-
-	@Override
-	public void modeNext() throws RemoteException {
-		sender.modeNext();
-	}
-
-	@Override
-	public void mode(int mode) throws RemoteException {
-		sender.mode(mode);
+	public void update(LightState state) throws RemoteException {
+		sender.update(state);
+// Message message = new Message(MessageType.LIGHT_COLOR, "Color changed");
+// message.setValue(color);
+// notifyClients(message);
 	}
 
 	@Override
@@ -147,13 +121,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	public void executeAlarm(Alarm alarm) {
-		try {
-			sender.sendButton(Button.ALL_ON);
-			sender.sendButton(Button.ALL_WHITE);
-		}
-		catch (RemoteException e) {
-			LOG.error("Unable to send Alarm  to Sender", e);
-		}
+		sender.queueFirst(alarm.getState());
 	}
 
 	@Override

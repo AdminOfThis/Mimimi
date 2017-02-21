@@ -13,11 +13,13 @@ public class Alarm extends GregorianCalendar {
 	};
 
 	private Mode mode;
+	private LightState state;
 
-	public Alarm(GregorianCalendar date, Mode mode) {
+	public Alarm(GregorianCalendar date, Mode mode, LightState state) {
 		super();
 		setTime(date.getTime());
-		this.setMode(mode);
+		setMode(mode);
+		setState(state);
 	}
 
 	public boolean isTimeToExecute() {
@@ -38,5 +40,13 @@ public class Alarm extends GregorianCalendar {
 		Date date = getTime();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm");
 		return formatter.format(date) + " (" + getMode().toString() + ")";
+	}
+
+	public LightState getState() {
+		return state;
+	}
+
+	public void setState(LightState state) {
+		this.state = state;
 	}
 }

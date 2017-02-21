@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 import data.Button;
+import data.LightState;
 import data.Message;
 import data.Message.MessageType;
 import net.Server;
@@ -75,13 +76,13 @@ public class NetworkScanner extends Module {
 
 	private void disconnected() throws RemoteException {
 		LOG.info("Device disconnected");
-		getServer().sendButton(Button.ALL_OFF);
+		getServer().update(new LightState(Button.ALL_OFF));
 		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
 	}
 
 	private void connected() throws RemoteException {
 		LOG.info("Device connected");
-		getServer().sendButton(Button.ALL_ON);
+		getServer().update(new LightState(Button.ALL_ON));
 		getServer().notifyClients(new Message(MessageType.WIFI, "WiFi-Device connected"));
 	}
 

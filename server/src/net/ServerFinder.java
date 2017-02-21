@@ -35,7 +35,7 @@ public class ServerFinder extends Thread {
 			LOG.warn("Unable to start Broadcast Socket on Port " + PORT);
 			return;
 		}
-		LOG.info("Starting broadcastserver");
+		LOG.info("Starting broadcast server");
 		while (true) {
 			try {
 				byte[] recvBuf = new byte[15000];
