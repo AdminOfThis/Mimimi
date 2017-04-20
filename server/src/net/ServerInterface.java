@@ -4,6 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
+import data.Address;
 import data.Alarm;
 import data.LightState;
 
@@ -30,4 +31,6 @@ public interface ServerInterface extends Remote {
 	public void removeAlarm(Alarm alarm) throws RemoteException;
 
 	public ArrayList<Alarm> getAlarmList() throws RemoteException;
+
+	public Address connectLightBulb() throws RemoteException;
 }

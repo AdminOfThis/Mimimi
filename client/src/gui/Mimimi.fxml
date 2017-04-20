@@ -28,20 +28,33 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GUIController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
-        <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="View">
-              <items>
-                  <CheckMenuItem fx:id="showMessages" mnemonicParsing="false" text="Show Messages" />
-              </items>
-            </Menu>
-        </menus>
-      </MenuBar>
+      <VBox spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <CheckMenuItem fx:id="showMessages" mnemonicParsing="false" text="Show Messages" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <HBox spacing="5.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addLight" text="Pair Light" />
+                  <Button mnemonicParsing="false" onAction="#addLight" text="Unpair Light" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
    </top>
    <right>
       <ListView fx:id="list" editable="true" nodeOrientation="LEFT_TO_RIGHT" BorderPane.alignment="CENTER" />

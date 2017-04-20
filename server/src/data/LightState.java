@@ -13,6 +13,8 @@ public class LightState implements Serializable {
 	private int color = -1;
 	private int brightness = -1;
 	private int mode = -1;
+	private Address address = Address.MASTER_ADRESS;
+
 
 	public LightState(Button button) {
 		this.setButton(button);
@@ -40,6 +42,14 @@ public class LightState implements Serializable {
 		default:
 			break;
 		}
+	}
+
+	public void setAddress(Address adr) {
+		this.address = adr;
+	}
+
+	public Address getAddress() {
+		return address;
 	}
 
 	public Button getButton() {

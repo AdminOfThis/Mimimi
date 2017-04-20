@@ -53,6 +53,7 @@ public class NetworkScanner extends Module {
 				reader.close();
 				if (found) {
 					failures = 0;
+					LOG.info("Device found again");
 					if (!deviceConnected) {
 						connected();
 						deviceConnected = true;

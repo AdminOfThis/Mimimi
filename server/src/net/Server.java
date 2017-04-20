@@ -12,7 +12,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.apache.log4j.Logger;
 
 import control.Sender;
+import data.Address;
 import data.Alarm;
+import data.LightBulb;
 import data.LightState;
 import data.Message;
 import modules.NetworkScanner;
@@ -165,5 +167,14 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 				};
 			}.start();
 		}
+	}
+
+	@Override
+	public Address connectLightBulb() throws RemoteException {
+		// TODO connect uuid
+		return sender.connectLightBulb(Address.idToAddress(LightBulb.getBulbList().size()));
+		// TODO connect master
+		// sender.connectLightBulb(Address.MASTER_ADRESS);
+
 	}
 }

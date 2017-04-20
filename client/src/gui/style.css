@@ -1,0 +1,19 @@
+.redBar .bar {
+	-fx-background-color: red;
+}
+.yellowBar .bar {
+	-fx-background-color: yellow;
+}
+.greenBar .bar{
+	-fx-background-color: green;
+}
+
+.whiteLabel{
+	-fx-text-fill: white;
+	-fx-font-size: 42;
+}
+
+.blackLabel{
+	-fx-text-fill: black;
+	-fx-font-size: 42;
+}

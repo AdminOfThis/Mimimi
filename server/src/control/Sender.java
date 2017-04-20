@@ -3,12 +3,14 @@ package control;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.nio.ByteBuffer;
 import java.rmi.RemoteException;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 import org.apache.log4j.Logger;
 
+import data.Address;
 import data.Button;
 import data.LightState;
 
@@ -47,7 +49,7 @@ public class Sender {
 		} else {
 			isLinux = true;
 		}
-		if (isLinux) {}
+		checkAndStartSendThread();
 	}
 
 	private void checkAndStartSendThread() {
@@ -76,7 +78,7 @@ public class Sender {
 								}
 							}
 							String cmd = buildCommand(queue.poll());
-							LOG.debug(cmd);
+							LOG.info(cmd);
 							if (isLinux()) {
 								for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
 									writer.write(cmd + " " + Integer.toHexString(SEQUENCE_SPACE * run) + "\n");
@@ -152,7 +154,10 @@ public class Sender {
 		if (mode >= 0) {
 			this.currentMode = mode;
 		}
-		return "B" + Integer.toHexString(currentMode) + " " + REMOTE_ID + " " + colorString + " " + brightString + " " + buttonString;
+		byte[] bytes = ByteBuffer.allocate(4).putInt(poll.getAddress().getAddress()).array();
+		String addressString = String.format("%02X", bytes[2]) + " " + String.format("%02X", bytes[3]);
+
+		return "B" + Integer.toHexString(currentMode) + " " + addressString + " " + colorString + " " + brightString + " " + buttonString;
 	}
 
 	public void update(LightState state) {
@@ -175,5 +180,31 @@ public class Sender {
 
 	public boolean isLinux() {
 		return isLinux;
+	}
+
+	public Address connectLightBulb(Address idToAddress) {
+		queue.clear();
+
+		LOG.info("SEND CONNECT");
+		// Send signal for 3 seconds
+		Button btn = null;
+		switch (idToAddress.getGroup()) {
+		case 1:
+			btn = Button.GROUP1_ON;
+			break;
+		case 2:
+			btn = Button.GROUP2_ON;
+			break;
+		case 3:
+			btn = Button.GROUP3_ON;
+			break;
+		case 4:
+			btn = Button.GROUP4_ON;
+			break;
+		}
+		LightState state = new LightState(btn);
+		state.setAddress(idToAddress);
+		queue.add(state);
+		return idToAddress;
 	}
 }

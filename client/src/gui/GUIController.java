@@ -19,8 +19,11 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -34,6 +37,8 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 import net.Client;
 import net.ServerFinder;
 import net.ServerInterface;
@@ -422,4 +427,21 @@ public class GUIController extends Client implements Initializable {
 		LOG.info("Received new alarms List from server");
 		this.alarmList.getItems().setAll(alarmList);
 	}
+
+	@FXML
+	private void addLight(ActionEvent e) {
+		try {
+			Stage stage = new Stage();
+			Parent p = FXMLLoader.load(getClass().getResource("../gui/AddBulb.fxml"));
+			stage.setScene(new Scene(p));
+			stage.initModality(Modality.APPLICATION_MODAL);
+			stage.setTitle("Pair Light");
+			stage.setAlwaysOnTop(true);
+			stage.showAndWait();
+		}
+		catch (Exception ex) {
+			ex.printStackTrace();
+		}
+	}
+
 }
