@@ -13,6 +13,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.Tooltip?>
@@ -26,7 +27,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GUIController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GUIController">
    <top>
       <VBox spacing="5.0" BorderPane.alignment="CENTER">
          <children>
@@ -64,331 +65,336 @@
         <tabs>
           <Tab text="Controller">
                <content>
-                  <VBox fx:id="anchor" alignment="CENTER" prefWidth="400.0" spacing="15.0">
-                     <children>
-                        <HBox alignment="CENTER" spacing="5.0">
+                  <SplitPane dividerPositions="0.3">
+                     <items>
+                        <ListView fx:id="lightList" />
+                        <VBox fx:id="anchor" alignment="CENTER" prefWidth="400.0" spacing="15.0">
                            <children>
-                              <Button mnemonicParsing="false" onAction="#allOn">
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Light_On-32.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="All ON" />
-                                 </tooltip>
-                              </Button>
-                              <Button mnemonicParsing="false" onAction="#allWhite">
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Light_White-32.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="White" />
-                                 </tooltip>
-                              </Button>
-                              <Button mnemonicParsing="false" onAction="#allOff">
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Light_Off-32.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="All OFF" />
-                                 </tooltip>
-                              </Button>
+                              <HBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#allOn">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Light_On-32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="All ON" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#allWhite">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Light_White-32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="White" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#allOff">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Light_Off-32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="All OFF" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <VBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <HBox fx:id="colorPane" alignment="CENTER" prefHeight="50.0" />
+                                    <Slider fx:id="slider" majorTickUnit="50.0" max="255.0">
+                                       <tooltip>
+                                          <Tooltip text="Color" />
+                                       </tooltip>
+                                    </Slider>
+                                    <Circle fx:id="circle" fill="#ffffff00" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <HBox fx:id="brightnessPane" prefHeight="50.0" />
+                                    <Slider fx:id="sliderBright" blockIncrement="1.0" majorTickUnit="5.0" max="25.0" minorTickCount="4" snapToTicks="true" value="25.0">
+                                       <tooltip>
+                                          <Tooltip text="Brightness" />
+                                       </tooltip>
+                                    </Slider>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" spacing="5.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#modeSlower">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Mode_Slower-32.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="Mode slower" />
+                                       </tooltip>
+                                    </Button>
+                                    <SplitMenuButton fx:id="modeButton" mnemonicParsing="false" onAction="#mode" prefHeight="35.0">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 1" />
+                                        <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 2" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 3" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 4" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 5" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 6" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 7" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 8" />
+                                          <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 9" />
+                                      </items>
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Mode_Next-32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="Next Mode" />
+                                       </tooltip>
+                                    </SplitMenuButton>
+                                    <Button mnemonicParsing="false" onAction="#modeFaster">
+                                       <graphic>
+                                          <ImageView>
+                                             <image>
+                                                <Image url="@icons/Mode_Faster-32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <tooltip>
+                                          <Tooltip text="Mode faster" />
+                                       </tooltip>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" spacing="15.0">
+                                 <children>
+                                    <VBox alignment="CENTER" spacing="5.0">
+                                       <children>
+                                          <Label>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Group_1-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#group1On">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_On-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 1 ON" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group1White">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_White-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="White" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group1Off">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_Off-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 1 OFF" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="5.0">
+                                       <children>
+                                          <Label>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Group_2%20-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#group2On">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_On-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 2 ON" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group2White">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_White-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="White" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group2Off">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_Off-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 2 OFF" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="5.0">
+                                       <children>
+                                          <Label>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Group_3%20-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#group3On">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_On-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 3 ON" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group3White">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_White-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="White" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group3Off">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_Off-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 3 OFF" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" spacing="5.0">
+                                       <children>
+                                          <Label>
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Group_4-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#group4On">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_On-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 4 ON" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group4White">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_White-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="White" />
+                                             </tooltip>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onAction="#group4Off">
+                                             <graphic>
+                                                <ImageView>
+                                                   <image>
+                                                      <Image url="@icons/Light_Off-32.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <tooltip>
+                                                <Tooltip text="Group 4 OFF" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
                            </children>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                        </HBox>
-                        <VBox alignment="CENTER" spacing="5.0">
-                           <children>
-                              <HBox fx:id="colorPane" alignment="CENTER" prefHeight="50.0" />
-                              <Slider fx:id="slider" majorTickUnit="50.0" max="255.0">
-                                 <tooltip>
-                                    <Tooltip text="Color" />
-                                 </tooltip>
-                              </Slider>
-                              <Circle fx:id="circle" fill="#ffffff00" radius="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
                         </VBox>
-                        <VBox alignment="CENTER">
-                           <children>
-                              <HBox fx:id="brightnessPane" prefHeight="50.0" />
-                              <Slider fx:id="sliderBright" blockIncrement="1.0" majorTickUnit="5.0" max="25.0" minorTickCount="4" snapToTicks="true" value="25.0">
-                                 <tooltip>
-                                    <Tooltip text="Brightness" />
-                                 </tooltip>
-                              </Slider>
-                           </children>
-                        </VBox>
-                        <HBox alignment="CENTER" spacing="5.0">
-                           <children>
-                              <Button mnemonicParsing="false" onAction="#modeSlower">
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Mode_Slower-32.png" />
-                                       </image>
-                                       <viewport>
-                                          <Rectangle2D />
-                                       </viewport>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="Mode slower" />
-                                 </tooltip>
-                              </Button>
-                              <SplitMenuButton fx:id="modeButton" mnemonicParsing="false" onAction="#mode" prefHeight="35.0">
-                                <items>
-                                  <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 1" />
-                                  <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 2" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 3" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 4" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 5" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 6" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 7" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 8" />
-                                    <MenuItem mnemonicParsing="false" onAction="#modeTotal" text="Mode 9" />
-                                </items>
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Mode_Next-32.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="Next Mode" />
-                                 </tooltip>
-                              </SplitMenuButton>
-                              <Button mnemonicParsing="false" onAction="#modeFaster">
-                                 <graphic>
-                                    <ImageView>
-                                       <image>
-                                          <Image url="@icons/Mode_Faster-32.png" />
-                                       </image>
-                                    </ImageView>
-                                 </graphic>
-                                 <tooltip>
-                                    <Tooltip text="Mode faster" />
-                                 </tooltip>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER" spacing="15.0">
-                           <children>
-                              <VBox alignment="CENTER" spacing="5.0">
-                                 <children>
-                                    <Label>
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Group_1-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                    </Label>
-                                    <Button mnemonicParsing="false" onAction="#group1On">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_On-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 1 ON" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group1White">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_White-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="White" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group1Off">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_Off-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 1 OFF" />
-                                       </tooltip>
-                                    </Button>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" spacing="5.0">
-                                 <children>
-                                    <Label>
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Group_2%20-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                    </Label>
-                                    <Button mnemonicParsing="false" onAction="#group2On">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_On-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 2 ON" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group2White">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_White-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="White" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group2Off">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_Off-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 2 OFF" />
-                                       </tooltip>
-                                    </Button>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" spacing="5.0">
-                                 <children>
-                                    <Label>
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Group_3%20-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                    </Label>
-                                    <Button mnemonicParsing="false" onAction="#group3On">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_On-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 3 ON" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group3White">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_White-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="White" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group3Off">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_Off-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 3 OFF" />
-                                       </tooltip>
-                                    </Button>
-                                 </children>
-                              </VBox>
-                              <VBox alignment="CENTER" spacing="5.0">
-                                 <children>
-                                    <Label>
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Group_4-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                    </Label>
-                                    <Button mnemonicParsing="false" onAction="#group4On">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_On-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 4 ON" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group4White">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_White-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="White" />
-                                       </tooltip>
-                                    </Button>
-                                    <Button mnemonicParsing="false" onAction="#group4Off">
-                                       <graphic>
-                                          <ImageView>
-                                             <image>
-                                                <Image url="@icons/Light_Off-32.png" />
-                                             </image>
-                                          </ImageView>
-                                       </graphic>
-                                       <tooltip>
-                                          <Tooltip text="Group 4 OFF" />
-                                       </tooltip>
-                                    </Button>
-                                 </children>
-                              </VBox>
-                           </children>
-                        </HBox>
-                     </children>
-                     <padding>
-                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-                     </padding>
-                  </VBox>
+                     </items>
+                  </SplitPane>
                </content>
             </Tab>
           <Tab text="Alarms">

@@ -8970,3 +8970,1064 @@
 2017-04-22 14:50:41 DEBUG Pinger:30 - Ping to 192.168.0.240: 2ms
 2017-04-22 14:50:42 DEBUG Pinger:30 - Ping to 192.168.0.240: 0ms
 2017-04-22 14:50:43 DEBUG Pinger:30 - Ping to 192.168.0.240: 1ms
+2017-04-22 20:33:06 INFO  Main:19 - Starting server
+2017-04-22 20:33:06 INFO  Server:39 - Starting registry
+2017-04-22 20:33:06 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:33:07 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:33:07 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:33:07 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:33:07 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:33:07 WARN  Sender:258 - Bulb List File not found
+2017-04-22 20:33:07 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:33:07 INFO  Timer:25 - Starting timer
+2017-04-22 20:33:07 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:33:08 INFO  Main:24 - === STARTED ===
+2017-04-22 20:33:20 INFO  Server:96 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:33:20 INFO  Server:106 - Client 10.1.1.72 successful registered
+2017-04-22 20:33:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:33:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:33:24 WARN  Pinger:33 - Unable to ping Client 10.1.1.72, gets removed
+2017-04-22 20:34:23 INFO  Main:19 - Starting server
+2017-04-22 20:34:24 INFO  Server:39 - Starting registry
+2017-04-22 20:34:24 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:34:25 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:34:25 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:34:25 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:34:25 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:34:25 WARN  Sender:258 - Bulb List File not found
+2017-04-22 20:34:25 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:34:25 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:34:25 INFO  Timer:25 - Starting timer
+2017-04-22 20:34:26 INFO  Main:24 - === STARTED ===
+2017-04-22 20:34:33 INFO  Server:96 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:34:33 INFO  Server:106 - Client 10.1.1.72 successful registered
+2017-04-22 20:34:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:34:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:34:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:34:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:34:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:34:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:34:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:34:58 INFO  Sender:197 - SEND CONNECT
+2017-04-22 20:34:58 INFO  Sender:90 - B0 0D 33 00 E9 03
+2017-04-22 20:34:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:04 INFO  Sender:241 - Saving Bulb List after Change
+2017-04-22 20:35:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:35:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:35:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:35:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:35:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:35:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:35:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:35:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:35:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:35:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:35:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:35:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:36:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:36:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:36:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:36:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:36:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:36:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:36:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:36:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:36:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:36:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:37:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:37:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:37:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:37:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:37:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:37:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:37:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:38:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:38:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:38:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:38:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:38:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:38:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:38:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:38:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:38:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:38:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:38:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:38:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:38:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:39:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:39:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:39:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:39:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:39:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:39:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:39:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:39:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:39:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:40:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:40:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:40:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:40:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:40:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:40:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:40:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:40:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:40:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:40:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:40:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:40:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:40:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 18ms
+2017-04-22 20:40:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:44:39 INFO  Main:19 - Starting server
+2017-04-22 20:44:40 INFO  Server:39 - Starting registry
+2017-04-22 20:44:40 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:44:40 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:44:40 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:44:40 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:44:40 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:44:40 INFO  Sender:265 - Loaded 1 Bulb(s)
+2017-04-22 20:44:40 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:44:40 INFO  Timer:25 - Starting timer
+2017-04-22 20:44:40 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:44:41 INFO  Main:24 - === STARTED ===
+2017-04-22 20:44:46 INFO  Server:93 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:44:46 INFO  Server:103 - Client 10.1.1.72 successful registered
+2017-04-22 20:44:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 53ms
+2017-04-22 20:44:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:44:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:44:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:44:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:44:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:44:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:45:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:45:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:45:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:45:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:45:21 INFO  Main:19 - Starting server
+2017-04-22 20:45:22 INFO  Server:39 - Starting registry
+2017-04-22 20:45:22 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:45:22 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:45:22 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:45:22 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:45:22 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:45:22 ERROR Sender:269 - Error while writing BulbList
+java.io.InvalidClassException: data.LightBulb; local class incompatible: stream classdesc serialVersionUID = 808410386593493058, local class serialVersionUID = -4105953527680859696
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at control.Sender.loadBulbList(Sender.java:264)
+	at control.Sender.<init>(Sender.java:60)
+	at control.Sender.getInstance(Sender.java:46)
+	at net.Server.<init>(Server.java:50)
+	at main.Main.main(Main.java:21)
+2017-04-22 20:45:22 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:45:22 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:45:22 INFO  Timer:25 - Starting timer
+2017-04-22 20:45:23 INFO  Main:24 - === STARTED ===
+2017-04-22 20:45:30 INFO  Main:19 - Starting server
+2017-04-22 20:45:31 INFO  Server:39 - Starting registry
+2017-04-22 20:45:31 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:45:31 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:45:31 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:45:31 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:45:31 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:45:31 ERROR Sender:269 - Error while writing BulbList
+java.io.InvalidClassException: data.LightBulb; local class incompatible: stream classdesc serialVersionUID = 808410386593493058, local class serialVersionUID = -4105953527680859696
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at control.Sender.loadBulbList(Sender.java:264)
+	at control.Sender.<init>(Sender.java:60)
+	at control.Sender.getInstance(Sender.java:46)
+	at net.Server.<init>(Server.java:50)
+	at main.Main.main(Main.java:21)
+2017-04-22 20:45:31 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:45:31 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:45:31 INFO  Timer:25 - Starting timer
+2017-04-22 20:45:32 INFO  Main:24 - === STARTED ===
+2017-04-22 20:45:46 INFO  Main:19 - Starting server
+2017-04-22 20:45:47 INFO  Server:39 - Starting registry
+2017-04-22 20:45:47 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:45:48 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:45:48 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:45:48 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:45:48 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:45:48 ERROR Sender:269 - Error while writing BulbList
+java.io.InvalidClassException: data.LightBulb; local class incompatible: stream classdesc serialVersionUID = 808410386593493058, local class serialVersionUID = -4105953527680859696
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at control.Sender.loadBulbList(Sender.java:264)
+	at control.Sender.<init>(Sender.java:60)
+	at control.Sender.getInstance(Sender.java:46)
+	at net.Server.<init>(Server.java:50)
+	at main.Main.main(Main.java:21)
+2017-04-22 20:45:48 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:45:48 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:45:48 INFO  Timer:25 - Starting timer
+2017-04-22 20:45:49 INFO  Main:24 - === STARTED ===
+2017-04-22 20:46:17 INFO  Main:19 - Starting server
+2017-04-22 20:46:17 INFO  Server:39 - Starting registry
+2017-04-22 20:46:17 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:46:18 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:46:18 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:46:18 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:46:18 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:46:18 ERROR Sender:269 - Error while writing BulbList
+java.io.InvalidClassException: data.LightBulb; local class incompatible: stream classdesc serialVersionUID = 808410386593493058, local class serialVersionUID = -4105953527680859696
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at control.Sender.loadBulbList(Sender.java:264)
+	at control.Sender.<init>(Sender.java:60)
+	at control.Sender.getInstance(Sender.java:46)
+	at net.Server.<init>(Server.java:50)
+	at main.Main.main(Main.java:21)
+2017-04-22 20:46:18 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:46:18 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:46:18 INFO  Timer:25 - Starting timer
+2017-04-22 20:46:19 INFO  Main:24 - === STARTED ===
+2017-04-22 20:46:36 INFO  Main:19 - Starting server
+2017-04-22 20:46:37 INFO  Server:39 - Starting registry
+2017-04-22 20:46:37 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:46:37 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:46:37 INFO  Sender:53 - Detected OS: windows 10
+2017-04-22 20:46:37 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:46:37 INFO  Sender:256 - Loading Bulb list from File
+2017-04-22 20:46:37 ERROR Sender:269 - Error while writing BulbList
+java.io.InvalidClassException: data.LightBulb; local class incompatible: stream classdesc serialVersionUID = 808410386593493058, local class serialVersionUID = -4105953527680859696
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at control.Sender.loadBulbList(Sender.java:264)
+	at control.Sender.<init>(Sender.java:60)
+	at control.Sender.getInstance(Sender.java:46)
+	at net.Server.<init>(Server.java:50)
+	at main.Main.main(Main.java:21)
+2017-04-22 20:46:37 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:46:37 INFO  Timer:25 - Starting timer
+2017-04-22 20:46:37 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:46:38 INFO  Main:24 - === STARTED ===
+2017-04-22 20:47:33 INFO  Main:19 - Starting server
+2017-04-22 20:47:34 INFO  Server:39 - Starting registry
+2017-04-22 20:47:34 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:47:34 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:47:34 INFO  Sender:54 - Detected OS: windows 10
+2017-04-22 20:47:34 WARN  Sender:56 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:47:34 INFO  Sender:253 - Loading Bulb list from File
+2017-04-22 20:47:34 WARN  Sender:255 - Bulb List File not found
+2017-04-22 20:47:34 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:47:34 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:47:34 INFO  Timer:25 - Starting timer
+2017-04-22 20:47:35 INFO  Main:24 - === STARTED ===
+2017-04-22 20:47:41 INFO  Main:19 - Starting server
+2017-04-22 20:47:42 INFO  Server:39 - Starting registry
+2017-04-22 20:47:42 INFO  Server:47 - Unable to register RMI-Module
+2017-04-22 20:47:42 ERROR Server:48 - java.rmi.server.ExportException: Port already in use: 1099; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+2017-04-22 20:47:42 INFO  Sender:54 - Detected OS: windows 10
+2017-04-22 20:47:42 WARN  ServerFinder:35 - Unable to start Broadcast Socket on Port 1100
+2017-04-22 20:47:42 WARN  Sender:56 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:47:42 INFO  Sender:253 - Loading Bulb list from File
+2017-04-22 20:47:42 WARN  Sender:255 - Bulb List File not found
+2017-04-22 20:47:42 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:47:42 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:47:42 INFO  Timer:25 - Starting timer
+2017-04-22 20:47:50 INFO  Server:93 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:47:50 INFO  Server:103 - Client 10.1.1.72 successful registered
+2017-04-22 20:47:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 20ms
+2017-04-22 20:47:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:47:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:47:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:47:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:47:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:47:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:47:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:47:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 8ms
+2017-04-22 20:48:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:09 INFO  Sender:197 - SEND CONNECT
+2017-04-22 20:48:09 INFO  Sender:90 - B0 0D 33 00 E9 03
+2017-04-22 20:48:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:14 INFO  Sender:239 - Saving Bulb List after Change
+2017-04-22 20:48:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:48:14 DEBUG Server:173 - Updating Lights on Clients10.1.1.72
+2017-04-22 20:48:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:48:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:48:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:38 INFO  Sender:197 - SEND CONNECT
+2017-04-22 20:48:38 INFO  Sender:90 - B0 0D 33 00 EA 05
+2017-04-22 20:48:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:45 INFO  Sender:239 - Saving Bulb List after Change
+2017-04-22 20:48:45 DEBUG Server:173 - Updating Lights on Clients10.1.1.72
+2017-04-22 20:48:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:48:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:48:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:48:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:48:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:00 INFO  Sender:197 - SEND CONNECT
+2017-04-22 20:49:00 INFO  Sender:90 - B0 0D 33 00 EB 07
+2017-04-22 20:49:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:04 INFO  Sender:239 - Saving Bulb List after Change
+2017-04-22 20:49:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:04 DEBUG Server:173 - Updating Lights on Clients10.1.1.72
+2017-04-22 20:49:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:49:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:49:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:49:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 7ms
+2017-04-22 20:49:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:49:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:49:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:49:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:49:57 WARN  Pinger:33 - Unable to ping Client 10.1.1.72, gets removed
+2017-04-22 20:50:02 INFO  Server:93 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:50:02 INFO  Server:103 - Client 10.1.1.72 successful registered
+2017-04-22 20:50:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 38ms
+2017-04-22 20:50:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 55ms
+2017-04-22 20:50:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:50:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:18 INFO  Sender:197 - SEND CONNECT
+2017-04-22 20:50:18 ERROR Sender:100 - Sender crashed
+2017-04-22 20:50:18 DEBUG Sender:101 - java.lang.NullPointerException
+2017-04-22 20:50:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:50:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:50:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:50:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:50:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:50:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:50:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:50:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:10 INFO  Sender:239 - Saving Bulb List after Change
+2017-04-22 20:51:10 DEBUG Server:173 - Updating Lights on Clients10.1.1.72
+2017-04-22 20:51:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:51:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:51:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 8ms
+2017-04-22 20:51:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:51:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:51:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:51:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 13ms
+2017-04-22 20:51:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:51:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:51:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:51:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:52:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:52:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 7ms
+2017-04-22 20:52:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:52:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:52:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:52:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 14ms
+2017-04-22 20:52:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:52:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 12ms
+2017-04-22 20:52:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:52:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 8ms
+2017-04-22 20:52:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:52:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:52:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:52:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:52:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:52:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:52:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:52:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:53:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:09 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:53:10 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:53:11 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:12 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:13 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:14 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:16 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:53:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 0ms
+2017-04-22 20:53:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:53:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:53:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 5ms
+2017-04-22 20:53:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:53:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:53:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:53:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:53:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:53:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 6ms
+2017-04-22 20:53:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:07 INFO  Main:19 - Starting server
+2017-04-22 20:54:07 INFO  Server:39 - Starting registry
+2017-04-22 20:54:07 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-22 20:54:07 INFO  Server:45 - Detected IP: 10.1.1.72
+2017-04-22 20:54:07 INFO  Sender:54 - Detected OS: windows 10
+2017-04-22 20:54:07 WARN  Sender:56 - !!!=== Will only simulate Sender ===!!!
+2017-04-22 20:54:07 INFO  Sender:253 - Loading Bulb list from File
+2017-04-22 20:54:07 INFO  Sender:262 - Loaded 4 Bulb(s)
+2017-04-22 20:54:07 INFO  Pinger:22 - Starting pinger
+2017-04-22 20:54:07 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-22 20:54:07 INFO  Timer:25 - Starting timer
+2017-04-22 20:54:08 INFO  Main:24 - === STARTED ===
+2017-04-22 20:54:15 INFO  Server:93 - Registering Client 10.1.1.72, # 0
+2017-04-22 20:54:15 INFO  Server:103 - Client 10.1.1.72 successful registered
+2017-04-22 20:54:15 DEBUG Pinger:30 - Ping to 10.1.1.72: 9ms
+2017-04-22 20:54:17 DEBUG Pinger:30 - Ping to 10.1.1.72: 11ms
+2017-04-22 20:54:18 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:19 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:54:20 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:21 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:54:22 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:23 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:24 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:25 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:26 DEBUG Pinger:30 - Ping to 10.1.1.72: 7ms
+2017-04-22 20:54:27 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:28 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:54:29 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:30 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:31 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:32 DEBUG Pinger:30 - Ping to 10.1.1.72: 4ms
+2017-04-22 20:54:33 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:34 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:35 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:36 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:37 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:38 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:39 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:40 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:41 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:42 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:43 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:44 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:45 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:46 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:47 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:48 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:49 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:50 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:54:51 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:52 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:53 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:54 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:55 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:54:56 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:57 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:54:58 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:54:59 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:55:00 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:01 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:02 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:03 DEBUG Pinger:30 - Ping to 10.1.1.72: 3ms
+2017-04-22 20:55:04 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:05 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:06 DEBUG Pinger:30 - Ping to 10.1.1.72: 2ms
+2017-04-22 20:55:07 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:08 DEBUG Pinger:30 - Ping to 10.1.1.72: 1ms
+2017-04-22 20:55:10 WARN  Pinger:33 - Unable to ping Client 10.1.1.72, gets removed
