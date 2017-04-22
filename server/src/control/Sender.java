@@ -192,7 +192,6 @@ public class Sender {
     }
 
     public Address connectLightBulb(Address idToAddress) {
-	queue.clear();
 
 	LOG.info("SEND CONNECT");
 	// Send signal for 3 seconds
@@ -213,7 +212,7 @@ public class Sender {
 	}
 	LightState state = new LightState(btn);
 	state.setAddress(idToAddress);
-	queue.add(state);
+	queueFirst(state);
 	return idToAddress;
     }
 

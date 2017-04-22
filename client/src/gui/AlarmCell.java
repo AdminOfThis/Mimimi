@@ -9,22 +9,22 @@ import javafx.scene.control.ListCell;
 
 public class AlarmCell extends ListCell<Alarm> {
 
-	@Override
-	protected void updateItem(Alarm item, boolean empty) {
-		super.updateItem(item, empty);
-		Platform.runLater(new Runnable() {
+    @Override
+    protected void updateItem(Alarm item, boolean empty) {
+	super.updateItem(item, empty);
+	Platform.runLater(new Runnable() {
 
-			@Override
-			public void run() {
-				if (!empty) {
-					Date date = item.getTime();
-					SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm");
-					setText(formatter.format(date) + " (" + item.getMode().toString() + ")");
-				} else {
-					setGraphic(null);
-					setText(null);
-				}
-			}
-		});
-	}
+	    @Override
+	    public void run() {
+		if (!empty) {
+		    Date date = item.getDate().getTime();
+		    SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy HH:mm");
+		    setText(formatter.format(date) + " (" + item.getMode().toString() + ")");
+		} else {
+		    setGraphic(null);
+		    setText(null);
+		}
+	    }
+	});
+    }
 }

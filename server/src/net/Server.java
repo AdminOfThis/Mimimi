@@ -118,6 +118,12 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
     }
 
+    // TODO
+    /**
+     * Rewrite for alarms, so they can build individual Commands
+     * 
+     * @param alarm
+     */
     public void executeAlarm(Alarm alarm) {
 	sender.queueFirst(alarm.getState());
     }
