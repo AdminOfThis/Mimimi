@@ -1,17 +1,24 @@
 package data;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class LightBulb implements Serializable {
 
-	private static final ArrayList<LightBulb> bulbList = new ArrayList<>();
-	private int id;
+	private Address address;
+	private String name;
 
-	public static List<LightBulb> getBulbList() {
-		return new ArrayList<>(bulbList);
+
+	public LightBulb(String name, Address address) {
+		this.name = name;
+		this.address = address;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
 
 }

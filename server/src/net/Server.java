@@ -171,10 +171,17 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public Address connectLightBulb() throws RemoteException {
-		// TODO connect uuid
-		return sender.connectLightBulb(Address.idToAddress(LightBulb.getBulbList().size()));
-		// TODO connect master
-		// sender.connectLightBulb(Address.MASTER_ADRESS);
+		return sender.connectLightBulb(Address.idToAddress(Sender.getInstance().getBulbList().size()));
 
+	}
+
+	@Override
+	public void addLightBulbToList(LightBulb bulb) throws RemoteException {
+		Sender.getInstance().addToBulbList(bulb);
+	}
+
+	@Override
+	public ArrayList<LightBulb> getBulbList() throws RemoteException {
+		return Sender.getInstance().getBulbList();
 	}
 }

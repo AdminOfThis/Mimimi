@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Address implements Serializable {
 
 	private static final int START_ADDRESS = 0x0D33;
+	// TODO Remove, replace by Bulb Selection
 	public static final Address MASTER_ADRESS = new Address(START_ADDRESS, 0x00);
 	private int remote;
 	private int group;

@@ -1,10 +1,16 @@
 package control;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.nio.ByteBuffer;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -12,13 +18,14 @@ import org.apache.log4j.Logger;
 
 import data.Address;
 import data.Button;
+import data.LightBulb;
 import data.LightState;
 
 public class Sender {
 
 	private static final Logger LOG = Logger.getLogger(Sender.class);
-	private static final String REMOTE_ID = "0D 33"; // ID of the initial Remote for the Bulbs
 	private static final String[] ARGS = new String[] { "sudo", "/bin/bash", "-c", "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
+	private static final String BULB_LIST_FILE = "./bulbs.blb";
 	private static final int SEQUENCE_RANGE = 255;
 	private static final int SEQUENCE_SPACE = 10;
 	private static Sender instance;
@@ -32,6 +39,7 @@ public class Sender {
 	private int currentGroup = 0;
 	private Process proc;
 	private OutputStreamWriter writer;
+	private ArrayList<LightBulb> bulbList = new ArrayList<>();
 
 	public static Sender getInstance() throws RemoteException {
 		if (instance == null) {
@@ -49,6 +57,7 @@ public class Sender {
 		} else {
 			isLinux = true;
 		}
+		bulbList = loadBulbList();
 		checkAndStartSendThread();
 	}
 
@@ -206,5 +215,60 @@ public class Sender {
 		state.setAddress(idToAddress);
 		queue.add(state);
 		return idToAddress;
+	}
+
+	public ArrayList<LightBulb> getBulbList() {
+		return new ArrayList<>(bulbList);
+	}
+
+	public void addToBulbList(LightBulb bulb) {
+		if (!bulbList.contains(bulb)) {
+			bulbList.add(bulb);
+			saveBulbList();
+		}
+	}
+
+
+	public void removeFromBulbList(LightBulb bulb) {
+		if (bulbList.contains(bulb)) {
+			bulbList.remove(bulb);
+			saveBulbList();
+		}
+	}
+
+
+	private void saveBulbList() {
+		LOG.info("Saving Bulb List after Change");
+		try {
+			FileOutputStream fos = new FileOutputStream(BULB_LIST_FILE);
+			ObjectOutputStream oos = new ObjectOutputStream(fos);
+			oos.writeObject(bulbList);
+			oos.close();
+		}
+		catch (Exception e) {
+			LOG.error("Error while writing BulbList", e);
+		}
+	}
+
+	@SuppressWarnings("unchecked")
+	private ArrayList<LightBulb> loadBulbList() {
+		ArrayList<LightBulb> result = new ArrayList<>();
+		LOG.info("Loading Bulb list from File");
+		if (!new File(BULB_LIST_FILE).exists() || new File(BULB_LIST_FILE).isDirectory()) {
+			LOG.warn("Bulb List File not found");
+		} else {
+
+			try {
+				FileInputStream fos = new FileInputStream(BULB_LIST_FILE);
+				ObjectInputStream oos = new ObjectInputStream(fos);
+				result = (ArrayList<LightBulb>) oos.readObject();
+				LOG.info("Loaded " + result.size() + " Bulb(s)");
+				oos.close();
+			}
+			catch (Exception e) {
+				LOG.error("Error while writing BulbList", e);
+			}
+		}
+		return result;
 	}
 }

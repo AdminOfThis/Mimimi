@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 import data.Address;
 import data.Alarm;
+import data.LightBulb;
 import data.LightState;
 
 public interface ServerInterface extends Remote {
@@ -33,4 +34,8 @@ public interface ServerInterface extends Remote {
 	public ArrayList<Alarm> getAlarmList() throws RemoteException;
 
 	public Address connectLightBulb() throws RemoteException;
+
+	public void addLightBulbToList(LightBulb bulb) throws RemoteException;
+
+	public ArrayList<LightBulb> getBulbList() throws RemoteException;
 }
