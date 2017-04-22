@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import org.apache.log4j.Logger;
 
 import data.Address;
+import data.LightBulb;
 import data.LightState;
 import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
@@ -15,6 +16,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class AddLightController implements Initializable {
 
@@ -25,16 +28,24 @@ public class AddLightController implements Initializable {
 	@FXML
 	private Label text;
 	@FXML
-	private Button btnOn, btnOff;
+	private Button btnOn, btnOff, saveBulb;
+	@FXML
+	private TextField nameField;
 	Address address;
 	private long start = System.currentTimeMillis();
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+
 		btnOn.setVisible(false);
 		btnOff.setVisible(false);
 		btnOn.setManaged(false);
 		btnOff.setManaged(false);
+		saveBulb.setManaged(false);
+		btnOff.setManaged(false);
+		nameField.setManaged(false);
+		nameField.setManaged(false);
+		saveBulb.disableProperty().bind(nameField.textProperty().isEmpty());
 		AnimationTimer timer = new AnimationTimer() {
 
 			@Override
@@ -60,6 +71,10 @@ public class AddLightController implements Initializable {
 						btnOff.setVisible(true);
 						btnOn.setManaged(true);
 						btnOff.setManaged(true);
+						saveBulb.setManaged(true);
+						btnOff.setManaged(true);
+						nameField.setManaged(true);
+						nameField.setManaged(true);
 						stop();
 					}
 				}
@@ -125,5 +140,20 @@ public class AddLightController implements Initializable {
 				LOG.error(e);
 			}
 		}
+	}
+
+	@FXML
+	private void saveBulb(ActionEvent e) {
+		LOG.info("Adding Bulb to Server");
+		if (address != null) {
+			LightBulb bulb = new LightBulb(nameField.getText(), address);
+			try {
+				GUIController.getInstance().getServer().addLightBulbToList(bulb);
+			}
+			catch (RemoteException e1) {
+				LOG.error(e1);
+			}
+		}
+		((Stage) saveBulb.getScene().getWindow()).close();
 	}
 }

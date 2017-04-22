@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import data.Alarm;
 import data.Alarm.Mode;
 import data.Button;
+import data.LightBulb;
 import data.LightState;
 import data.LightState.FIELD;
 import data.Message;
@@ -77,6 +78,7 @@ public class GUIController extends Client implements Initializable {
 	@FXML
 	private ListView<Message> list;
 	private int color = 0;
+	private ArrayList<LightBulb> bulbs;
 
 	public GUIController() throws RemoteException {
 		super();
@@ -95,6 +97,18 @@ public class GUIController extends Client implements Initializable {
 			LOG.info("Server: " + ip);
 			connect(ip);
 			server = getServer();
+			try {
+				bulbs = server.getBulbList();
+				StringBuilder sb = new StringBuilder();
+				for (LightBulb bulb : bulbs) {
+					sb.append(bulb.getName() + ", ");
+				}
+				sb.delete(sb.length() - 2, sb.length());
+				LOG.info("Bulbs from Server: " + sb.toString());
+			}
+			catch (RemoteException e) {
+				LOG.warn("Unable to load Bulb List", e);
+			}
 		}
 		initGUI();
 	}
