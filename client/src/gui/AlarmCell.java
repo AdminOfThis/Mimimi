@@ -3,9 +3,9 @@ package gui;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import data.Alarm;
 import javafx.application.Platform;
 import javafx.scene.control.ListCell;
+import modules.timer.Alarm;
 
 public class AlarmCell extends ListCell<Alarm> {
 

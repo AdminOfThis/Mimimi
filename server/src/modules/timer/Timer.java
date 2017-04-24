@@ -1,12 +1,12 @@
-package modules;
+package modules.timer;
 
 import java.util.ArrayList;
-import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
-import data.Alarm;
-import data.Alarm.Mode;
+import control.Sender;
+import modules.Module;
+import modules.timer.Alarm.Mode;
 import net.Server;
 
 public class Timer extends Module {
@@ -41,7 +41,7 @@ public class Timer extends Module {
 	    if (alarm.isTimeToExecute()) {
 		// TODO
 		LOG.info("Executing alarm: " + alarm.toString());
-		getServer().executeAlarm(alarm);
+		Sender.getInstance().queueFirst(alarm.getCmd());
 		if (alarm.isDone()) {
 		    if (alarm.getMode() == Mode.ONCE) {
 			removeList.add(alarm);

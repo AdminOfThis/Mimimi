@@ -13,13 +13,14 @@ import org.apache.log4j.Logger;
 
 import control.Sender;
 import data.Address;
-import data.Alarm;
 import data.LightBulb;
 import data.LightState;
 import data.Message;
 import modules.NetworkScanner;
 import modules.SerialScanner;
-import modules.Timer;
+import modules.timer.Alarm;
+import modules.timer.SimpleAlarm;
+import modules.timer.Timer;
 
 /**
  * 
@@ -118,18 +119,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
     }
 
-    // TODO
-    /**
-     * Rewrite for alarms, so they can build individual Commands
-     * 
-     * @param alarm
-     */
-    public void executeAlarm(Alarm alarm) {
-	sender.queueFirst(alarm.getState());
-    }
-
     @Override
-    public void addAlarm(Alarm alarm) throws RemoteException {
+    public void addAlarm(SimpleAlarm alarm) throws RemoteException {
 	timer.addAlarm(alarm);
     }
 

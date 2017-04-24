@@ -42,14 +42,14 @@ public class Sender {
     private OutputStreamWriter writer;
     private ArrayList<LightBulb> bulbList = new ArrayList<>();
 
-    public static Sender getInstance() throws RemoteException {
+    public static Sender getInstance() {
 	if (instance == null) {
 	    instance = new Sender();
 	}
 	return instance;
     }
 
-    private Sender() throws RemoteException {
+    private Sender() {
 	String os = System.getProperty("os.name").toLowerCase();
 	LOG.info("Detected OS: " + os);
 	if (!os.contains("linux")) {

@@ -9,8 +9,6 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
-import data.Alarm;
-import data.Alarm.Mode;
 import data.Button;
 import data.LightBulb;
 import data.LightState;
@@ -41,6 +39,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import modules.timer.Alarm;
+import modules.timer.Alarm.Mode;
+import modules.timer.SimpleAlarm;
 import net.Client;
 import net.ServerFinder;
 import net.ServerInterface;
@@ -405,7 +406,7 @@ public class GUIController extends Client implements Initializable {
 	date.set(GregorianCalendar.HOUR_OF_DAY, hours.getValue());
 	date.set(GregorianCalendar.MINUTE, minutes.getValue());
 	date.set(GregorianCalendar.SECOND, 0);
-	Alarm alarm = new Alarm(date, mode, new LightState(FIELD.COLOR, 0));
+	SimpleAlarm alarm = new SimpleAlarm(date, mode, new LightState(FIELD.COLOR, 0));
 	try {
 	    server.addAlarm(alarm);
 	    alarmCombo.setValue(null);

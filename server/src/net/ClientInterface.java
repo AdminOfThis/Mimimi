@@ -4,9 +4,9 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import data.Alarm;
 import data.LightBulb;
 import data.Message;
+import modules.timer.Alarm;
 
 public interface ClientInterface extends Remote {
 
