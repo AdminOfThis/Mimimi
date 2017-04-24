@@ -2,6 +2,8 @@ package modules.timer;
 
 import java.util.GregorianCalendar;
 
+import org.apache.log4j.Logger;
+
 import data.LightState;
 
 public class FadingAlarm extends Alarm {
@@ -9,11 +11,16 @@ public class FadingAlarm extends Alarm {
      * 
      */
     private static final long serialVersionUID = 3281807284152588529L;
+    private static final Logger LOG = Logger.getLogger(FadingAlarm.class);
     private int minutesFading;
+    private int startColor;
+    private int endColor;
 
-    public FadingAlarm(GregorianCalendar date, int minutesFading, Mode mode) {
+    public FadingAlarm(GregorianCalendar date, int minutesFading, Mode mode, int startColor, int endColor) {
 	super(mode, date);
 	this.minutesFading = minutesFading;
+	this.startColor = startColor;
+	this.endColor = endColor;
     }
 
     @Override
@@ -23,13 +30,19 @@ public class FadingAlarm extends Alarm {
 
     @Override
     boolean isDone() {
-	// TODO Auto-generated method stub
-	return false;
+	return System.currentTimeMillis() >= getDate().getTimeInMillis();
     }
 
     @Override
     public LightState getCmd() {
-	// TODO Auto-generated method stub
-	return null;
+	long time = System.currentTimeMillis();
+	long endtime = getDate().getTimeInMillis();
+	long starttime = (endtime - (60000 * minutesFading));
+	// TODO
+	double percent = (endtime - (endtime - starttime)) / (endtime - time);
+	LOG.info("Fading Alarm to " + (percent * 100) + "% done");
+	int colorRange = (startColor - endColor);
+	int color = (int) Math.round(startColor + (colorRange * percent));
+	return new LightState(color);
     }
 }

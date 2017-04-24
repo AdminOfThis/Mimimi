@@ -1,6 +1,7 @@
 package modules.timer;
 
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
@@ -18,6 +19,9 @@ public class Timer extends Module {
 
     public Timer(Server server) {
 	super(server);
+	GregorianCalendar cal = new GregorianCalendar();
+	cal.add(GregorianCalendar.MINUTE, 1);
+	this.addList.add(new FadingAlarm(cal, 2, Mode.ONCE, 0, 100));
 	start();
     }
 

@@ -922,3 +922,6 @@ Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range:
 2017-04-22 20:55:07 DEBUG GUIController:277 - Ping received
 2017-04-22 20:55:08 DEBUG GUIController:277 - Ping received
 2017-04-22 20:55:08 INFO  Main:44 - Terminating client
+2017-04-24 17:50:34 INFO  Main:25 - Starting GUI
+2017-04-24 17:50:39 ERROR ServerFinder:135 - No server found
+2017-04-24 17:50:39 ERROR GUIController:95 - Unable to find Server
