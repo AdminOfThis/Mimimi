@@ -44,7 +44,7 @@ public class Timer extends Module {
 	    // search for alarms to execute
 	    if (alarm.isTimeToExecute()) {
 		// TODO
-		LOG.info("Executing alarm: " + alarm.toString());
+		LOG.info("Executing alarm");
 		Sender.getInstance().queueFirst(alarm.getCmd());
 		if (alarm.isDone()) {
 		    if (alarm.getMode() == Mode.ONCE) {

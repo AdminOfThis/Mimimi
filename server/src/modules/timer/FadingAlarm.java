@@ -39,9 +39,11 @@ public class FadingAlarm extends Alarm {
 	long endtime = getDate().getTimeInMillis();
 	long starttime = (endtime - (60000 * minutesFading));
 	// TODO
-	double percent = (endtime - (endtime - starttime)) / (endtime - time);
-	LOG.info("Fading Alarm to " + (percent * 100) + "% done");
-	int colorRange = (startColor - endColor);
+	double range = endtime - starttime;
+	double done = time - starttime;
+	double percent = (done / range);
+	LOG.info("Fading Alarm to " + Math.round(percent * 100.0) + "% done");
+	double colorRange = (startColor - endColor);
 	int color = (int) Math.round(startColor + (colorRange * percent));
 	return new LightState(color);
     }

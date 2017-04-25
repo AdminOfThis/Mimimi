@@ -10613,3 +10613,565 @@ java.io.InvalidClassException: data.LightBulb; local class incompatible: stream 
 2017-04-24 18:07:49 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
 2017-04-24 18:07:49 INFO  FadingAlarm:43 - Fading Alarm to 3.8358082E9% done
 2017-04-24 18:07:49 INFO  Sender:89 - B0 0D 33 03 E8 0F
+2017-04-25 14:04:46 INFO  Main:19 - Starting server
+2017-04-25 14:04:47 INFO  Server:40 - Starting registry
+2017-04-25 14:04:47 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:04:47 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:04:47 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:04:47 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:04:47 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:04:47 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:04:47 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:04:47 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:04:47 INFO  Timer:30 - Starting timer
+2017-04-25 14:04:48 INFO  Main:24 - === STARTED ===
+2017-04-25 14:04:48 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@1290a9b7
+2017-04-25 14:04:48 INFO  FadingAlarm:43 - Fading Alarm to 2.5321312E9% done
+2017-04-25 14:04:48 INFO  Sender:89 - B0 0D 33 D5 E8 0F
+2017-04-25 14:04:49 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@1290a9b7
+2017-04-25 14:04:49 INFO  FadingAlarm:43 - Fading Alarm to 2.5759024E9% done
+2017-04-25 14:04:49 INFO  Sender:89 - B0 0D 33 12 E8 0F
+2017-04-25 14:04:50 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@1290a9b7
+2017-04-25 14:04:50 INFO  FadingAlarm:43 - Fading Alarm to 2.6212134E9% done
+2017-04-25 14:04:50 INFO  Sender:89 - B0 0D 33 DF E8 0F
+2017-04-25 14:04:51 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@1290a9b7
+2017-04-25 14:04:51 INFO  FadingAlarm:43 - Fading Alarm to 2.6681471E9% done
+2017-04-25 14:04:51 INFO  Sender:89 - B0 0D 33 26 E8 0F
+2017-04-25 14:04:52 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@1290a9b7
+2017-04-25 14:04:52 INFO  FadingAlarm:43 - Fading Alarm to 2.7167427E9% done
+2017-04-25 14:04:52 INFO  Sender:89 - B0 0D 33 2B E8 0F
+2017-04-25 14:06:25 INFO  Main:19 - Starting server
+2017-04-25 14:06:26 INFO  Server:40 - Starting registry
+2017-04-25 14:06:26 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:06:26 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:06:26 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:06:26 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:06:26 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:06:26 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:06:26 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:06:26 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:06:26 INFO  Timer:30 - Starting timer
+2017-04-25 14:06:27 INFO  Main:24 - === STARTED ===
+2017-04-25 14:06:27 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
+2017-04-25 14:06:27 INFO  FadingAlarm:44 - Fading Alarm to 0.0% done
+2017-04-25 14:06:27 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:06:28 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
+2017-04-25 14:06:28 INFO  FadingAlarm:44 - Fading Alarm to 0.0% done
+2017-04-25 14:06:28 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:06:29 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
+2017-04-25 14:06:29 INFO  FadingAlarm:44 - Fading Alarm to 0.0% done
+2017-04-25 14:06:29 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:06:30 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
+2017-04-25 14:06:30 INFO  FadingAlarm:44 - Fading Alarm to 0.0% done
+2017-04-25 14:06:30 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:06:31 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@71989e71
+2017-04-25 14:06:31 INFO  FadingAlarm:44 - Fading Alarm to 0.0% done
+2017-04-25 14:06:31 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:06:46 INFO  Main:19 - Starting server
+2017-04-25 14:06:46 INFO  Server:40 - Starting registry
+2017-04-25 14:06:46 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:06:46 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:06:46 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:06:46 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:06:46 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:06:46 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:06:46 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:06:46 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:06:46 INFO  Timer:30 - Starting timer
+2017-04-25 14:06:47 INFO  Main:24 - === STARTED ===
+2017-04-25 14:06:47 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@19ab7834
+2017-04-25 14:07:39 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:06 INFO  FadingAlarm:45 - Fading Alarm to 1.0% done
+2017-04-25 14:08:10 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:08:23 INFO  Main:19 - Starting server
+2017-04-25 14:08:24 INFO  Server:40 - Starting registry
+2017-04-25 14:08:24 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:08:24 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:08:24 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:08:24 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:08:24 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:08:24 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:08:24 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:08:24 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:08:24 INFO  Timer:30 - Starting timer
+2017-04-25 14:08:25 INFO  Main:24 - === STARTED ===
+2017-04-25 14:08:25 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:25 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:25 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:26 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:26 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:26 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:27 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:27 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:27 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:28 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:28 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:28 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:29 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:29 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:29 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:30 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:30 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:30 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:31 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:31 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:08:31 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:08:32 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:08:57 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:09:01 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:09:02 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@39108540
+2017-04-25 14:09:39 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:09:39 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:10:03 INFO  Main:19 - Starting server
+2017-04-25 14:10:03 INFO  Server:40 - Starting registry
+2017-04-25 14:10:03 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:10:03 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:10:03 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:10:03 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:10:03 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:10:03 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:10:03 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:10:03 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:10:03 INFO  Timer:30 - Starting timer
+2017-04-25 14:10:04 INFO  Main:24 - === STARTED ===
+2017-04-25 14:10:04 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:11:07 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:11:07 INFO  Sender:89 - B0 0D 33 1B E8 0F
+2017-04-25 14:11:25 INFO  Main:19 - Starting server
+2017-04-25 14:11:25 INFO  Server:40 - Starting registry
+2017-04-25 14:11:25 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:11:25 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:11:25 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:11:25 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:11:25 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:11:25 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:11:25 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:11:25 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:11:25 INFO  Timer:30 - Starting timer
+2017-04-25 14:11:26 INFO  Main:24 - === STARTED ===
+2017-04-25 14:11:26 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:11:28 INFO  FadingAlarm:45 - Fading Alarm to 0.0% done
+2017-04-25 14:11:59 INFO  FadingAlarm:45 - Fading Alarm to 72.56416666666667% done
+2017-04-25 14:11:59 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:00 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:06 INFO  FadingAlarm:45 - Fading Alarm to 78.64166666666667% done
+2017-04-25 14:12:06 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:07 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:07 INFO  FadingAlarm:45 - Fading Alarm to 84.315% done
+2017-04-25 14:12:07 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:08 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:08 INFO  FadingAlarm:45 - Fading Alarm to 85.15% done
+2017-04-25 14:12:08 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:09 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:09 INFO  FadingAlarm:45 - Fading Alarm to 85.98333333333333% done
+2017-04-25 14:12:09 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:10 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:10 INFO  FadingAlarm:45 - Fading Alarm to 86.81750000000001% done
+2017-04-25 14:12:10 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:11 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:11 INFO  FadingAlarm:45 - Fading Alarm to 87.65166666666667% done
+2017-04-25 14:12:11 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:12 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:12 INFO  FadingAlarm:45 - Fading Alarm to 88.48583333333333% done
+2017-04-25 14:12:12 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:13 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:13 INFO  FadingAlarm:45 - Fading Alarm to 89.32% done
+2017-04-25 14:12:13 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:14 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:14 INFO  FadingAlarm:45 - Fading Alarm to 90.155% done
+2017-04-25 14:12:14 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:15 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:15 INFO  FadingAlarm:45 - Fading Alarm to 90.98916666666666% done
+2017-04-25 14:12:15 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:16 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:16 INFO  FadingAlarm:45 - Fading Alarm to 91.82249999999999% done
+2017-04-25 14:12:16 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:17 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:17 INFO  FadingAlarm:45 - Fading Alarm to 92.65666666666667% done
+2017-04-25 14:12:17 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:18 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:18 INFO  FadingAlarm:45 - Fading Alarm to 93.49166666666666% done
+2017-04-25 14:12:18 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:19 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:19 INFO  FadingAlarm:45 - Fading Alarm to 94.325% done
+2017-04-25 14:12:19 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:20 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:20 INFO  FadingAlarm:45 - Fading Alarm to 95.16% done
+2017-04-25 14:12:20 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:21 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:21 INFO  FadingAlarm:45 - Fading Alarm to 95.99333333333333% done
+2017-04-25 14:12:21 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:22 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:22 INFO  FadingAlarm:45 - Fading Alarm to 96.8275% done
+2017-04-25 14:12:22 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:23 INFO  Timer:47 - Executing alarm: modules.timer.FadingAlarm@642208a0
+2017-04-25 14:12:23 INFO  FadingAlarm:45 - Fading Alarm to 97.67083333333333% done
+2017-04-25 14:12:23 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:24 INFO  Timer:47 - Executing alarm
+2017-04-25 14:12:24 INFO  FadingAlarm:45 - Fading Alarm to 98.51333333333334% done
+2017-04-25 14:12:24 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:25 INFO  Timer:47 - Executing alarm
+2017-04-25 14:12:25 INFO  FadingAlarm:45 - Fading Alarm to 99.3475% done
+2017-04-25 14:12:25 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:12:26 INFO  Timer:47 - Executing alarm
+2017-04-25 14:12:26 INFO  FadingAlarm:45 - Fading Alarm to 100.18083333333334% done
+2017-04-25 14:12:26 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:17 INFO  Main:19 - Starting server
+2017-04-25 14:13:17 INFO  Server:40 - Starting registry
+2017-04-25 14:13:17 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:13:17 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:13:17 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:13:17 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:13:17 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:13:17 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:13:17 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:13:17 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:13:17 INFO  Timer:30 - Starting timer
+2017-04-25 14:13:18 INFO  Main:24 - === STARTED ===
+2017-04-25 14:13:18 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:18 INFO  FadingAlarm:45 - Fading Alarm to 50.844166666666666% done
+2017-04-25 14:13:18 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:19 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:19 INFO  FadingAlarm:45 - Fading Alarm to 51.67916666666667% done
+2017-04-25 14:13:19 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:20 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:20 INFO  FadingAlarm:45 - Fading Alarm to 52.513333333333335% done
+2017-04-25 14:13:20 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:21 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:21 INFO  FadingAlarm:45 - Fading Alarm to 53.347500000000004% done
+2017-04-25 14:13:21 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:22 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:22 INFO  FadingAlarm:45 - Fading Alarm to 54.18166666666666% done
+2017-04-25 14:13:22 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:23 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:23 INFO  FadingAlarm:45 - Fading Alarm to 55.01583333333333% done
+2017-04-25 14:13:23 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:24 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:24 INFO  FadingAlarm:45 - Fading Alarm to 55.84916666666667% done
+2017-04-25 14:13:24 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:25 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:25 INFO  FadingAlarm:45 - Fading Alarm to 56.68333333333333% done
+2017-04-25 14:13:25 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:26 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:26 INFO  FadingAlarm:45 - Fading Alarm to 57.5175% done
+2017-04-25 14:13:26 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:27 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:27 INFO  FadingAlarm:45 - Fading Alarm to 58.35083333333333% done
+2017-04-25 14:13:27 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:28 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:28 INFO  FadingAlarm:45 - Fading Alarm to 59.185% done
+2017-04-25 14:13:28 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:29 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:29 INFO  FadingAlarm:45 - Fading Alarm to 60.01833333333333% done
+2017-04-25 14:13:29 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:30 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:30 INFO  FadingAlarm:45 - Fading Alarm to 60.8525% done
+2017-04-25 14:13:30 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:31 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:31 INFO  FadingAlarm:45 - Fading Alarm to 61.68666666666667% done
+2017-04-25 14:13:31 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:32 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:32 INFO  FadingAlarm:45 - Fading Alarm to 62.519999999999996% done
+2017-04-25 14:13:32 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:33 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:33 INFO  FadingAlarm:45 - Fading Alarm to 63.355% done
+2017-04-25 14:13:33 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:34 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:34 INFO  FadingAlarm:45 - Fading Alarm to 64.18833333333333% done
+2017-04-25 14:13:34 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:35 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:35 INFO  FadingAlarm:45 - Fading Alarm to 65.02250000000001% done
+2017-04-25 14:13:35 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:36 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:36 INFO  FadingAlarm:45 - Fading Alarm to 65.85666666666667% done
+2017-04-25 14:13:36 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:37 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:37 INFO  FadingAlarm:45 - Fading Alarm to 66.69% done
+2017-04-25 14:13:37 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:38 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:38 INFO  FadingAlarm:45 - Fading Alarm to 67.52416666666666% done
+2017-04-25 14:13:38 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:39 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:39 INFO  FadingAlarm:45 - Fading Alarm to 68.36% done
+2017-04-25 14:13:39 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:40 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:40 INFO  FadingAlarm:45 - Fading Alarm to 69.19333333333333% done
+2017-04-25 14:13:40 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:41 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:41 INFO  FadingAlarm:45 - Fading Alarm to 70.0275% done
+2017-04-25 14:13:41 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:42 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:42 INFO  FadingAlarm:45 - Fading Alarm to 70.86166666666666% done
+2017-04-25 14:13:42 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:43 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:43 INFO  FadingAlarm:45 - Fading Alarm to 71.695% done
+2017-04-25 14:13:43 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:44 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:44 INFO  FadingAlarm:45 - Fading Alarm to 72.52916666666667% done
+2017-04-25 14:13:44 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:45 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:45 INFO  FadingAlarm:45 - Fading Alarm to 73.36333333333333% done
+2017-04-25 14:13:46 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:46 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:47 INFO  FadingAlarm:45 - Fading Alarm to 74.1975% done
+2017-04-25 14:13:47 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:48 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:48 INFO  FadingAlarm:45 - Fading Alarm to 75.03083333333333% done
+2017-04-25 14:13:48 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:49 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:49 INFO  FadingAlarm:45 - Fading Alarm to 75.86583333333333% done
+2017-04-25 14:13:49 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:50 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:50 INFO  FadingAlarm:45 - Fading Alarm to 76.69916666666666% done
+2017-04-25 14:13:50 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:51 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:51 INFO  FadingAlarm:45 - Fading Alarm to 77.53333333333333% done
+2017-04-25 14:13:51 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:52 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:52 INFO  FadingAlarm:45 - Fading Alarm to 78.3675% done
+2017-04-25 14:13:52 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:53 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:53 INFO  FadingAlarm:45 - Fading Alarm to 79.20166666666667% done
+2017-04-25 14:13:53 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:54 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:54 INFO  FadingAlarm:45 - Fading Alarm to 80.035% done
+2017-04-25 14:13:54 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:55 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:55 INFO  FadingAlarm:45 - Fading Alarm to 80.87% done
+2017-04-25 14:13:55 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:56 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:56 INFO  FadingAlarm:45 - Fading Alarm to 81.70416666666667% done
+2017-04-25 14:13:56 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:57 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:57 INFO  FadingAlarm:45 - Fading Alarm to 82.53833333333334% done
+2017-04-25 14:13:57 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:58 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:58 INFO  FadingAlarm:45 - Fading Alarm to 83.3725% done
+2017-04-25 14:13:58 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:13:59 INFO  Timer:47 - Executing alarm
+2017-04-25 14:13:59 INFO  FadingAlarm:45 - Fading Alarm to 84.20583333333333% done
+2017-04-25 14:13:59 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:14:00 INFO  Timer:47 - Executing alarm
+2017-04-25 14:14:00 INFO  FadingAlarm:45 - Fading Alarm to 85.04% done
+2017-04-25 14:14:00 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:14:01 INFO  Timer:47 - Executing alarm
+2017-04-25 14:14:01 INFO  FadingAlarm:45 - Fading Alarm to 85.87416666666667% done
+2017-04-25 14:14:01 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:14:10 INFO  Main:19 - Starting server
+2017-04-25 14:14:10 INFO  Server:40 - Starting registry
+2017-04-25 14:14:10 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:14:10 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:14:10 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:14:10 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:14:10 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:14:10 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:14:10 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:14:10 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:14:10 INFO  Timer:30 - Starting timer
+2017-04-25 14:14:11 INFO  Main:24 - === STARTED ===
+2017-04-25 14:14:11 INFO  Timer:47 - Executing alarm
+2017-04-25 14:14:11 INFO  FadingAlarm:45 - Fading Alarm to 50.8425% done
+2017-04-25 14:14:40 INFO  FadingAlarm:45 - Fading Alarm to 73.46166666666667% done
+2017-04-25 14:14:47 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:14:48 INFO  Timer:47 - Executing alarm
+2017-04-25 14:14:48 INFO  FadingAlarm:45 - Fading Alarm to 80.89833333333334% done
+2017-04-25 14:14:55 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:14:56 INFO  Timer:47 - Executing alarm
+2017-04-25 14:14:56 INFO  FadingAlarm:45 - Fading Alarm to 87.99666666666667% done
+2017-04-25 14:15:25 INFO  Sender:89 - B0 0D 33 00 E8 0F
+2017-04-25 14:15:35 INFO  Main:19 - Starting server
+2017-04-25 14:15:36 INFO  Server:40 - Starting registry
+2017-04-25 14:15:36 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:15:36 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:15:36 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:15:36 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:15:36 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:15:36 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:15:36 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:15:36 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:15:36 INFO  Timer:30 - Starting timer
+2017-04-25 14:15:37 INFO  Main:24 - === STARTED ===
+2017-04-25 14:15:37 INFO  Timer:47 - Executing alarm
+2017-04-25 14:15:37 INFO  FadingAlarm:45 - Fading Alarm to 50.840833333333336% done
+2017-04-25 14:16:20 INFO  Main:19 - Starting server
+2017-04-25 14:16:21 INFO  Server:40 - Starting registry
+2017-04-25 14:16:21 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:16:21 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:16:21 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:16:21 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:16:21 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:16:21 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:16:21 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:16:21 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:16:21 INFO  Timer:30 - Starting timer
+2017-04-25 14:16:22 INFO  Main:24 - === STARTED ===
+2017-04-25 14:16:22 INFO  Timer:47 - Executing alarm
+2017-04-25 14:16:22 INFO  FadingAlarm:45 - Fading Alarm to 50.84166666666666% done
+2017-04-25 14:16:56 INFO  Main:19 - Starting server
+2017-04-25 14:16:56 INFO  Server:40 - Starting registry
+2017-04-25 14:16:56 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:16:56 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:16:56 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:16:56 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:16:56 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:16:56 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:16:56 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:16:56 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:16:56 INFO  Timer:30 - Starting timer
+2017-04-25 14:16:57 INFO  Main:24 - === STARTED ===
+2017-04-25 14:16:57 INFO  Timer:47 - Executing alarm
+2017-04-25 14:16:57 INFO  FadingAlarm:45 - Fading Alarm to 50.846666666666664% done
+2017-04-25 14:17:03 INFO  Sender:89 - B0 0D 33 E8 E8 0F
+2017-04-25 14:17:04 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:04 INFO  FadingAlarm:45 - Fading Alarm to 56.79416666666667% done
+2017-04-25 14:17:04 INFO  Sender:89 - B0 0D 33 E2 E8 0F
+2017-04-25 14:17:05 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:05 INFO  FadingAlarm:45 - Fading Alarm to 57.62916666666666% done
+2017-04-25 14:17:05 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:17:06 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:06 INFO  FadingAlarm:45 - Fading Alarm to 58.46333333333333% done
+2017-04-25 14:17:06 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:17:07 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:07 INFO  FadingAlarm:45 - Fading Alarm to 59.29666666666667% done
+2017-04-25 14:17:07 INFO  Sender:89 - B0 0D 33 E0 E8 0F
+2017-04-25 14:17:08 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:08 INFO  FadingAlarm:45 - Fading Alarm to 60.131666666666675% done
+2017-04-25 14:17:08 INFO  Sender:89 - B0 0D 33 DF E8 0F
+2017-04-25 14:17:09 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:09 INFO  FadingAlarm:45 - Fading Alarm to 60.965% done
+2017-04-25 14:17:09 INFO  Sender:89 - B0 0D 33 DE E8 0F
+2017-04-25 14:17:10 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:10 INFO  FadingAlarm:45 - Fading Alarm to 61.79916666666667% done
+2017-04-25 14:17:10 INFO  Sender:89 - B0 0D 33 DD E8 0F
+2017-04-25 14:17:11 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:11 INFO  FadingAlarm:45 - Fading Alarm to 62.63333333333333% done
+2017-04-25 14:17:11 INFO  Sender:89 - B0 0D 33 DC E8 0F
+2017-04-25 14:17:12 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:12 INFO  FadingAlarm:45 - Fading Alarm to 63.46666666666667% done
+2017-04-25 14:17:12 INFO  Sender:89 - B0 0D 33 DC E8 0F
+2017-04-25 14:17:13 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:13 INFO  FadingAlarm:45 - Fading Alarm to 64.30083333333333% done
+2017-04-25 14:17:13 INFO  Sender:89 - B0 0D 33 DB E8 0F
+2017-04-25 14:17:14 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:14 INFO  FadingAlarm:45 - Fading Alarm to 65.135% done
+2017-04-25 14:17:14 INFO  Sender:89 - B0 0D 33 DA E8 0F
+2017-04-25 14:17:15 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:15 INFO  FadingAlarm:45 - Fading Alarm to 65.96833333333333% done
+2017-04-25 14:17:15 INFO  Sender:89 - B0 0D 33 D9 E8 0F
+2017-04-25 14:17:16 INFO  Timer:47 - Executing alarm
+2017-04-25 14:17:16 INFO  FadingAlarm:45 - Fading Alarm to 66.8025% done
+2017-04-25 14:17:16 INFO  Sender:89 - B0 0D 33 D8 E8 0F
+2017-04-25 14:20:07 INFO  Main:19 - Starting server
+2017-04-25 14:20:08 INFO  Server:40 - Starting registry
+2017-04-25 14:20:08 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:20:08 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:20:08 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:20:08 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:20:08 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:20:08 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:20:08 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:20:08 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:20:08 INFO  Timer:30 - Starting timer
+2017-04-25 14:20:09 INFO  Main:24 - === STARTED ===
+2017-04-25 14:20:09 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:09 INFO  FadingAlarm:45 - Fading Alarm to 50.854166666666664% done
+2017-04-25 14:20:09 INFO  Sender:89 - B0 0D 33 E8 E8 0F
+2017-04-25 14:20:10 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:10 INFO  FadingAlarm:45 - Fading Alarm to 51.690000000000005% done
+2017-04-25 14:20:10 INFO  Sender:89 - B0 0D 33 E7 E8 0F
+2017-04-25 14:20:11 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:11 INFO  FadingAlarm:45 - Fading Alarm to 52.52416666666667% done
+2017-04-25 14:20:11 INFO  Sender:89 - B0 0D 33 E6 E8 0F
+2017-04-25 14:20:12 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:12 INFO  FadingAlarm:45 - Fading Alarm to 53.35833333333333% done
+2017-04-25 14:20:12 INFO  Sender:89 - B0 0D 33 E6 E8 0F
+2017-04-25 14:20:13 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:13 INFO  FadingAlarm:45 - Fading Alarm to 54.192499999999995% done
+2017-04-25 14:20:13 INFO  Sender:89 - B0 0D 33 E5 E8 0F
+2017-04-25 14:20:14 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:14 INFO  FadingAlarm:45 - Fading Alarm to 55.02666666666667% done
+2017-04-25 14:20:14 INFO  Sender:89 - B0 0D 33 E4 E8 0F
+2017-04-25 14:20:15 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:15 INFO  FadingAlarm:45 - Fading Alarm to 55.86% done
+2017-04-25 14:20:15 INFO  Sender:89 - B0 0D 33 E3 E8 0F
+2017-04-25 14:20:16 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:16 INFO  FadingAlarm:45 - Fading Alarm to 56.69416666666667% done
+2017-04-25 14:20:16 INFO  Sender:89 - B0 0D 33 E2 E8 0F
+2017-04-25 14:20:17 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:17 INFO  FadingAlarm:45 - Fading Alarm to 57.527499999999996% done
+2017-04-25 14:20:17 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:20:18 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:18 INFO  FadingAlarm:45 - Fading Alarm to 58.361666666666665% done
+2017-04-25 14:20:18 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:20:19 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:19 INFO  FadingAlarm:45 - Fading Alarm to 59.19583333333334% done
+2017-04-25 14:20:19 INFO  Sender:89 - B0 0D 33 E0 E8 0F
+2017-04-25 14:20:20 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:20 INFO  FadingAlarm:45 - Fading Alarm to 60.02916666666667% done
+2017-04-25 14:20:20 INFO  Sender:89 - B0 0D 33 DF E8 0F
+2017-04-25 14:20:21 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:21 INFO  FadingAlarm:45 - Fading Alarm to 60.865% done
+2017-04-25 14:20:21 INFO  Sender:89 - B0 0D 33 DE E8 0F
+2017-04-25 14:20:22 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:22 INFO  FadingAlarm:45 - Fading Alarm to 61.69916666666667% done
+2017-04-25 14:20:22 INFO  Sender:89 - B0 0D 33 DD E8 0F
+2017-04-25 14:20:23 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:23 INFO  FadingAlarm:45 - Fading Alarm to 62.53333333333333% done
+2017-04-25 14:20:23 INFO  Sender:89 - B0 0D 33 DC E8 0F
+2017-04-25 14:20:24 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:24 INFO  FadingAlarm:45 - Fading Alarm to 63.3675% done
+2017-04-25 14:20:24 INFO  Sender:89 - B0 0D 33 DC E8 0F
+2017-04-25 14:20:25 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:25 INFO  FadingAlarm:45 - Fading Alarm to 64.20083333333334% done
+2017-04-25 14:20:25 INFO  Sender:89 - B0 0D 33 DB E8 0F
+2017-04-25 14:20:45 INFO  Main:19 - Starting server
+2017-04-25 14:20:45 INFO  Server:40 - Starting registry
+2017-04-25 14:20:45 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-25 14:20:45 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-25 14:20:45 INFO  Sender:53 - Detected OS: windows 10
+2017-04-25 14:20:45 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-25 14:20:45 INFO  Sender:251 - Loading Bulb list from File
+2017-04-25 14:20:45 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-25 14:20:45 INFO  Pinger:22 - Starting pinger
+2017-04-25 14:20:45 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-25 14:20:45 INFO  Timer:30 - Starting timer
+2017-04-25 14:20:46 INFO  Main:24 - === STARTED ===
+2017-04-25 14:20:46 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:46 INFO  FadingAlarm:45 - Fading Alarm to 51% done
+2017-04-25 14:20:46 INFO  Sender:89 - B0 0D 33 E8 E8 0F
+2017-04-25 14:20:47 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:47 INFO  FadingAlarm:45 - Fading Alarm to 52% done
+2017-04-25 14:20:47 INFO  Sender:89 - B0 0D 33 E7 E8 0F
+2017-04-25 14:20:48 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:48 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-25 14:20:48 INFO  Sender:89 - B0 0D 33 E6 E8 0F
+2017-04-25 14:20:49 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:49 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-25 14:20:49 INFO  Sender:89 - B0 0D 33 E6 E8 0F
+2017-04-25 14:20:50 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:50 INFO  FadingAlarm:45 - Fading Alarm to 54% done
+2017-04-25 14:20:50 INFO  Sender:89 - B0 0D 33 E5 E8 0F
+2017-04-25 14:20:51 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:51 INFO  FadingAlarm:45 - Fading Alarm to 55% done
+2017-04-25 14:20:51 INFO  Sender:89 - B0 0D 33 E4 E8 0F
+2017-04-25 14:20:52 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:52 INFO  FadingAlarm:45 - Fading Alarm to 56% done
+2017-04-25 14:20:52 INFO  Sender:89 - B0 0D 33 E3 E8 0F
+2017-04-25 14:20:53 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:53 INFO  FadingAlarm:45 - Fading Alarm to 57% done
+2017-04-25 14:20:53 INFO  Sender:89 - B0 0D 33 E2 E8 0F
+2017-04-25 14:20:54 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:54 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-25 14:20:54 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:20:55 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:55 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-25 14:20:55 INFO  Sender:89 - B0 0D 33 E1 E8 0F
+2017-04-25 14:20:56 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:56 INFO  FadingAlarm:45 - Fading Alarm to 59% done
+2017-04-25 14:20:56 INFO  Sender:89 - B0 0D 33 E0 E8 0F
+2017-04-25 14:20:57 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:57 INFO  FadingAlarm:45 - Fading Alarm to 60% done
+2017-04-25 14:20:57 INFO  Sender:89 - B0 0D 33 DF E8 0F
+2017-04-25 14:20:58 INFO  Timer:47 - Executing alarm
+2017-04-25 14:20:58 INFO  FadingAlarm:45 - Fading Alarm to 61% done
+2017-04-25 14:20:58 INFO  Sender:89 - B0 0D 33 DE E8 0F

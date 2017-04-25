@@ -3,6 +3,8 @@ package modules.timer;
 import java.io.Serializable;
 import java.util.GregorianCalendar;
 
+import org.apache.log4j.Logger;
+
 import data.LightState;
 
 public abstract class Alarm implements Serializable {
@@ -11,6 +13,7 @@ public abstract class Alarm implements Serializable {
      * 
      */
     private static final long serialVersionUID = -1178811957835437175L;
+    private static final Logger LOG = Logger.getLogger(Alarm.class);
 
     public enum Mode {
 	ONCE, HOUR, DAY, WEEK, MONTH, YEAR
@@ -25,6 +28,7 @@ public abstract class Alarm implements Serializable {
     }
 
     public void rewindAlarm() {
+	LOG.info("Rewinding alarm");
 	switch (mode) {
 	case HOUR:
 	    date.add(GregorianCalendar.HOUR, 1);
