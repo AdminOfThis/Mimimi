@@ -45,6 +45,8 @@ public class FadingAlarm extends Alarm {
 	LOG.info("Fading Alarm to " + Math.round(percent * 100.0) + "% done");
 	double colorRange = (startColor - endColor);
 	int color = (int) Math.round(startColor + (colorRange * percent));
-	return new LightState(color);
+	LightState state = new LightState(color);
+	state.setBrightness((int) Math.round(LightState.BRIGHTNESS_MAX * percent));
+	return state;
     }
 }

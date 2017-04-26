@@ -11175,3 +11175,17 @@ java.io.InvalidClassException: data.LightBulb; local class incompatible: stream 
 2017-04-25 14:20:58 INFO  Timer:47 - Executing alarm
 2017-04-25 14:20:58 INFO  FadingAlarm:45 - Fading Alarm to 61% done
 2017-04-25 14:20:58 INFO  Sender:89 - B0 0D 33 DE E8 0F
+2017-04-26 10:03:52 INFO  Main:19 - Starting server
+2017-04-26 10:03:53 INFO  Server:40 - Starting registry
+2017-04-26 10:03:53 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-26 10:03:53 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-26 10:03:53 INFO  Sender:53 - Detected OS: windows 10
+2017-04-26 10:03:53 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-26 10:03:53 INFO  Sender:251 - Loading Bulb list from File
+2017-04-26 10:03:53 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-26 10:03:53 INFO  Pinger:22 - Starting pinger
+2017-04-26 10:03:53 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-26 10:03:53 INFO  Timer:30 - Starting timer
+2017-04-26 10:03:54 INFO  Main:24 - === STARTED ===
+2017-04-26 10:03:54 INFO  Timer:47 - Executing alarm
+2017-04-26 10:03:54 INFO  FadingAlarm:45 - Fading Alarm to 51% done

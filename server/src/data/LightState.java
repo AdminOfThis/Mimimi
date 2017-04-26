@@ -9,6 +9,8 @@ public class LightState implements Serializable {
     };
 
     private static final long serialVersionUID = 8782198898112704078L;
+    public static final int COLOR_MAX = 255;
+    public static final int BRIGHTNESS_MAX = 25;
     private Button button;
     private int color = -1;
     private int brightness = -1;
