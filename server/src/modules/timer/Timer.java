@@ -19,9 +19,6 @@ public class Timer extends Module {
 
     public Timer(Server server) {
 	super(server);
-	GregorianCalendar cal = new GregorianCalendar();
-	cal.add(GregorianCalendar.MINUTE, 1);
-	this.addList.add(new FadingAlarm(cal, 2, Mode.ONCE, 0, 100));
 	start();
     }
 
@@ -44,7 +41,7 @@ public class Timer extends Module {
 	    // search for alarms to execute
 	    if (alarm.isTimeToExecute()) {
 		// TODO
-		LOG.info("Executing alarm");
+		LOG.debug("Executing alarm");
 		Sender.getInstance().queueFirst(alarm.getCmd());
 		if (alarm.isDone()) {
 		    if (alarm.getMode() == Mode.ONCE) {

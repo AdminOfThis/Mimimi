@@ -16,8 +16,8 @@ import data.Address;
 import data.LightBulb;
 import data.LightState;
 import data.Message;
-import modules.NetworkScanner;
 import modules.SerialScanner;
+import modules.WiFiScanner.WiFiScanner;
 import modules.timer.Alarm;
 import modules.timer.SimpleAlarm;
 import modules.timer.Timer;
@@ -33,7 +33,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
     private static final Logger LOG = Logger.getLogger(Server.class);
     private ConcurrentHashMap<ClientInterface, String> clients = new ConcurrentHashMap<>();
     private Sender sender;
-    private NetworkScanner scanner;
+    private WiFiScanner scanner;
     private Timer timer;
 
     public Server() throws RemoteException {
@@ -50,7 +50,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 	sender = Sender.getInstance();
 	if (sender.isLinux()) {
-	    scanner = new NetworkScanner(this);
+	    scanner = new WiFiScanner(this);
 	}
 	new Pinger(this);
 	new SerialScanner(this);

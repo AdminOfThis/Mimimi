@@ -86,7 +86,7 @@ public class Sender {
 				}
 			    }
 			    String cmd = buildCommand(queue.poll());
-			    LOG.info(cmd);
+			    LOG.debug(cmd);
 			    if (isLinux()) {
 				for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
 				    writer.write(cmd + " " + Integer.toHexString(SEQUENCE_SPACE * run) + "\n");

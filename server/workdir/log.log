@@ -11189,3 +11189,365 @@ java.io.InvalidClassException: data.LightBulb; local class incompatible: stream 
 2017-04-26 10:03:54 INFO  Main:24 - === STARTED ===
 2017-04-26 10:03:54 INFO  Timer:47 - Executing alarm
 2017-04-26 10:03:54 INFO  FadingAlarm:45 - Fading Alarm to 51% done
+2017-04-26 11:06:02 INFO  Main:19 - Starting server
+2017-04-26 11:06:03 INFO  Server:40 - Starting registry
+2017-04-26 11:06:03 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-26 11:06:04 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-26 11:06:04 INFO  Sender:53 - Detected OS: windows 10
+2017-04-26 11:06:04 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-26 11:06:04 INFO  Sender:251 - Loading Bulb list from File
+2017-04-26 11:06:04 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-26 11:06:04 INFO  Pinger:22 - Starting pinger
+2017-04-26 11:06:04 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-26 11:06:04 INFO  Timer:30 - Starting timer
+2017-04-26 11:06:05 INFO  Main:24 - === STARTED ===
+2017-04-26 11:06:05 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:05 INFO  FadingAlarm:45 - Fading Alarm to 51% done
+2017-04-26 11:06:05 INFO  Sender:89 - B0 0D 33 E8 18 0F
+2017-04-26 11:06:06 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:06 INFO  FadingAlarm:45 - Fading Alarm to 52% done
+2017-04-26 11:06:06 INFO  Sender:89 - B0 0D 33 E7 18 0F
+2017-04-26 11:06:07 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:07 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-26 11:06:07 INFO  Sender:89 - B0 0D 33 E6 18 0F
+2017-04-26 11:06:08 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:08 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-26 11:06:08 INFO  Sender:89 - B0 0D 33 E6 18 0F
+2017-04-26 11:06:09 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:09 INFO  FadingAlarm:45 - Fading Alarm to 54% done
+2017-04-26 11:06:09 INFO  Sender:89 - B0 0D 33 E5 10 0F
+2017-04-26 11:06:10 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:10 INFO  FadingAlarm:45 - Fading Alarm to 55% done
+2017-04-26 11:06:10 INFO  Sender:89 - B0 0D 33 E4 10 0F
+2017-04-26 11:06:11 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:11 INFO  FadingAlarm:45 - Fading Alarm to 56% done
+2017-04-26 11:06:11 INFO  Sender:89 - B0 0D 33 E3 10 0F
+2017-04-26 11:06:12 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:12 INFO  FadingAlarm:45 - Fading Alarm to 57% done
+2017-04-26 11:06:12 INFO  Sender:89 - B0 0D 33 E2 10 0F
+2017-04-26 11:06:13 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-26 11:06:13 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-26 11:06:13 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:13 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-26 11:06:13 INFO  Sender:89 - B0 0D 33 E1 10 0F
+2017-04-26 11:06:13 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:06:14 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:14 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-26 11:06:14 INFO  Sender:89 - B0 0D 33 E1 08 0F
+2017-04-26 11:06:14 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:06:14 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-04-26 11:06:14 ERROR Server:157 - Unable to notify Client Proxy[ClientInterface,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[141.58.49.213:59253](remote),objID:[-506b1546:15ba982c7d9:-7fff, -4515765500025074426]]]]]
+2017-04-26 11:06:15 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:15 INFO  FadingAlarm:45 - Fading Alarm to 59% done
+2017-04-26 11:06:15 INFO  Sender:89 - B0 0D 33 E0 08 0F
+2017-04-26 11:06:15 ERROR Server:157 - Unable to notify Client Proxy[ClientInterface,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[141.58.49.213:59253](remote),objID:[-506b1546:15ba982c7d9:-7fff, -4515765500025074426]]]]]
+2017-04-26 11:06:16 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:16 INFO  FadingAlarm:45 - Fading Alarm to 60% done
+2017-04-26 11:06:16 INFO  Sender:89 - B0 0D 33 DF 08 0F
+2017-04-26 11:06:17 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:17 INFO  FadingAlarm:45 - Fading Alarm to 61% done
+2017-04-26 11:06:17 INFO  Sender:89 - B0 0D 33 DE 08 0F
+2017-04-26 11:06:18 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:18 INFO  FadingAlarm:45 - Fading Alarm to 62% done
+2017-04-26 11:06:18 INFO  Sender:89 - B0 0D 33 DD 08 0F
+2017-04-26 11:06:19 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:19 INFO  FadingAlarm:45 - Fading Alarm to 63% done
+2017-04-26 11:06:19 INFO  Sender:89 - B0 0D 33 DC 00 0F
+2017-04-26 11:06:20 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:20 INFO  FadingAlarm:45 - Fading Alarm to 63% done
+2017-04-26 11:06:20 INFO  Sender:89 - B0 0D 33 DC 00 0F
+2017-04-26 11:06:21 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:21 INFO  FadingAlarm:45 - Fading Alarm to 64% done
+2017-04-26 11:06:21 INFO  Sender:89 - B0 0D 33 DB 00 0F
+2017-04-26 11:06:22 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:22 INFO  FadingAlarm:45 - Fading Alarm to 65% done
+2017-04-26 11:06:22 INFO  Sender:89 - B0 0D 33 DA 00 0F
+2017-04-26 11:06:23 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:23 INFO  FadingAlarm:45 - Fading Alarm to 66% done
+2017-04-26 11:06:23 INFO  Sender:89 - B0 0D 33 D9 00 0F
+2017-04-26 11:06:24 INFO  Timer:47 - Executing alarm
+2017-04-26 11:06:24 INFO  FadingAlarm:45 - Fading Alarm to 67% done
+2017-04-26 11:06:24 INFO  Sender:89 - B0 0D 33 D8 F8 0F
+2017-04-26 11:08:27 INFO  Main:19 - Starting server
+2017-04-26 11:08:28 INFO  Server:40 - Starting registry
+2017-04-26 11:08:28 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-26 11:08:29 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-26 11:08:29 INFO  Sender:53 - Detected OS: windows 10
+2017-04-26 11:08:29 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-26 11:08:29 INFO  Sender:251 - Loading Bulb list from File
+2017-04-26 11:08:29 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-26 11:08:29 INFO  Pinger:22 - Starting pinger
+2017-04-26 11:08:29 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-26 11:08:29 INFO  Timer:30 - Starting timer
+2017-04-26 11:08:30 INFO  Main:24 - === STARTED ===
+2017-04-26 11:08:30 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:30 INFO  FadingAlarm:45 - Fading Alarm to 51% done
+2017-04-26 11:08:30 INFO  Sender:89 - B0 0D 33 E8 18 0F
+2017-04-26 11:08:31 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:31 INFO  FadingAlarm:45 - Fading Alarm to 52% done
+2017-04-26 11:08:31 INFO  Sender:89 - B0 0D 33 E7 18 0F
+2017-04-26 11:08:32 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:32 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-26 11:08:32 INFO  Sender:89 - B0 0D 33 E6 18 0F
+2017-04-26 11:08:33 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:33 INFO  FadingAlarm:45 - Fading Alarm to 53% done
+2017-04-26 11:08:33 INFO  Sender:89 - B0 0D 33 E6 18 0F
+2017-04-26 11:08:34 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:34 INFO  FadingAlarm:45 - Fading Alarm to 54% done
+2017-04-26 11:08:34 INFO  Sender:89 - B0 0D 33 E5 10 0F
+2017-04-26 11:08:35 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:35 INFO  FadingAlarm:45 - Fading Alarm to 55% done
+2017-04-26 11:08:35 INFO  Sender:89 - B0 0D 33 E4 10 0F
+2017-04-26 11:08:36 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:36 INFO  FadingAlarm:45 - Fading Alarm to 56% done
+2017-04-26 11:08:36 INFO  Sender:89 - B0 0D 33 E3 10 0F
+2017-04-26 11:08:37 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:37 INFO  FadingAlarm:45 - Fading Alarm to 57% done
+2017-04-26 11:08:37 INFO  Sender:89 - B0 0D 33 E2 10 0F
+2017-04-26 11:08:38 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-26 11:08:38 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-26 11:08:38 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:38 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-26 11:08:38 INFO  Sender:89 - B0 0D 33 E1 10 0F
+2017-04-26 11:08:38 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 4ms
+2017-04-26 11:08:39 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:39 INFO  FadingAlarm:45 - Fading Alarm to 58% done
+2017-04-26 11:08:39 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:39 INFO  Sender:89 - B0 0D 33 E1 08 0F
+2017-04-26 11:08:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:08:40 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:40 INFO  FadingAlarm:45 - Fading Alarm to 59% done
+2017-04-26 11:08:40 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:40 INFO  Sender:89 - B0 0D 33 E0 08 0F
+2017-04-26 11:08:41 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:08:41 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:41 INFO  FadingAlarm:45 - Fading Alarm to 60% done
+2017-04-26 11:08:41 INFO  Sender:89 - B0 0D 33 DF 08 0F
+2017-04-26 11:08:41 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:42 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:08:42 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:42 INFO  FadingAlarm:45 - Fading Alarm to 61% done
+2017-04-26 11:08:42 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:42 INFO  Sender:89 - B0 0D 33 DE 08 0F
+2017-04-26 11:08:43 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:08:43 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:43 INFO  FadingAlarm:45 - Fading Alarm to 62% done
+2017-04-26 11:08:43 INFO  Sender:89 - B0 0D 33 DD 08 0F
+2017-04-26 11:08:43 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:44 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:08:44 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:44 INFO  FadingAlarm:45 - Fading Alarm to 63% done
+2017-04-26 11:08:44 INFO  Sender:89 - B0 0D 33 DC 00 0F
+2017-04-26 11:08:44 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:45 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:08:45 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:45 INFO  FadingAlarm:45 - Fading Alarm to 63% done
+2017-04-26 11:08:45 INFO  Sender:89 - B0 0D 33 DC 00 0F
+2017-04-26 11:08:45 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:46 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:46 INFO  FadingAlarm:45 - Fading Alarm to 64% done
+2017-04-26 11:08:46 INFO  Sender:89 - B0 0D 33 DB 00 0F
+2017-04-26 11:08:46 DEBUG Server:153 - Updating Alarms on Clients127.0.0.1
+2017-04-26 11:08:46 ERROR Server:157 - Unable to notify Client Proxy[ClientInterface,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[141.58.49.213:59633](remote),objID:[-3ef13f3d:15ba984fe27:-7fff, 1098747849330574301]]]]]
+2017-04-26 11:08:47 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-04-26 11:08:47 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:47 INFO  FadingAlarm:45 - Fading Alarm to 65% done
+2017-04-26 11:08:47 INFO  Sender:89 - B0 0D 33 DA 00 0F
+2017-04-26 11:08:47 ERROR Server:157 - Unable to notify Client Proxy[ClientInterface,RemoteObjectInvocationHandler[UnicastRef [liveRef: [endpoint:[141.58.49.213:59633](remote),objID:[-3ef13f3d:15ba984fe27:-7fff, 1098747849330574301]]]]]
+2017-04-26 11:08:48 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:48 INFO  FadingAlarm:45 - Fading Alarm to 66% done
+2017-04-26 11:08:48 INFO  Sender:89 - B0 0D 33 D9 00 0F
+2017-04-26 11:08:49 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:49 INFO  FadingAlarm:45 - Fading Alarm to 67% done
+2017-04-26 11:08:49 INFO  Sender:89 - B0 0D 33 D8 F8 0F
+2017-04-26 11:08:50 INFO  Timer:47 - Executing alarm
+2017-04-26 11:08:50 INFO  FadingAlarm:45 - Fading Alarm to 68% done
+2017-04-26 11:08:50 INFO  Sender:89 - B0 0D 33 D7 F8 0F
+2017-04-26 11:10:41 INFO  Main:19 - Starting server
+2017-04-26 11:10:43 INFO  Server:40 - Starting registry
+2017-04-26 11:10:43 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-26 11:10:43 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-26 11:10:43 INFO  Sender:53 - Detected OS: windows 10
+2017-04-26 11:10:43 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-26 11:10:43 INFO  Sender:251 - Loading Bulb list from File
+2017-04-26 11:10:43 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-26 11:10:43 INFO  Pinger:22 - Starting pinger
+2017-04-26 11:10:43 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-26 11:10:43 INFO  Timer:27 - Starting timer
+2017-04-26 11:10:44 INFO  Main:24 - === STARTED ===
+2017-04-26 11:10:49 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-26 11:10:49 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-26 11:10:49 DEBUG Pinger:30 - Ping to 127.0.0.1: 3ms
+2017-04-26 11:10:50 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:51 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:52 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:53 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:54 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:55 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:56 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:57 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:58 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:10:59 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:00 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:11:01 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:02 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:03 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:04 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:11:05 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:06 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:07 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:08 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:09 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:10 DEBUG Pinger:30 - Ping to 127.0.0.1: 3ms
+2017-04-26 11:11:11 DEBUG Pinger:30 - Ping to 127.0.0.1: 3ms
+2017-04-26 11:11:12 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:13 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:14 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:15 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:16 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:17 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:18 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:19 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:20 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:21 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:22 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:23 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:24 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:25 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:26 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:27 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:28 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:29 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:30 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:31 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:32 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:33 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:34 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:35 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:36 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:37 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:38 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:11:41 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:42 DEBUG Pinger:30 - Ping to 127.0.0.1: 4ms
+2017-04-26 11:11:43 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:44 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:45 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:46 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:47 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:48 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:49 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:50 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:51 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:52 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:53 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:54 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:55 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:56 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:57 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:58 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:11:59 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:00 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:01 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:02 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:03 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:04 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:05 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:06 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:07 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:08 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:09 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:10 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:11 DEBUG Pinger:30 - Ping to 127.0.0.1: 6ms
+2017-04-26 11:12:12 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:13 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:14 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:15 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:16 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:17 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:18 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:19 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:21 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-04-26 11:12:22 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-26 11:12:22 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-26 11:12:23 DEBUG Pinger:30 - Ping to 127.0.0.1: 14ms
+2017-04-26 11:12:24 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:25 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:26 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:27 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:28 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:29 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:30 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:31 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:32 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:33 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:34 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:35 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:36 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:37 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:38 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:41 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:42 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:43 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:44 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:45 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:46 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:12:47 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:48 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:49 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:50 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:51 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:52 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:53 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:54 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:55 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:56 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:57 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:58 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:12:59 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:00 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:01 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:02 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:03 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:04 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:05 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:06 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:07 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:08 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:09 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:10 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:11 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:12 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:13:13 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:14 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:15 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:16 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:13:17 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:18 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:13:19 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:20 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:21 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:22 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:23 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:13:24 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-26 11:13:25 DEBUG Pinger:30 - Ping to 127.0.0.1: 5ms
+2017-04-26 11:13:26 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:28 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-04-26 11:13:30 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-26 11:13:30 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-26 11:13:30 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:31 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:32 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:33 DEBUG Pinger:30 - Ping to 127.0.0.1: 95ms
+2017-04-26 11:13:34 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:35 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:36 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-26 11:13:37 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:38 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-26 11:13:42 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed

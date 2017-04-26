@@ -1,4 +1,4 @@
-package gui;
+package gui.controller;
 
 import java.net.URL;
 import java.rmi.RemoteException;
@@ -14,6 +14,8 @@ import data.LightBulb;
 import data.LightState;
 import data.LightState.FIELD;
 import data.Message;
+import gui.AlarmCell;
+import gui.MessageCell;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -39,21 +41,17 @@ import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import main.GuiClient;
 import modules.timer.Alarm;
 import modules.timer.Alarm.Mode;
 import modules.timer.SimpleAlarm;
-import net.Client;
-import net.ServerFinder;
-import net.ServerInterface;
 
-public class GUIController extends Client implements Initializable {
+public class Control implements Initializable {
 
-    private static final long serialVersionUID = -165050278898546292L;
     public static final String MAIN_NAME = "../gui/Mimimi.fxml";
-    private static final Logger LOG = Logger.getLogger(GUIController.class);
+    private static final Logger LOG = Logger.getLogger(Control.class);
     private static final double COLORS = 255;
-    private static GUIController instance;
-    private ServerInterface server;
+    private static Control instance;
     @FXML
     private Slider slider, sliderBright;
     @FXML
@@ -83,25 +81,15 @@ public class GUIController extends Client implements Initializable {
     private ListView<Message> list;
     private int color = 0;
 
-    public GUIController() throws RemoteException {
+    public Control() throws RemoteException {
 	super();
+	instance = this;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 	instance = this;
-	String ip = ServerFinder.findServer();
-	if (ip == null) {
-	    LOG.error("Unable to find Server");
-	    Platform.exit();
-	    System.exit(0);
-	}
-	if (ip != null) {
-	    LOG.info("Server: " + ip);
-	    connect(ip);
-	    server = getServer();
 
-	}
 	initRemote();
 	initAlarm();
     }
@@ -127,7 +115,8 @@ public class GUIController extends Client implements Initializable {
 	    @Override
 	    public void handle(MouseEvent event) {
 		try {
-		    server.update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
+		    GuiClient.getInstance().getServer()
+			    .update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
 		} catch (RemoteException e) {
 		    LOG.error(e);
 		}
@@ -138,7 +127,8 @@ public class GUIController extends Client implements Initializable {
 	    @Override
 	    public void handle(KeyEvent event) {
 		try {
-		    server.update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
+		    GuiClient.getInstance().getServer()
+			    .update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
 		} catch (RemoteException e) {
 		    LOG.error(e);
 		}
@@ -177,7 +167,7 @@ public class GUIController extends Client implements Initializable {
 	list.setCellFactory(e -> new MessageCell());
 	lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 	try {
-	    lightList.getItems().setAll(server.getBulbList());
+	    lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
 	} catch (RemoteException e1) {
 	    LOG.error("Unable to load Lights from Server", e1);
 	}
@@ -188,7 +178,7 @@ public class GUIController extends Client implements Initializable {
 	alarmList.setCellFactory(e -> new AlarmCell());
 	alarmCombo.getItems().addAll(Mode.values());
 	try {
-	    ArrayList<Alarm> alarmList = server.getAlarmList();
+	    ArrayList<Alarm> alarmList = GuiClient.getInstance().getServer().getAlarmList();
 	    this.alarmList.getItems().addAll(alarmList);
 	} catch (RemoteException e) {
 	    LOG.error("Unable to get Alarms from Server", e);
@@ -214,7 +204,7 @@ public class GUIController extends Client implements Initializable {
 		}
 	    }
 	    if (send) {
-		server.update(new LightState(value));
+		GuiClient.getInstance().getServer().update(new LightState(value));
 	    }
 	    color = value;
 	} catch (RemoteException e) {
@@ -248,13 +238,14 @@ public class GUIController extends Client implements Initializable {
 	return result;
     }
 
-    public static GUIController getInstance() {
+    public static Control getInstance() {
+
 	return instance;
     }
 
     // TODO Adding icon depending on Message type
-    @Override
-    public void notify(Message message) throws RemoteException {
+
+    public void notify(Message message) {
 	// TODO Update GUI incase of external Color update
 	switch (message.getType()) {
 	case LIGHT_COLOR:
@@ -273,14 +264,9 @@ public class GUIController extends Client implements Initializable {
 	});
     }
 
-    @Override
-    public void ping() throws RemoteException {
-	LOG.debug("Ping received");
-    }
-
     private void sendBtn(Button btn) {
 	try {
-	    server.update(new LightState(btn));
+	    GuiClient.getInstance().getServer().update(new LightState(btn));
 	} catch (RemoteException e) {
 	    LOG.error(e);
 	}
@@ -306,7 +292,7 @@ public class GUIController extends Client implements Initializable {
 	try {
 	    MenuItem node = (MenuItem) e.getSource();
 	    int count = modeButton.getItems().indexOf(node);
-	    server.update(new LightState(FIELD.MODE, count));
+	    GuiClient.getInstance().getServer().update(new LightState(FIELD.MODE, count));
 	} catch (Exception ex) {
 	    LOG.error(ex);
 	}
@@ -408,7 +394,7 @@ public class GUIController extends Client implements Initializable {
 	date.set(GregorianCalendar.SECOND, 0);
 	SimpleAlarm alarm = new SimpleAlarm(date, mode, new LightState(FIELD.COLOR, 0));
 	try {
-	    server.addAlarm(alarm);
+	    GuiClient.getInstance().getServer().addAlarm(alarm);
 	    alarmCombo.setValue(null);
 	    alarmDate.setValue(null);
 	    hours.setValue(null);
@@ -422,13 +408,12 @@ public class GUIController extends Client implements Initializable {
     private void removeAlarm(ActionEvent e) {
 	Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
 	try {
-	    server.removeAlarm(alarm);
+	    GuiClient.getInstance().getServer().removeAlarm(alarm);
 	} catch (RemoteException e1) {
 	    LOG.error("Cannot reach server to remove alarm", e1);
 	}
     }
 
-    @Override
     public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
 	LOG.info("Received new alarms List from server");
 	this.alarmList.getItems().setAll(alarmList);
@@ -449,7 +434,6 @@ public class GUIController extends Client implements Initializable {
 	}
     }
 
-    @Override
     public void updateBulbs(ArrayList<LightBulb> bulbList) throws RemoteException {
 	Platform.runLater(new Runnable() {
 

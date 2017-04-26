@@ -1,4 +1,4 @@
-package modules;
+package modules.WiFiScanner;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,11 +12,12 @@ import data.Button;
 import data.LightState;
 import data.Message;
 import data.Message.MessageType;
+import modules.Module;
 import net.Server;
 
-public class NetworkScanner extends Module {
+public class WiFiScanner extends Module {
 
-	private static final Logger LOG = Logger.getLogger(NetworkScanner.class);
+	private static final Logger LOG = Logger.getLogger(WiFiScanner.class);
 	private static final String[] COMMANDS = new String[] { "sudo", "arp-scan", "-l", };
 	private static final int MAX_FAILURES = 30;
 	private static final long SLEEP = 3500;
@@ -24,7 +25,7 @@ public class NetworkScanner extends Module {
 	private ArrayList<String> macs = new ArrayList<>();
 	private int failures = 0;
 
-	public NetworkScanner(Server server) {
+	public WiFiScanner(Server server) {
 		super(server);
 		macs.add("90:E7:C4:C9:6A:CF");
 		start();
