@@ -1,7 +1,7 @@
 package gui;
 
 import data.Message;
-import gui.controller.Control;
+import gui.controller.ControlController;
 import javafx.scene.Node;
 import javafx.scene.control.ListCell;
 import javafx.scene.image.ImageView;
@@ -21,7 +21,7 @@ public class MessageCell extends ListCell<Message> {
 			switch (item.getType()) {
 			case LIGHT_COLOR:
 				Circle circle = new Circle(10);
-				circle.setStyle("-fx-fill: " + Control.parseToColor((int) item.getValue()));
+				circle.setStyle("-fx-fill: " + ControlController.parseToColor((int) item.getValue()));
 				graphic = circle;
 				break;
 			case LIGHT_BRIGHTNESS:

@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 
 import data.LightBulb;
 import data.Message;
-import gui.controller.Control;
+import gui.controller.ControlController;
 import modules.timer.Alarm;
 import net.Client;
 import net.ServerFinder;
@@ -62,17 +62,17 @@ public class GuiClient extends Client {
 
     @Override
     public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
-	Control.getInstance().updateAlarms(alarmList);
+	// TODO
     }
 
     @Override
     public void updateBulbs(ArrayList<LightBulb> bulbList) throws RemoteException {
-	Control.getInstance().updateBulbs(bulbList);
+	ControlController.getInstance().updateBulbs(bulbList);
     }
 
     @Override
     public void notify(Message message) throws RemoteException {
-	Control.getInstance().notify(message);
+	ControlController.getInstance().notify(message);
     }
 
 }

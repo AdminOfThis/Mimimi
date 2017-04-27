@@ -11551,3 +11551,63 @@ java.io.InvalidClassException: data.LightBulb; local class incompatible: stream 
 2017-04-26 11:13:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
 2017-04-26 11:13:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
 2017-04-26 11:13:42 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-04-27 13:48:04 INFO  Main:19 - Starting server
+2017-04-27 13:48:05 INFO  Server:40 - Starting registry
+2017-04-27 13:48:05 INFO  ServerFinder:38 - Starting broadcast server
+2017-04-27 13:48:05 INFO  Server:46 - Detected IP: 127.0.0.1
+2017-04-27 13:48:05 INFO  Sender:53 - Detected OS: windows 10
+2017-04-27 13:48:05 WARN  Sender:55 - !!!=== Will only simulate Sender ===!!!
+2017-04-27 13:48:05 INFO  Sender:251 - Loading Bulb list from File
+2017-04-27 13:48:05 INFO  Sender:260 - Loaded 4 Bulb(s)
+2017-04-27 13:48:05 INFO  Pinger:22 - Starting pinger
+2017-04-27 13:48:05 INFO  SerialScanner:29 - Starting serial scanner
+2017-04-27 13:48:05 INFO  Timer:27 - Starting timer
+2017-04-27 13:48:06 INFO  Main:24 - === STARTED ===
+2017-04-27 13:48:10 INFO  Server:94 - Registering Client 127.0.0.1, # 0
+2017-04-27 13:48:10 INFO  Server:104 - Client 127.0.0.1 successful registered
+2017-04-27 13:48:11 DEBUG Pinger:30 - Ping to 127.0.0.1: 2ms
+2017-04-27 13:48:12 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:13 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:14 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:15 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:16 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:17 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:18 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:19 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:20 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:21 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:22 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:23 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:24 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:25 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:26 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:27 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:28 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:29 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:30 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:31 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:32 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:33 DEBUG Pinger:30 - Ping to 127.0.0.1: 3ms
+2017-04-27 13:48:34 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:35 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:36 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:37 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:38 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:39 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:40 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:41 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:42 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:43 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:44 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:45 DEBUG Pinger:30 - Ping to 127.0.0.1: 3ms
+2017-04-27 13:48:46 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:47 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:48 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:49 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:50 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:51 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 13:48:52 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:53 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 13:48:54 DEBUG Pinger:30 - Ping to 127.0.0.1: 0ms
+2017-04-27 20:28:53 DEBUG Pinger:30 - Ping to 127.0.0.1: 1ms
+2017-04-27 20:28:55 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed

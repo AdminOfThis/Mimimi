@@ -1709,3 +1709,9 @@ Caused by: java.lang.NullPointerException
 2017-04-26 11:13:30 INFO  Main:32 - Starting GUI
 2017-04-26 11:13:30 INFO  MainFrameController:32 - Loading MainFrame
 2017-04-26 11:13:40 INFO  Main:57 - Terminating client
+2017-04-27 13:48:10 INFO  ServerFinder:131 - Found server on 141.58.37.9
+2017-04-27 13:48:10 INFO  GuiClient:48 - Server: 141.58.37.9
+2017-04-27 13:48:10 INFO  Client:31 - Register Client @ 141.58.37.9
+2017-04-27 13:48:10 INFO  Client:39 - Registered successful
+2017-04-27 13:48:10 INFO  Main:32 - Starting GUI
+2017-04-27 13:48:11 INFO  MainFrameController:32 - Loading MainFrame

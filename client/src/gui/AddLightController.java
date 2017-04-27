@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 import data.Address;
 import data.LightBulb;
 import data.LightState;
-import gui.controller.Control;
+import gui.controller.ControlController;
 import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

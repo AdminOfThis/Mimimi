@@ -14,8 +14,6 @@ import data.LightBulb;
 import data.LightState;
 import data.LightState.FIELD;
 import data.Message;
-import gui.AlarmCell;
-import gui.MessageCell;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -25,9 +23,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckMenuItem;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SelectionMode;
@@ -46,12 +41,12 @@ import modules.timer.Alarm;
 import modules.timer.Alarm.Mode;
 import modules.timer.SimpleAlarm;
 
-public class Control implements Initializable {
+public class ControlController implements Initializable {
 
     public static final String MAIN_NAME = "../gui/Mimimi.fxml";
-    private static final Logger LOG = Logger.getLogger(Control.class);
+    private static final Logger LOG = Logger.getLogger(ControlController.class);
     private static final double COLORS = 255;
-    private static Control instance;
+    private static ControlController instance;
     @FXML
     private Slider slider, sliderBright;
     @FXML
@@ -61,27 +56,14 @@ public class Control implements Initializable {
     @FXML
     private Circle circle;
     @FXML
-    private CheckMenuItem showMessages;
+    private ListView<LightBulb> lightList;
+
     @FXML
     private SplitMenuButton modeButton;
     /* Alarm Section */
-    @FXML
-    private ListView<Alarm> alarmList;
-    @FXML
-    private ListView<LightBulb> lightList;
-    @FXML
-    private javafx.scene.control.Button addAlarm, removeAlarm;
-    @FXML
-    private DatePicker alarmDate;
-    @FXML
-    private ComboBox<Mode> alarmCombo;
-    @FXML
-    private ComboBox<Integer> hours, minutes;
-    @FXML
-    private ListView<Message> list;
     private int color = 0;
 
-    public Control() throws RemoteException {
+    public ControlController() throws RemoteException {
 	super();
 	instance = this;
     }
@@ -91,7 +73,6 @@ public class Control implements Initializable {
 	instance = this;
 
 	initRemote();
-	initAlarm();
     }
 
     private void initRemote() {
@@ -162,9 +143,6 @@ public class Control implements Initializable {
 	    color.setStyle("-fx-background-color:#" + bri + bri + bri);
 	    brightnessPane.getChildren().add(color);
 	}
-	list.visibleProperty().bind(showMessages.selectedProperty());
-	list.managedProperty().bind(showMessages.selectedProperty());
-	list.setCellFactory(e -> new MessageCell());
 	lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 	try {
 	    lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
@@ -172,26 +150,6 @@ public class Control implements Initializable {
 	    LOG.error("Unable to load Lights from Server", e1);
 	}
 
-    }
-
-    private void initAlarm() {
-	alarmList.setCellFactory(e -> new AlarmCell());
-	alarmCombo.getItems().addAll(Mode.values());
-	try {
-	    ArrayList<Alarm> alarmList = GuiClient.getInstance().getServer().getAlarmList();
-	    this.alarmList.getItems().addAll(alarmList);
-	} catch (RemoteException e) {
-	    LOG.error("Unable to get Alarms from Server", e);
-	}
-	addAlarm.disableProperty().bind(alarmCombo.valueProperty().isNull().or(alarmDate.valueProperty().isNull())
-		.or(hours.valueProperty().isNull()).or(minutes.valueProperty().isNull()));
-	removeAlarm.disableProperty().bind(alarmList.getSelectionModel().selectedItemProperty().isNull());
-	for (int hours = 0; hours <= 23; hours++) {
-	    this.hours.getItems().add(hours);
-	}
-	for (int minutes = 0; minutes <= 59; minutes++) {
-	    this.minutes.getItems().add(minutes);
-	}
     }
 
     private void updateColor(int value, boolean send) {
@@ -238,7 +196,7 @@ public class Control implements Initializable {
 	return result;
     }
 
-    public static Control getInstance() {
+    public static ControlController getInstance() {
 
 	return instance;
     }
@@ -255,13 +213,6 @@ public class Control implements Initializable {
 	default:
 	    break;
 	}
-	Platform.runLater(new Runnable() {
-
-	    @Override
-	    public void run() {
-		list.getItems().add(message);
-	    }
-	});
     }
 
     private void sendBtn(Button btn) {
@@ -378,45 +329,6 @@ public class Control implements Initializable {
 	LOG.info("Terminating Client");
 	Platform.exit();
 	System.exit(0);
-    }
-
-    @FXML
-    private void addAlarm(ActionEvent e) {
-	// TODO
-	Mode mode = alarmCombo.getValue();
-	LocalDate cal = alarmDate.getValue();
-	GregorianCalendar date = new GregorianCalendar();
-	date.set(GregorianCalendar.YEAR, cal.getYear());
-	date.set(GregorianCalendar.MONTH, cal.getMonthValue() - 1);
-	date.set(GregorianCalendar.DAY_OF_MONTH, cal.getDayOfMonth());
-	date.set(GregorianCalendar.HOUR_OF_DAY, hours.getValue());
-	date.set(GregorianCalendar.MINUTE, minutes.getValue());
-	date.set(GregorianCalendar.SECOND, 0);
-	SimpleAlarm alarm = new SimpleAlarm(date, mode, new LightState(FIELD.COLOR, 0));
-	try {
-	    GuiClient.getInstance().getServer().addAlarm(alarm);
-	    alarmCombo.setValue(null);
-	    alarmDate.setValue(null);
-	    hours.setValue(null);
-	    minutes.setValue(null);
-	} catch (RemoteException e1) {
-	    LOG.error("Unable to set alarm on server", e1);
-	}
-    }
-
-    @FXML
-    private void removeAlarm(ActionEvent e) {
-	Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
-	try {
-	    GuiClient.getInstance().getServer().removeAlarm(alarm);
-	} catch (RemoteException e1) {
-	    LOG.error("Cannot reach server to remove alarm", e1);
-	}
-    }
-
-    public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
-	LOG.info("Received new alarms List from server");
-	this.alarmList.getItems().setAll(alarmList);
     }
 
     @FXML
