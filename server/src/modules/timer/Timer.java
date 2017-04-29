@@ -41,7 +41,7 @@ public class Timer extends Module {
 			// search for alarms to execute
 			if (alarm.isTimeToExecute()) {
 				// TODO
-				LOG.debug("Executing alarm");
+				LOG.info("Executing alarm");
 				Sender.getInstance().queueFirst(alarm.getCmd());
 				if (alarm.isDone()) {
 					if (alarm.getMode() == Mode.ONCE) {
@@ -64,15 +64,16 @@ public class Timer extends Module {
 
 	public void addAlarm(Alarm alarm) {
 		addList.add(alarm);
-		LOG.info("Alarm added: " + alarm.toString());
+		LOG.debug("Alarm added: " + alarm.toString());
 	}
 
 	public void removeAlarm(Alarm alarm) {
 		removeList.add(alarm);
-		LOG.info("Alarm removed: " + alarm.toString());
+		LOG.debug("Alarm removed: " + alarm.toString());
 	}
 
 	public ArrayList<Alarm> getAlarmList() {
-		return new ArrayList<>(alarmList);
+		// return new ArrayList<>(alarmList);
+		return alarmList;
 	}
 }

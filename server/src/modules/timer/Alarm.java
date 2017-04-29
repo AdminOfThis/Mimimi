@@ -15,6 +15,8 @@ public abstract class Alarm implements Serializable {
 	 */
 	private static final long serialVersionUID = -1178811957835437175L;
 	private static final Logger LOG = Logger.getLogger(Alarm.class);
+	private static int count = 0;
+	private int id;
 
 	public enum Mode {
 		ONCE, HOUR, DAY, WEEK, MONTH, YEAR
@@ -26,6 +28,12 @@ public abstract class Alarm implements Serializable {
 	public Alarm(Mode m, GregorianCalendar d) {
 		this.mode = m;
 		this.date = d;
+		this.id = count;
+		count++;
+	}
+
+	public int getID() {
+		return id;
 	}
 
 	public void rewindAlarm() {
@@ -73,6 +81,19 @@ public abstract class Alarm implements Serializable {
 
 	public GregorianCalendar getDate() {
 		return date;
+	}
+
+	public void setDate(GregorianCalendar cal) {
+		this.date = cal;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Alarm) {
+			Alarm other = (Alarm) obj;
+			return this.getID() == other.getID();
+		}
+		return false;
 	}
 
 }

@@ -3,7 +3,9 @@ package gui.controller;
 import java.net.URL;
 import java.rmi.RemoteException;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.ResourceBundle;
 
@@ -14,12 +16,15 @@ import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import main.GuiClient;
 import modules.timer.Alarm;
@@ -78,12 +83,19 @@ public class AlarmController implements Initializable {
 				updateAlarmEditor(newValue);
 			}
 		});
-		datePicker.valueProperty().addListener(new ChangeListener<LocalDate>() {
+		alarmList.setOnKeyPressed(new EventHandler<KeyEvent>() {
 
 			@Override
-			public void changed(ObservableValue<? extends LocalDate> observable, LocalDate oldValue, LocalDate newValue) {
-				// TODO Auto-generated method stub
-
+			public void handle(KeyEvent event) {
+				if (event.getCode() == KeyCode.DELETE) {
+					Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
+					try {
+						GuiClient.getInstance().getServer().removeAlarm(alarm);
+					}
+					catch (RemoteException e) {
+						LOG.error("Unable to remove alarm", e);
+					}
+				}
 			}
 		});
 	}
@@ -91,10 +103,17 @@ public class AlarmController implements Initializable {
 
 	protected void updateAlarmEditor(Alarm newValue) {
 		if (newValue != null) {
-// LocalDate localDate = datePicker.getValue();
-// Instant instant = Instant.from(localDate.atStartOfDay(ZoneId.systemDefault()));
-// newValue.getDate().setTime(Date.from(instant));
-			datePicker.setValue(LocalDate.from(newValue.getDate().toInstant()));
+			GregorianCalendar date = newValue.getDate();
+			LocalDate localDate = date.getTime().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+			datePicker.setValue(localDate);
+			timeHour.setValue(date.get(GregorianCalendar.HOUR_OF_DAY));
+			timeMinute.setValue(date.get(GregorianCalendar.MINUTE));
+			modeBox.setValue(newValue.getMode());
+		} else {
+			datePicker.setValue(null);
+			timeHour.setValue(null);
+			timeMinute.setValue(null);
+			modeBox.setValue(null);
 		}
 	}
 
@@ -121,9 +140,38 @@ public class AlarmController implements Initializable {
 
 			@Override
 			public void run() {
+
 				alarmList.getItems().setAll(alarmList2);
 			}
 		});
+	}
+
+	@FXML
+	private void saveAlarm(ActionEvent e) {
+		Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
+		if (alarm != null) {
+			try {
+				GregorianCalendar oldCal = alarm.getDate();
+				Date date = Date.from(datePicker.getValue().atStartOfDay(ZoneId.systemDefault()).toInstant());
+				GregorianCalendar cal = new GregorianCalendar();
+				cal.setTime(date);
+
+				cal.set(GregorianCalendar.HOUR_OF_DAY, timeHour.getValue());
+				cal.set(GregorianCalendar.MINUTE, timeMinute.getValue());
+				GuiClient.getInstance().getServer().removeAlarm(alarm);
+				alarm.setDate(cal);
+				alarm.setMode(modeBox.getValue());
+				GuiClient.getInstance().getServer().addAlarm(alarm);
+
+			}
+			catch (RemoteException ex) {
+				LOG.error("Unable to save Alarm", ex);
+			}
+		}
+	}
+
+	@FXML
+	private void cancelAlarm(ActionEvent e) {
 
 	}
 

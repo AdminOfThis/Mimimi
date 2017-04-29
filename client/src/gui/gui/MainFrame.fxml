@@ -7,13 +7,13 @@
 
 <BorderPane fx:id="content" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFrameController">
    <top>
-      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <ToolBar BorderPane.alignment="CENTER">
         <items>
           <Button mnemonicParsing="false" text="Add Bulb" />
         </items>
       </ToolBar>
    </top>
    <left>
-      <ListView fx:id="moduleList" BorderPane.alignment="CENTER" />
+      <ListView fx:id="moduleList" prefWidth="100.0" BorderPane.alignment="CENTER" />
    </left>
 </BorderPane>
