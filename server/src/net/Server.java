@@ -35,7 +35,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	private WiFiScanner scanner;
 	private Timer timer;
 
-	public Server() throws RemoteException {
+	public Server() throws Exception {
 		LOG.info("Starting registry");
 		new ServerFinder();
 		try {
@@ -46,7 +46,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		}
 		catch (MalformedURLException | RemoteException e) {
 			LOG.info("Unable to register RMI-Module");
-			LOG.error(e);
+			throw e;
 		}
 		sender = Sender.getInstance();
 		if (sender.isLinux()) {
