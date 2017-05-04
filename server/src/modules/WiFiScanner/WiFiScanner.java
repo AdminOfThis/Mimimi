@@ -54,7 +54,7 @@ public class WiFiScanner extends Module {
 				reader.close();
 				if (found) {
 					failures = 0;
-					LOG.info("Device found again");
+					LOG.trace("Device found again");
 					if (!deviceConnected) {
 						connected();
 						deviceConnected = true;
@@ -62,7 +62,7 @@ public class WiFiScanner extends Module {
 				} else {
 					if (failures < MAX_FAILURES) {
 						failures++;
-						LOG.debug("No device found (" + failures + "/" + MAX_FAILURES + ")");
+						LOG.trace("No device found (" + failures + "/" + MAX_FAILURES + ")");
 					} else if (deviceConnected) {
 						disconnected();
 						deviceConnected = false;

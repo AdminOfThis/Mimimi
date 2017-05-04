@@ -27,7 +27,7 @@ public class Pinger extends Thread {
 					long dateBefore = new Date().getTime();
 					client.ping();
 					long dateAfter = new Date().getTime();
-					LOG.debug("Ping to " + server.getClients().get(client) + ": " + (dateAfter - dateBefore) + "ms");
+					LOG.trace("Ping to " + server.getClients().get(client) + ": " + (dateAfter - dateBefore) + "ms");
 				}
 				catch (Exception e) {
 					LOG.warn("Unable to ping Client " + server.getClients().get(client) + ", gets removed");

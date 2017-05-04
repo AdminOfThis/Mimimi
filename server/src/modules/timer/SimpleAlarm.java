@@ -1,5 +1,6 @@
 package modules.timer;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 import data.LightState;
@@ -9,8 +10,8 @@ public class SimpleAlarm extends Alarm {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 4346675791191520129L;
-	private LightState state;
+	private static final long	serialVersionUID	= 4346675791191520129L;
+	private LightState			state;
 
 	public SimpleAlarm(GregorianCalendar date, Mode mode, LightState state) {
 		super(mode, date);
@@ -35,5 +36,12 @@ public class SimpleAlarm extends Alarm {
 	@Override
 	public LightState getCmd() {
 		return state;
+	}
+
+	@Override
+	public ArrayList<LightState> constructCMDs() {
+		// TODO Auto-generated method stub
+		return state;
+
 	}
 }
