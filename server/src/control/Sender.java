@@ -1,11 +1,7 @@
 package control;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.nio.ByteBuffer;
@@ -25,7 +21,7 @@ public class Sender {
     private static final Logger LOG = Logger.getLogger(Sender.class);
     private static final String[] ARGS = new String[] { "sudo", "/bin/bash", "-c",
 	    "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
-    private static final String BULB_LIST_FILE = "./bulbs.blb";
+    private static final File BULB_LIST_FILE = new File("./bulbs.data");
     private static final int SEQUENCE_RANGE = 255;
     private static final int SEQUENCE_SPACE = 10;
     private static Sender instance;
@@ -48,6 +44,7 @@ public class Sender {
 	return instance;
     }
 
+    @SuppressWarnings("unchecked")
     private Sender() {
 	String os = System.getProperty("os.name").toLowerCase();
 	LOG.info("Detected OS: " + os);
@@ -57,7 +54,7 @@ public class Sender {
 	} else {
 	    isLinux = true;
 	}
-	bulbList = loadBulbList();
+	bulbList = (ArrayList<LightBulb>) FileUtil.loadList(BULB_LIST_FILE);
 	checkAndStartSendThread();
     }
 
@@ -222,47 +219,15 @@ public class Sender {
     public void addToBulbList(LightBulb bulb) {
 	if (!bulbList.contains(bulb)) {
 	    bulbList.add(bulb);
-	    saveBulbList();
+	    FileUtil.saveList(bulbList, BULB_LIST_FILE);
 	}
     }
 
     public void removeFromBulbList(LightBulb bulb) {
 	if (bulbList.contains(bulb)) {
 	    bulbList.remove(bulb);
-	    saveBulbList();
+	    FileUtil.saveList(bulbList, BULB_LIST_FILE);
 	}
     }
 
-    private void saveBulbList() {
-	LOG.info("Saving Bulb List after Change");
-	try {
-	    FileOutputStream fos = new FileOutputStream(BULB_LIST_FILE);
-	    ObjectOutputStream oos = new ObjectOutputStream(fos);
-	    oos.writeObject(bulbList);
-	    oos.close();
-	} catch (Exception e) {
-	    LOG.error("Error while writing BulbList", e);
-	}
-    }
-
-    @SuppressWarnings("unchecked")
-    private ArrayList<LightBulb> loadBulbList() {
-	ArrayList<LightBulb> result = new ArrayList<>();
-	LOG.info("Loading Bulb list from File");
-	if (!new File(BULB_LIST_FILE).exists() || new File(BULB_LIST_FILE).isDirectory()) {
-	    LOG.warn("Bulb List File not found");
-	} else {
-
-	    try {
-		FileInputStream fos = new FileInputStream(BULB_LIST_FILE);
-		ObjectInputStream oos = new ObjectInputStream(fos);
-		result = (ArrayList<LightBulb>) oos.readObject();
-		LOG.info("Loaded " + result.size() + " Bulb(s)");
-		oos.close();
-	    } catch (Exception e) {
-		LOG.error("Error while reading BulbList", e);
-	    }
-	}
-	return result;
-    }
 }

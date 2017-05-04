@@ -137,8 +137,7 @@ public class AlarmFrameController implements Initializable {
 
     @FXML
     private void saveAlarm(ActionEvent e) {
-	Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
-	if(controller !=null) {
+	if (controller != null) {
 	    controller.save();
 	}
     }
