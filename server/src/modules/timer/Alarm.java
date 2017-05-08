@@ -8,8 +8,8 @@ import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
-import data.LightBulb;
-import data.LightState;
+import data.Bulb;
+import data.State;
 
 public abstract class Alarm implements Serializable {
 
@@ -25,9 +25,9 @@ public abstract class Alarm implements Serializable {
 		ONCE, HOUR, DAY, WEEK, MONTH, YEAR
 	};
 
-	private Mode					mode;
-	private GregorianCalendar		date;
-	private ArrayList<LightBulb>	bulbList	= new ArrayList<>();
+	private Mode				mode;
+	private GregorianCalendar	date;
+	private ArrayList<Bulb>		bulbList	= new ArrayList<>();
 
 	public Alarm(Mode m, GregorianCalendar d) {
 		this.mode = m;
@@ -81,7 +81,7 @@ public abstract class Alarm implements Serializable {
 
 	abstract boolean isDone();
 
-	abstract public ArrayList<LightState> constructCMDs();
+	abstract public ArrayList<State> constructCMDs();
 
 	public Mode getMode() {
 		return mode;
@@ -108,21 +108,21 @@ public abstract class Alarm implements Serializable {
 		return false;
 	}
 
-	public ArrayList<LightBulb> getBulbList() {
+	public ArrayList<Bulb> getBulbList() {
 		return new ArrayList<>(bulbList);
 	}
 
-	public void addBulb(LightBulb bulb) {
+	public void addBulb(Bulb bulb) {
 		if (!bulbList.contains(bulb)) {
 			bulbList.add(bulb);
 		}
 	}
 
-	public void removeBulb(LightBulb bulb) {
+	public void removeBulb(Bulb bulb) {
 		bulbList.remove(bulb);
 	}
 
-	public void setAllBulbs(Collection<LightBulb> bulbs) {
+	public void setAllBulbs(Collection<Bulb> bulbs) {
 		bulbList.clear();
 		bulbList.addAll(bulbs);
 	}

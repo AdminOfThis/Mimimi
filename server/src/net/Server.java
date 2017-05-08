@@ -13,8 +13,8 @@ import org.apache.log4j.Logger;
 
 import control.Sender;
 import data.Address;
-import data.LightBulb;
-import data.LightState;
+import data.Bulb;
+import data.LightCommand;
 import data.Message;
 import modules.SerialScanner;
 import modules.WiFiScanner.WiFiScanner;
@@ -28,12 +28,12 @@ import modules.timer.Timer;
  */
 public class Server extends UnicastRemoteObject implements ServerInterface {
 
-	private static final long serialVersionUID = 2772132741229895918L;
-	private static final Logger LOG = Logger.getLogger(Server.class);
-	private ConcurrentHashMap<ClientInterface, String> clients = new ConcurrentHashMap<>();
-	private Sender sender;
-	private WiFiScanner scanner;
-	private Timer timer;
+	private static final long							serialVersionUID	= 2772132741229895918L;
+	private static final Logger							LOG					= Logger.getLogger(Server.class);
+	private ConcurrentHashMap<ClientInterface, String>	clients				= new ConcurrentHashMap<>();
+	private Sender										sender;
+	private WiFiScanner									scanner;
+	private Timer										timer;
 
 	public Server() throws Exception {
 		LOG.info("Starting registry");
@@ -77,7 +77,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	@Override
-	public void update(LightState state) throws RemoteException {
+	public void update(LightCommand state) throws RemoteException {
 		sender.update(state);
 		// Message message = new Message(MessageType.LIGHT_COLOR, "Color changed");
 		// message.setValue(color);
@@ -185,24 +185,24 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public Address connectLightBulb() throws RemoteException {
-		return sender.connectLightBulb(Address.idToAddress(Sender.getInstance().getBulbList().size()));
-
+		// return sender.connectLightBulb(Address.idToAddress(Sender.getInstance().getBulbList().size()));
+		return null;
 	}
 
 	@Override
-	public void addLightBulbToList(LightBulb bulb) throws RemoteException {
+	public void addLightBulbToList(Bulb bulb) throws RemoteException {
 		Sender.getInstance().addToBulbList(bulb);
 		updateLights();
 	}
 
 	@Override
-	public void removeLightFromBulbList(LightBulb bulb) throws RemoteException {
+	public void removeLightFromBulbList(Bulb bulb) throws RemoteException {
 		Sender.getInstance().removeFromBulbList(bulb);
 		updateLights();
 	}
 
 	@Override
-	public ArrayList<LightBulb> getBulbList() throws RemoteException {
+	public ArrayList<Bulb> getBulbList() throws RemoteException {
 		return Sender.getInstance().getBulbList();
 
 	}

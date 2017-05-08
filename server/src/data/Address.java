@@ -4,34 +4,34 @@ import java.io.Serializable;
 
 public class Address implements Serializable {
 
-    /**
-    * 
-    */
-    private static final long serialVersionUID = -7986294771317163598L;
-    private static final int START_ADDRESS = 0x0D33;
-    // TODO Remove, replace by Bulb Selection
-    public static final Address MASTER_ADRESS = new Address(START_ADDRESS, 0x00);
-    private int remote;
-    private int group;
+	private Remote	remote;
+	private int		group;
 
-    public Address(int address, int group) {
-	this.remote = address;
-	this.group = group;
-    }
 
-    public static Address idToAddress(int id) {
-	id++;
-	int group = id % 4;
-	int address = id - group;
-	address = START_ADDRESS + (address / 4);
-	return new Address(address, group);
-    }
+	public Address(Remote remote, int group) {
+		this.remote = remote;
+		this.group = group;
+	}
 
-    public int getGroup() {
-	return group;
-    }
+	// GETTER AND SETTER
+	public Remote getRemote() {
+		return remote;
+	}
 
-    public int getAddress() {
-	return remote;
-    }
+	public void setRemote(Remote remote) {
+		this.remote = remote;
+	}
+
+	public int getGroup() {
+		return group;
+	}
+
+	public void setGroup(int group) {
+		this.group = group;
+	}
+
+	@Override
+	public String toString() {
+		return remote.toString() + " " + String.format("%02X", group);
+	}
 }

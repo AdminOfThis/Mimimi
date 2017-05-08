@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 import data.Button;
+import data.Command;
 import data.LightState;
 import data.Message;
 import data.Message.MessageType;
@@ -17,13 +18,13 @@ import net.Server;
 
 public class WiFiScanner extends Module {
 
-	private static final Logger LOG = Logger.getLogger(WiFiScanner.class);
-	private static final String[] COMMANDS = new String[] { "sudo", "arp-scan", "-l", };
-	private static final int MAX_FAILURES = 30;
-	private static final long SLEEP = 3500;
+	private static final Logger		LOG				= Logger.getLogger(WiFiScanner.class);
+	private static final String[]	COMMANDS		= new String[] { "sudo", "arp-scan", "-l", };
+	private static final int		MAX_FAILURES	= 30;
+	private static final long		SLEEP			= 3500;
 	/**/
-	private ArrayList<String> macs = new ArrayList<>();
-	private int failures = 0;
+	private ArrayList<String>		macs			= new ArrayList<>();
+	private int						failures		= 0;
 
 	public WiFiScanner(Server server) {
 		super(server);
@@ -78,7 +79,7 @@ public class WiFiScanner extends Module {
 
 	private void disconnected() throws RemoteException {
 		LOG.info("Device disconnected");
-		getServer().update(new LightState(Button.ALL_OFF));
+		getServer().update(new Command(Button.ALL_OFF));
 		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
 	}
 

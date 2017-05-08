@@ -5,8 +5,8 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 
 import data.Address;
-import data.LightBulb;
-import data.LightState;
+import data.Bulb;
+import data.LightCommand;
 import modules.timer.Alarm;
 
 public interface ServerInterface extends Remote {
@@ -15,7 +15,7 @@ public interface ServerInterface extends Remote {
 
 	public boolean clientRegister(int index) throws RemoteException;
 
-	public void update(LightState state) throws RemoteException;
+	public void update(LightCommand state) throws RemoteException;
 
 	public void addNetworkDevice(String mac) throws RemoteException;
 
@@ -35,9 +35,9 @@ public interface ServerInterface extends Remote {
 
 	public Address connectLightBulb() throws RemoteException;
 
-	public void addLightBulbToList(LightBulb bulb) throws RemoteException;
+	public void addLightBulbToList(Bulb bulb) throws RemoteException;
 
-	public void removeLightFromBulbList(LightBulb bulb) throws RemoteException;
+	public void removeLightFromBulbList(Bulb bulb) throws RemoteException;
 
-	public ArrayList<LightBulb> getBulbList() throws RemoteException;
+	public ArrayList<Bulb> getBulbList() throws RemoteException;
 }
