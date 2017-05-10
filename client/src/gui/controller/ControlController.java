@@ -7,11 +7,12 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
+import data.Bulb;
 import data.Button;
-import data.LightBulb;
-import data.LightState;
-import data.LightState.FIELD;
+import data.Command;
 import data.Message;
+import data.State;
+import data.State.FIELD;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -38,25 +39,25 @@ import main.GuiClient;
 
 public class ControlController implements Initializable {
 
-	public static final String MAIN_NAME = "../gui/Mimimi.fxml";
-	private static final Logger LOG = Logger.getLogger(ControlController.class);
-	private static final double COLORS = 255;
-	private static ControlController instance;
+	public static final String			MAIN_NAME	= "../gui/Mimimi.fxml";
+	private static final Logger			LOG			= Logger.getLogger(ControlController.class);
+	private static final double			COLORS		= 255;
+	private static ControlController	instance;
 	@FXML
-	private Slider slider, sliderBright;
+	private Slider						slider, sliderBright;
 	@FXML
-	private HBox colorPane, brightnessPane;
+	private HBox						colorPane, brightnessPane;
 	@FXML
-	private VBox anchor;
+	private VBox						anchor;
 	@FXML
-	private Circle circle;
+	private Circle						circle;
 	@FXML
-	private ListView<LightBulb> lightList;
+	private ListView<Bulb>				lightList;
 
 	@FXML
-	private SplitMenuButton modeButton;
+	private SplitMenuButton				modeButton;
 	/* Alarm Section */
-	private int color = 0;
+	private int							color		= 0;
 
 	public ControlController() throws RemoteException {
 		super();
@@ -91,9 +92,14 @@ public class ControlController implements Initializable {
 			@Override
 			public void handle(MouseEvent event) {
 				try {
-					GuiClient.getInstance().getServer().update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
-				}
-				catch (RemoteException e) {
+					State state = new State(Button.BRIGHTNESS);
+					state.setBrightness((int) Math.round(sliderBright.getValue()));
+					Command cmd = new Command(state);
+					for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+						cmd.addAddress(b.getAddress());
+					}
+					GuiClient.getInstance().getServer().update(cmd);
+				} catch (RemoteException e) {
 					LOG.error(e);
 				}
 			}
@@ -103,9 +109,14 @@ public class ControlController implements Initializable {
 			@Override
 			public void handle(KeyEvent event) {
 				try {
-					GuiClient.getInstance().getServer().update(new LightState(FIELD.BRIGHTNESS, (int) Math.round(sliderBright.getValue())));
-				}
-				catch (RemoteException e) {
+					State state = new State(Button.BRIGHTNESS);
+					state.setBrightness((int) Math.round(sliderBright.getValue()));
+					Command cmd = new Command(state);
+					for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+						cmd.addAddress(b.getAddress());
+					}
+					GuiClient.getInstance().getServer().update(cmd);
+				} catch (RemoteException e) {
 					LOG.error(e);
 				}
 			}
@@ -141,8 +152,7 @@ public class ControlController implements Initializable {
 		lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 		try {
 			lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
-		}
-		catch (RemoteException e1) {
+		} catch (RemoteException e1) {
 			LOG.error("Unable to load Lights from Server", e1);
 		}
 
@@ -158,11 +168,15 @@ public class ControlController implements Initializable {
 				}
 			}
 			if (send) {
-				GuiClient.getInstance().getServer().update(new LightState(value));
+				State state = new State(value);
+				Command cmd = new Command(state);
+				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+					cmd.addAddress(b.getAddress());
+				}
+				GuiClient.getInstance().getServer().update(cmd);
 			}
 			color = value;
-		}
-		catch (RemoteException e) {
+		} catch (RemoteException e) {
 			LOG.error(e);
 			e.printStackTrace();
 		}
@@ -214,9 +228,12 @@ public class ControlController implements Initializable {
 
 	private void sendBtn(Button btn) {
 		try {
-			GuiClient.getInstance().getServer().update(new LightState(btn));
-		}
-		catch (RemoteException e) {
+			State state = new State(btn);
+			Command cmd = new Command(state);
+			for(Bulb b: lightList.getSelectionModel().getSelectedItems()) {
+				cmd.addAddress(b.getAddress());
+			}
+			GuiClient.getInstance().getServer().update(cmd);} catch (RemoteException e) {
 			LOG.error(e);
 		}
 	}
@@ -241,9 +258,12 @@ public class ControlController implements Initializable {
 		try {
 			MenuItem node = (MenuItem) e.getSource();
 			int count = modeButton.getItems().indexOf(node);
-			GuiClient.getInstance().getServer().update(new LightState(FIELD.MODE, count));
-		}
-		catch (Exception ex) {
+			State state = new State(FIELD.MODE, count);
+			Command cmd = new Command(state);
+			for(Bulb b: lightList.getSelectionModel().getSelectedItems()) {
+				cmd.addAddress(b.getAddress());
+			}
+			GuiClient.getInstance().getServer().update(cmd);	} catch (Exception ex) {
 			LOG.error(ex);
 		}
 	}
@@ -340,13 +360,12 @@ public class ControlController implements Initializable {
 			stage.setTitle("Pair Light");
 			stage.setAlwaysOnTop(true);
 			stage.showAndWait();
-		}
-		catch (Exception ex) {
+		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}
 
-	public void updateBulbs(ArrayList<LightBulb> bulbList) throws RemoteException {
+	public void updateBulbs(ArrayList<Bulb> bulbList) throws RemoteException {
 		Platform.runLater(new Runnable() {
 
 			@Override

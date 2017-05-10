@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
-import data.LightBulb;
+import data.Bulb;
 import data.Message;
 import gui.controller.AlarmFrameController;
 import gui.controller.ControlController;
@@ -16,16 +16,15 @@ import net.ServerInterface;
 
 public class GuiClient extends Client {
 
-	private static final Logger LOG = Logger.getLogger(GuiClient.class);
-	private static GuiClient instance;
-	private ServerInterface server;
+	private static final Logger	LOG	= Logger.getLogger(GuiClient.class);
+	private static GuiClient	instance;
+	private ServerInterface		server;
 
 	public static GuiClient getInstance() {
 		if (instance == null) {
 			try {
 				instance = new GuiClient();
-			}
-			catch (RemoteException e) {
+			} catch (RemoteException e) {
 				LOG.error(e);
 			}
 		}
@@ -69,7 +68,7 @@ public class GuiClient extends Client {
 	}
 
 	@Override
-	public void updateBulbs(ArrayList<LightBulb> bulbList) throws RemoteException {
+	public void updateBulbs(ArrayList<Bulb> bulbList) throws RemoteException {
 		ControlController.getInstance().updateBulbs(bulbList);
 	}
 

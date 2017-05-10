@@ -6,9 +6,8 @@ import java.util.Collection;
 
 public class Command implements Serializable, LightCommand {
 
-	private State			state;
-	private ArrayList<Address>	AddressList	= new ArrayList<>();
-
+	private State				state;
+	private ArrayList<Address>	addressList	= new ArrayList<>();
 
 	public Command(State state) {
 		this.state = state;
@@ -16,45 +15,46 @@ public class Command implements Serializable, LightCommand {
 
 	public Command(State state, Address Address) {
 		this.state = state;
-		AddressList.add(Address);
+		addressList.add(Address);
 	}
 
 	public Command(State state, Collection<Address> Addresss) {
 		this.state = state;
-		AddressList.addAll(Addresss);
+		addressList.addAll(Addresss);
 	}
-
 
 	// GETTER AND SETTER
 	public State getState() {
 		return state;
 	}
 
-
 	public void setState(State state) {
 		this.state = state;
 	}
 
-
 	public ArrayList<Address> getAddressList() {
-		return AddressList;
+		return addressList;
 	}
 
-
 	public void setAddressList(ArrayList<Address> AddressList) {
-		this.AddressList = AddressList;
+		this.addressList = AddressList;
+	}
+
+	public void addAddress(Address address) {
+		if (!addressList.contains(address)) {
+			addressList.add(address);
+		}
 	}
 
 	@Override
 	public ArrayList<String> buildCommands() {
 		ArrayList<String> resultList = new ArrayList<>();
-		for (Address Address : AddressList) {
+		for (Address Address : addressList) {
 			// TODO optimization if every Address in remote control is afffected
 			resultList.add(buildCommand(Address));
 		}
 		return resultList;
 	}
-
 
 	private String buildCommand(Address address) {
 		String command = "";
@@ -85,7 +85,7 @@ public class Command implements Serializable, LightCommand {
 	}
 
 	private String buildBrighnessCommand(State state, Address address) {
-		return String.format("%02X", Integer.toHexString(parseToBrightness(state.getBrightness()) + address.getGroup()));
+		return String.format("%02X", parseToBrightness(state.getBrightness()) + address.getGroup());
 	}
 
 	private String buildButtonCommand(State state) {

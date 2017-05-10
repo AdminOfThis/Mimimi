@@ -33,9 +33,9 @@ public interface ServerInterface extends Remote {
 
 	public ArrayList<Alarm> getAlarmList() throws RemoteException;
 
-	public Address connectLightBulb() throws RemoteException;
+	public Address connectBulb() throws RemoteException;
 
-	public void addLightBulbToList(Bulb bulb) throws RemoteException;
+	public void addBulbToList(Bulb bulb) throws RemoteException;
 
 	public void removeLightFromBulbList(Bulb bulb) throws RemoteException;
 

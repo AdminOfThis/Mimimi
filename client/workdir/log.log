@@ -1715,3 +1715,47 @@ Caused by: java.lang.NullPointerException
 2017-04-27 13:48:10 INFO  Client:39 - Registered successful
 2017-04-27 13:48:10 INFO  Main:32 - Starting GUI
 2017-04-27 13:48:11 INFO  MainFrameController:32 - Loading MainFrame
+2017-05-10 12:31:30 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:31:30 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:31:30 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:31:30 INFO  Client:39 - Registered successful
+2017-05-10 12:31:30 INFO  Main:32 - Starting GUI
+2017-05-10 12:31:31 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:31:41 INFO  Main:57 - Terminating client
+2017-05-10 12:31:49 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:31:49 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:31:50 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:31:50 INFO  Client:39 - Registered successful
+2017-05-10 12:31:50 INFO  Main:32 - Starting GUI
+2017-05-10 12:31:50 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:32:05 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-10 12:32:57 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:32:58 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:32:58 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:32:58 INFO  Client:39 - Registered successful
+2017-05-10 12:32:58 INFO  Main:32 - Starting GUI
+2017-05-10 12:32:58 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:33:00 INFO  Main:57 - Terminating client
+2017-05-10 12:33:15 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-10 12:33:39 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:33:39 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:33:39 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:33:39 INFO  Client:39 - Registered successful
+2017-05-10 12:33:39 INFO  Main:32 - Starting GUI
+2017-05-10 12:33:40 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:33:55 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-10 12:34:08 INFO  Main:57 - Terminating client
+2017-05-10 12:34:52 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:34:52 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:34:52 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:34:52 INFO  Client:39 - Registered successful
+2017-05-10 12:34:52 INFO  Main:32 - Starting GUI
+2017-05-10 12:34:53 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:35:05 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-10 12:36:17 INFO  ServerFinder:131 - Found server on 141.58.38.109
+2017-05-10 12:36:17 INFO  GuiClient:49 - Server: 141.58.38.109
+2017-05-10 12:36:17 INFO  Client:31 - Register Client @ 141.58.38.109
+2017-05-10 12:36:17 INFO  Client:39 - Registered successful
+2017-05-10 12:36:17 INFO  Main:32 - Starting GUI
+2017-05-10 12:36:18 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-10 12:36:37 INFO  AddBulbController:65 - Sending ON MESSAGE

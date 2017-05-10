@@ -179,12 +179,12 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	@Override
-	public Address connectLightBulb() throws RemoteException {
+	public Address connectBulb() throws RemoteException {
 		return sender.connectLightBulb();
 	}
 
 	@Override
-	public void addLightBulbToList(Bulb bulb) throws RemoteException {
+	public void addBulbToList(Bulb bulb) throws RemoteException {
 		Sender.getInstance().addToBulbList(bulb);
 		updateLights();
 	}

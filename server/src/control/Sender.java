@@ -80,6 +80,7 @@ public class Sender {
 							}
 							ArrayList<String> rawCommands = queue.poll().buildCommands();
 							for (String cmd : rawCommands) {
+								System.out.println(cmd);
 								LOG.debug(cmd);
 								if (isLinux()) {
 									for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
@@ -91,8 +92,8 @@ public class Sender {
 							}
 							LOG.trace("Sended, " + queue.size() + " queued");
 						} catch (Exception e) {
-							LOG.error("Sender crashed");
-							LOG.debug(e);
+							LOG.error("Sender crashed", e);
+
 							if (proc != null) {
 								proc.destroyForcibly();
 							}

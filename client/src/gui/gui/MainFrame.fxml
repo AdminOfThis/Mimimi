@@ -5,11 +5,11 @@
 <?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane fx:id="content" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFrameController">
+<BorderPane fx:id="content" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFrameController">
    <top>
       <ToolBar BorderPane.alignment="CENTER">
         <items>
-          <Button mnemonicParsing="false" text="Add Bulb" />
+          <Button mnemonicParsing="false" onAction="#addBulb" text="Add Bulb" />
         </items>
       </ToolBar>
    </top>
