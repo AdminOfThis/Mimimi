@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 
 import control.FileUtil;
 import control.Sender;
-import data.LightState;
 import modules.Module;
 import modules.timer.Alarm.Mode;
 import net.Server;
@@ -54,8 +53,7 @@ public class Timer extends Module {
 			if (alarm.isTimeToExecute()) {
 				// TODO
 				LOG.info("Executing alarm");
-				ArrayList<LightState> alarmCommands = alarm.constructCMDs();
-				Sender.getInstance().queueFirst(alarmCommands);
+				Sender.getInstance().queueFirst(alarm);
 				if (alarm.isDone()) {
 					if (alarm.getMode() == Mode.ONCE) {
 						removeList.add(alarm);

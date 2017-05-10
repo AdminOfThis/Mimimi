@@ -9,9 +9,10 @@ import java.util.GregorianCalendar;
 import org.apache.log4j.Logger;
 
 import data.Bulb;
+import data.LightCommand;
 import data.State;
 
-public abstract class Alarm implements Serializable {
+public abstract class Alarm implements Serializable, LightCommand {
 
 	/**
 	 * 
@@ -80,8 +81,6 @@ public abstract class Alarm implements Serializable {
 	abstract boolean isTimeToExecute();
 
 	abstract boolean isDone();
-
-	abstract public ArrayList<State> constructCMDs();
 
 	public Mode getMode() {
 		return mode;

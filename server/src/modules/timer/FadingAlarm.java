@@ -1,10 +1,11 @@
 package modules.timer;
 
+import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
-import data.LightState;
+import data.State;
 
 public class FadingAlarm extends Alarm {
 
@@ -35,20 +36,21 @@ public class FadingAlarm extends Alarm {
 	}
 
 	@Override
-	public LightState getCmd() {
-		long time = System.currentTimeMillis();
-		long endtime = getDate().getTimeInMillis();
-		long starttime = (endtime - (60000 * minutesFading));
-		// TODO
-		double range = endtime - starttime;
-		double done = time - starttime;
-		double percent = (done / range);
-		LOG.info("Fading Alarm to " + Math.round(percent * 100.0) + "% done");
-		double colorRange = (startColor - endColor);
-		int color = (int) Math.round(startColor + (colorRange * percent));
-		LightState state = new LightState(color);
-		state.setBrightness((int) Math.round(LightState.BRIGHTNESS_MAX * percent));
-		return state;
+	public ArrayList<String> buildCommands() {
+//		long time = System.currentTimeMillis();
+//		long endtime = getDate().getTimeInMillis();
+//		long starttime = (endtime - (60000 * minutesFading));
+//		// TODO
+//		double range = endtime - starttime;
+//		double done = time - starttime;
+//		double percent = (done / range);
+//		LOG.info("Fading Alarm to " + Math.round(percent * 100.0) + "% done");
+//		double colorRange = (startColor - endColor);
+//		int color = (int) Math.round(startColor + (colorRange * percent));
+//		LightState state = new LightState(color);
+//		state.setBrightness((int) Math.round(LightState.BRIGHTNESS_MAX * percent));
+//		return state;
+		return null;
 	}
 
 }

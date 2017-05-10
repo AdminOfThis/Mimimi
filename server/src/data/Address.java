@@ -7,7 +7,6 @@ public class Address implements Serializable {
 	private Remote	remote;
 	private int		group;
 
-
 	public Address(Remote remote, int group) {
 		this.remote = remote;
 		this.group = group;
@@ -34,4 +33,5 @@ public class Address implements Serializable {
 	public String toString() {
 		return remote.toString() + " " + String.format("%02X", group);
 	}
+
 }

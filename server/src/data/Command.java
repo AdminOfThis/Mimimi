@@ -7,21 +7,21 @@ import java.util.Collection;
 public class Command implements Serializable, LightCommand {
 
 	private State			state;
-	private ArrayList<Bulb>	bulbList	= new ArrayList<>();
+	private ArrayList<Address>	AddressList	= new ArrayList<>();
 
 
 	public Command(State state) {
 		this.state = state;
 	}
 
-	public Command(State state, Bulb bulb) {
+	public Command(State state, Address Address) {
 		this.state = state;
-		bulbList.add(bulb);
+		AddressList.add(Address);
 	}
 
-	public Command(State state, Collection<Bulb> bulbs) {
+	public Command(State state, Collection<Address> Addresss) {
 		this.state = state;
-		bulbList.addAll(bulbs);
+		AddressList.addAll(Addresss);
 	}
 
 
@@ -36,34 +36,34 @@ public class Command implements Serializable, LightCommand {
 	}
 
 
-	public ArrayList<Bulb> getBulbList() {
-		return bulbList;
+	public ArrayList<Address> getAddressList() {
+		return AddressList;
 	}
 
 
-	public void setBulbList(ArrayList<Bulb> bulbList) {
-		this.bulbList = bulbList;
+	public void setAddressList(ArrayList<Address> AddressList) {
+		this.AddressList = AddressList;
 	}
 
 	@Override
 	public ArrayList<String> buildCommands() {
 		ArrayList<String> resultList = new ArrayList<>();
-		for (Bulb bulb : bulbList) {
-			// TODO optimization if every bulb in remote control is afffected
-			resultList.add(buildCommand(bulb));
+		for (Address Address : AddressList) {
+			// TODO optimization if every Address in remote control is afffected
+			resultList.add(buildCommand(Address));
 		}
 		return resultList;
 	}
 
 
-	private String buildCommand(Bulb bulb) {
+	private String buildCommand(Address address) {
 		String command = "";
 		// return "B" + Integer.toHexString(currentMode) + " " + addressString + " " + colorString + " " + brightString + " " + buttonString;
 
 		command = buildCurrentMode(state);
-		command += " " + buildRemoteCommand(bulb);
+		command += " " + buildRemoteCommand(address);
 		command += " " + buildColorCommand(state);
-		command += " " + buildBrighnessCommand(state, bulb.getAddress());
+		command += " " + buildBrighnessCommand(state, address);
 		command += " " + buildButtonCommand(state);
 		return command;
 	}
@@ -76,8 +76,8 @@ public class Command implements Serializable, LightCommand {
 		}
 	}
 
-	private String buildRemoteCommand(Bulb bulb) {
-		return bulb.getAddress().getRemote().toString();
+	private String buildRemoteCommand(Address address) {
+		return address.getRemote().toString();
 	}
 
 	public String buildColorCommand(State state) {

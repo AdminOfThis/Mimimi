@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Bulb implements Serializable {
 
-	public static final Bulb	ALL_BULBS	= new Bulb(new Address(new Remote(), 0));
 
 	private Address				address;
 	private String				name;

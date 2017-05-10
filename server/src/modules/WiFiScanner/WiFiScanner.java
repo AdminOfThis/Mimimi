@@ -8,9 +8,6 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
-import data.Button;
-import data.Command;
-import data.LightState;
 import data.Message;
 import data.Message.MessageType;
 import modules.Module;
@@ -70,8 +67,7 @@ public class WiFiScanner extends Module {
 					}
 				}
 				Thread.sleep(SLEEP);
-			}
-			catch (IOException | InterruptedException e) {
+			} catch (IOException | InterruptedException e) {
 				LOG.error(e);
 			}
 		}
@@ -79,13 +75,13 @@ public class WiFiScanner extends Module {
 
 	private void disconnected() throws RemoteException {
 		LOG.info("Device disconnected");
-		getServer().update(new Command(Button.ALL_OFF));
+		// getServer().update(new Command(Button.ALL_OFF));
 		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
 	}
 
 	private void connected() throws RemoteException {
 		LOG.info("Device connected");
-		getServer().update(new LightState(Button.ALL_ON));
+		// getServer().update(new LightState(Button.ALL_ON));
 		getServer().notifyClients(new Message(MessageType.WIFI, "WiFi-Device connected"));
 	}
 

@@ -5,7 +5,6 @@ import java.io.Serializable;
 public class Remote implements Serializable {
 
 	private static final int	START_REMOTE	= 0x0D33;
-	private static int			remoteCount		= 1;
 	private int					id;
 
 	@Override
@@ -15,14 +14,21 @@ public class Remote implements Serializable {
 		return string;
 	}
 
-
-	public Remote() {
-		this.id = remoteCount;
-		remoteCount++;
-	}
-
 	public Remote(int id) {
 		this.id = id;
+	}
+
+	public int getID() {
+		return id;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Remote) {
+			Remote other = (Remote) obj;
+			return other.getID() == this.getID();
+		}
+		return false;
 	}
 
 }
