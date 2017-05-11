@@ -9,9 +9,11 @@ public class Remote implements Serializable {
 
 	@Override
 	public String toString() {
-		String string = String.format("%06X", id);
-		string = string.substring(0, 1) + " " + string.substring(2, 3) + " " + string.substring(4, 5);
-		return string;
+		String string = String.format("%04X", (id + START_REMOTE));
+		String part1 = string.substring(0, 2);
+		String part2 = string.substring(2, 4);
+
+		return part1 + " " + part2;
 	}
 
 	public Remote(int id) {

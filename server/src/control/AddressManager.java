@@ -1,5 +1,6 @@
 package control;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import data.Address;
@@ -9,7 +10,7 @@ public class AddressManager {
 
 	private static AddressManager	instance;
 
-	private ArrayList<Address>		freeAddresses	= new ArrayList<Address>();
+	private ArrayList<Address>		freeAddresses	= new ArrayList<>();
 	private ArrayList<Address>		usedAddresses	= new ArrayList<>();
 	private ArrayList<Remote>		usedRemotes		= new ArrayList<>();
 
@@ -42,15 +43,22 @@ public class AddressManager {
 
 	private Remote createNewRemote() {
 		// TODO lückenfinder
-		return new Remote(usedRemotes.size() + 1);
+		return new Remote(usedRemotes.size());
 	}
 
 	public boolean blockAddress(Address a) {
-		if (usedAddresses.contains(a)) {
-			return false;
-		}
+		if (usedAddresses.contains(a)) { return false; }
 		usedAddresses.add(a);
+		saveAddresses();
 		return true;
+	}
+
+	private void saveAddresses() {
+		ArrayList<String> clearAddresses = new ArrayList<>();
+		for (Address a : usedAddresses) {
+			clearAddresses.add(a.getRemote().toString() + " : " + a.getGroup());
+		}
+		FileUtil.saveClearList(clearAddresses, new File("./addresses.txt"));
 	}
 
 	public void freeAddress(Address a) {
@@ -69,9 +77,10 @@ public class AddressManager {
 			if (!stillOneUsedAddress) {
 				usedRemotes.remove(remoteToCheck);
 			}
+			saveAddresses();
 		}
 	}
-	
+
 	public ArrayList<Remote> getAllRemotes() {
 		return new ArrayList<>(usedRemotes);
 	}

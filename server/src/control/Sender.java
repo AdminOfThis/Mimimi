@@ -19,19 +19,21 @@ import data.State;
 
 public class Sender {
 
-	private static final Logger		LOG				= Logger.getLogger(Sender.class);
-	private static final String[]	ARGS			= new String[] { "sudo", "/bin/bash", "-c",
-	        "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
-	private static final File		BULB_LIST_FILE	= new File("./bulbs.data");
-	private static final int		SEQUENCE_RANGE	= 255;
-	private static final int		SEQUENCE_SPACE	= 10;
+	private static final Logger		LOG					= Logger.getLogger(Sender.class);
+	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c", "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
+	private static final File		BULB_LIST_FILE		= new File("./bulbs.data");
+	private static final int		SEQUENCE_RANGE		= 255;
+	private static final int		SEQUENCE_SPACE		= 10;
 	private static Sender			instance;
 	private boolean					isLinux;
 	private Thread					thread;
-	private Queue<LightCommand>		queue			= new LinkedBlockingQueue<>();
+	private Queue<LightCommand>		queue				= new LinkedBlockingQueue<>();
 	private Process					proc;
 	private OutputStreamWriter		writer;
-	private ArrayList<Bulb>			bulbList		= new ArrayList<>();
+	private ArrayList<Bulb>			bulbList			= new ArrayList<>();
+	private int						currentColor		= 0;
+	private int						currentBrightness	= 0;
+
 
 	public static Sender getInstance() {
 		if (instance == null) {
@@ -74,11 +76,13 @@ public class Sender {
 									proc = pb.start();
 									OutputStream outStream = proc.getOutputStream();
 									writer = new OutputStreamWriter(outStream);
-								} catch (IOException e) {
+								}
+								catch (IOException e) {
 									LOG.error(e);
 								}
 							}
-							ArrayList<String> rawCommands = queue.poll().buildCommands();
+							LightCommand command = queue.poll();
+							ArrayList<String> rawCommands = buildCommands(command);
 							for (String cmd : rawCommands) {
 								System.out.println(cmd);
 								LOG.debug(cmd);
@@ -91,7 +95,8 @@ public class Sender {
 								}
 							}
 							LOG.trace("Sended, " + queue.size() + " queued");
-						} catch (Exception e) {
+						}
+						catch (Exception e) {
 							LOG.error("Sender crashed", e);
 
 							if (proc != null) {
@@ -100,6 +105,8 @@ public class Sender {
 						}
 					}
 				}
+
+
 			});
 			thread.start();
 		}
@@ -130,6 +137,7 @@ public class Sender {
 
 	public Address connectLightBulb() {
 		Address address = AddressManager.getInstance().getNextFreeAddress();
+		AddressManager.getInstance().blockAddress(address);
 		LOG.info("SEND CONNECT");
 		// Send signal for 3 seconds
 		Button btn = null;
@@ -152,6 +160,70 @@ public class Sender {
 		return address;
 	}
 
+	private ArrayList<String> buildCommands(LightCommand cmd) {
+		ArrayList<String> result = new ArrayList<>();
+		for (Address a : cmd.getAddressList()) {
+			result.add(buildCommand(a, cmd.getState()));
+		}
+		return result;
+	}
+
+	private String buildCommand(Address address, State state) {
+		String command = "";
+		// return "B" + Integer.toHexString(currentMode) + " " + addressString + " " + colorString + " " + brightString + " " + buttonString;
+
+		command = buildCurrentMode(state);
+		command += " " + buildRemoteCommand(address);
+		command += " " + buildColorCommand(state);
+		command += " " + buildBrighnessCommand(state, address);
+		command += " " + buildButtonCommand(state);
+		return command;
+	}
+
+	public String buildCurrentMode(State state) {
+		if (state.getButton() == Button.MODE) {
+			return "B8";
+		} else {
+			return "B0";
+		}
+	}
+
+	private String buildRemoteCommand(Address address) {
+		return address.getRemote().toString();
+	}
+
+	public String buildColorCommand(State state) {
+		int color = state.getColor();
+		if (color < 0) {
+			color = currentColor;
+		} else {
+			currentColor = color;
+		}
+		return String.format("%02X", color);
+	}
+
+	private String buildBrighnessCommand(State state, Address address) {
+		int brightness = state.getBrightness();
+		if (brightness < 0) {
+			brightness = currentBrightness;
+		} else {
+			currentBrightness = brightness;
+		}
+		return String.format("%02X", parseToBrightness(brightness) + address.getGroup());
+	}
+
+	private String buildButtonCommand(State state) {
+		return String.format("%02X", state.getButton().getCmd());
+	}
+
+	private int parseToBrightness(int round) {
+		int newRound = -(round - 16) * 8;
+		if (newRound < 0) {
+			newRound = newRound + 256;
+		}
+		return Math.abs(newRound);
+	}
+
 	public ArrayList<Bulb> getBulbList() {
 		return new ArrayList<>(bulbList);
 	}
@@ -169,5 +241,6 @@ public class Sender {
 			FileUtil.saveList(bulbList, BULB_LIST_FILE);
 		}
 	}
+
 
 }

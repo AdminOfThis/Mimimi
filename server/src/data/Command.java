@@ -24,6 +24,7 @@ public class Command implements Serializable, LightCommand {
 	}
 
 	// GETTER AND SETTER
+	@Override
 	public State getState() {
 		return state;
 	}
@@ -46,57 +47,4 @@ public class Command implements Serializable, LightCommand {
 		}
 	}
 
-	@Override
-	public ArrayList<String> buildCommands() {
-		ArrayList<String> resultList = new ArrayList<>();
-		for (Address Address : addressList) {
-			// TODO optimization if every Address in remote control is afffected
-			resultList.add(buildCommand(Address));
-		}
-		return resultList;
-	}
-
-	private String buildCommand(Address address) {
-		String command = "";
-		// return "B" + Integer.toHexString(currentMode) + " " + addressString + " " + colorString + " " + brightString + " " + buttonString;
-
-		command = buildCurrentMode(state);
-		command += " " + buildRemoteCommand(address);
-		command += " " + buildColorCommand(state);
-		command += " " + buildBrighnessCommand(state, address);
-		command += " " + buildButtonCommand(state);
-		return command;
-	}
-
-	public String buildCurrentMode(State state) {
-		if (state.getButton() == Button.MODE) {
-			return "B8";
-		} else {
-			return "B0";
-		}
-	}
-
-	private String buildRemoteCommand(Address address) {
-		return address.getRemote().toString();
-	}
-
-	public String buildColorCommand(State state) {
-		return String.format("%02X", state.getColor());
-	}
-
-	private String buildBrighnessCommand(State state, Address address) {
-		return String.format("%02X", parseToBrightness(state.getBrightness()) + address.getGroup());
-	}
-
-	private String buildButtonCommand(State state) {
-		return String.format("%02X", state.getButton().getCmd());
-	}
-
-	private int parseToBrightness(int round) {
-		int newRound = -(round - 16) * 8;
-		if (newRound < 0) {
-			newRound = newRound + 256;
-		}
-		return Math.abs(newRound);
-	}
 }

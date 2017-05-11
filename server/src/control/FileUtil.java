@@ -1,8 +1,11 @@
 package control;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InvalidClassException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -22,7 +25,8 @@ public abstract class FileUtil {
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(list);
 			oos.close();
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			LOG.error("Error while writing list", e);
 		}
 	}
@@ -39,14 +43,40 @@ public abstract class FileUtil {
 				result = (ArrayList<?>) oos.readObject();
 				LOG.info("Loaded " + result.size() + " objects from list");
 				oos.close();
-			} catch (InvalidClassException e) {
+			}
+			catch (InvalidClassException e) {
 				LOG.warn("File Version is too old, will delete old File");
 				file.delete();
-			} catch (Exception e) {
+			}
+			catch (Exception e) {
 
 				LOG.error("Error while reading list from file " + file.getName(), e);
 			}
 		}
 		return result;
+	}
+
+	public static void saveClearList(ArrayList<String> list, File file) {
+		if (!file.exists()) {
+			try {
+				file.createNewFile();
+			}
+			catch (IOException e) {
+				LOG.error("Unable to create File");
+			}
+		}
+		if (file.exists() && !file.isDirectory()) {
+			try {
+				BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+				for (Object o : list) {
+					writer.write(o.toString());
+				}
+				writer.close();
+			}
+			catch (IOException e) {
+				LOG.error("Unable to write List to File");
+			}
+
+		}
 	}
 }

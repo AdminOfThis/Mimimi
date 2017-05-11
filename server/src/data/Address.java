@@ -31,7 +31,7 @@ public class Address implements Serializable {
 
 	@Override
 	public String toString() {
-		return remote.toString() + " " + String.format("%02X", group);
+		return "Remote: " + remote.toString() + ", Group: " + group;
 	}
 
 }

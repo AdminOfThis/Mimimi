@@ -24,7 +24,8 @@ public class GuiClient extends Client {
 		if (instance == null) {
 			try {
 				instance = new GuiClient();
-			} catch (RemoteException e) {
+			}
+			catch (RemoteException e) {
 				LOG.error(e);
 			}
 		}
@@ -69,7 +70,9 @@ public class GuiClient extends Client {
 
 	@Override
 	public void updateBulbs(ArrayList<Bulb> bulbList) throws RemoteException {
-		ControlController.getInstance().updateBulbs(bulbList);
+		if (ControlController.getInstance() != null) {
+			ControlController.getInstance().updateBulbs(bulbList);
+		}
 	}
 
 	@Override
