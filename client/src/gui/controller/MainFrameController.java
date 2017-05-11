@@ -62,33 +62,34 @@ public class MainFrameController implements Initializable {
 		if (loadedModules.containsKey(newValue)) {
 			return loadedModules.get(newValue);
 		} else {
-			String moduleName;
-			if (modules.containsKey(newValue)) {
-				moduleName = modules.get(newValue);
-			} else {
-				moduleName = newValue;
-			}
-			FXMLLoader loader = new FXMLLoader(getClass().getResource(GUI_FOLDER + moduleName));
-			Node node = null;
-			try {
-				node = loader.load();
-				loadedModules.put(newValue, node);
-				AnchorPane.setLeftAnchor(node, 0.0);
-				AnchorPane.setTopAnchor(node, 0.0);
-				AnchorPane.setRightAnchor(node, 0.0);
-				AnchorPane.setBottomAnchor(node, 0.0);
-			} catch (IOException e) {
-				LOG.error("Unable to load Module", e);
-			}
-			return node;
+			Node module = loadScene(modules.get(newValue));
+			loadedModules.put(newValue, module);
+			return module;
+
 		}
+	}
+
+	private Node loadScene(String fileName) {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource(GUI_FOLDER + fileName));
+		Node node = null;
+		try {
+			node = loader.load();
+			AnchorPane.setLeftAnchor(node, 0.0);
+			AnchorPane.setTopAnchor(node, 0.0);
+			AnchorPane.setRightAnchor(node, 0.0);
+			AnchorPane.setBottomAnchor(node, 0.0);
+		}
+		catch (IOException e) {
+			LOG.error("Unable to load Module", e);
+		}
+		return node;
 	}
 
 	@FXML
 	public void addBulb(ActionEvent e) {
 		Stage stage2 = new Stage();
 		stage2.initModality(Modality.WINDOW_MODAL);
-		Parent p = (Parent) loadModule("AddBulb.fxml");
+		Parent p = (Parent) loadScene("AddBulb.fxml");
 		stage2.setScene(new Scene(p));
 		stage2.showAndWait();
 	}

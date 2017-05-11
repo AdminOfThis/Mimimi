@@ -53,8 +53,7 @@ public class AddBulbController implements Initializable {
 			@Override
 			public void handle(long now) {
 				if (start + WAIT >= System.currentTimeMillis()) {
-					text.setText(
-					        "Wait: " + Math.round((WAIT - (System.currentTimeMillis() - start) + 800) / 1000) + "s");
+					text.setText("Wait: " + Math.round((WAIT - (System.currentTimeMillis() - start) + 800) / 1000) + "s");
 					bar.setProgress((System.currentTimeMillis() - start) / WAIT);
 				} else {
 					bar.getStyleClass().add("greenBar");
@@ -66,7 +65,8 @@ public class AddBulbController implements Initializable {
 						text.setText("Command sent");
 						try {
 							address = GuiClient.getInstance().getServer().connectBulb();
-						} catch (RemoteException e) {
+						}
+						catch (RemoteException e) {
 							LOG.error(e);
 						}
 						btnOn.setVisible(true);
@@ -107,7 +107,8 @@ public class AddBulbController implements Initializable {
 			Command cmd = new Command(new State(btn), address);
 			try {
 				GuiClient.getInstance().getServer().update(cmd);
-			} catch (RemoteException e1) {
+			}
+			catch (RemoteException e1) {
 				LOG.error(e);
 			}
 		}
@@ -134,7 +135,8 @@ public class AddBulbController implements Initializable {
 			Command cmd = new Command(new State(btn), address);
 			try {
 				GuiClient.getInstance().getServer().update(cmd);
-			} catch (RemoteException e1) {
+			}
+			catch (RemoteException e1) {
 				LOG.error(e);
 			}
 		}
@@ -147,7 +149,8 @@ public class AddBulbController implements Initializable {
 			Bulb bulb = new Bulb(address, nameField.getText());
 			try {
 				GuiClient.getInstance().getServer().addBulbToList(bulb);
-			} catch (RemoteException e1) {
+			}
+			catch (RemoteException e1) {
 				LOG.error(e1);
 			}
 		}

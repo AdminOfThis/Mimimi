@@ -70,6 +70,8 @@ public abstract class FileUtil {
 				BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 				for (Object o : list) {
 					writer.write(o.toString());
+					writer.write("\r\n");
+					writer.flush();
 				}
 				writer.close();
 			}

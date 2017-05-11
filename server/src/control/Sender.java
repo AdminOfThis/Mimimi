@@ -53,6 +53,10 @@ public class Sender {
 			isLinux = true;
 		}
 		bulbList = (ArrayList<Bulb>) FileUtil.loadList(BULB_LIST_FILE);
+		boolean success = AddressManager.getInstance().setUsedAddresses(bulbList);
+		if (!success) {
+			LOG.warn("Unable to import used Bulb Addresses");
+		}
 		checkAndStartSendThread();
 	}
 

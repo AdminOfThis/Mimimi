@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 
 import data.Address;
+import data.Bulb;
 import data.Remote;
 
 public class AddressManager {
@@ -79,6 +80,16 @@ public class AddressManager {
 			}
 			saveAddresses();
 		}
+	}
+
+	public boolean setUsedAddresses(ArrayList<Bulb> bulbList) {
+		if (usedAddresses.isEmpty()) {
+			for (Bulb b : bulbList) {
+				usedAddresses.add(b.getAddress());
+			}
+			return true;
+		}
+		return false;
 	}
 
 	public ArrayList<Remote> getAllRemotes() {
