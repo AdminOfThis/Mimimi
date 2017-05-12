@@ -11,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import org.apache.log4j.Logger;
 
+import control.AddressManager;
 import control.Sender;
 import data.Address;
 import data.Bulb;
@@ -31,7 +32,6 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	private static final long							serialVersionUID	= 2772132741229895918L;
 	private static final Logger							LOG					= Logger.getLogger(Server.class);
 	private ConcurrentHashMap<ClientInterface, String>	clients				= new ConcurrentHashMap<>();
-	private Sender										sender;
 	private WiFiScanner									scanner;
 	private Timer										timer;
 
@@ -43,13 +43,11 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			String address = ServerFinder.getIp();
 			Naming.rebind("rmi://" + address + "/Mimimi", this);
 			LOG.info("Detected IP: " + address);
-		}
-		catch (MalformedURLException | RemoteException e) {
+		} catch (MalformedURLException | RemoteException e) {
 			LOG.info("Unable to register RMI-Module");
 			throw e;
 		}
-		sender = Sender.getInstance();
-		if (sender.isLinux()) {
+		if (Sender.getInstance().isLinux()) {
 			scanner = new WiFiScanner(this);
 		}
 		new Pinger(this);
@@ -67,8 +65,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Notify Client " + clients.get(client));
 					try {
 						client.notify(message);
-					}
-					catch (RemoteException e) {
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -78,7 +75,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public void update(LightCommand state) throws RemoteException {
-		sender.update(state);
+		Sender.getInstance().update(state);
 		// Message message = new Message(MessageType.LIGHT_COLOR, "Color changed");
 		// message.setValue(color);
 		// notifyClients(message);
@@ -89,8 +86,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		String clientIP;
 		try {
 			clientIP = getClientHost();
-		}
-		catch (ServerNotActiveException e) {
+		} catch (ServerNotActiveException e) {
 			return -1;
 		}
 		LOG.info("Registering Client " + clientIP + ", # " + clients.size());
@@ -105,8 +101,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			clients.put(clIntf, clientIP);
 			LOG.info("Client " + clientIP + " successful registered");
 			return true;
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
@@ -156,8 +151,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Updating Alarms on Clients" + clients.get(client));
 					try {
 						client.updateAlarms(timer.getAlarmList());
-					}
-					catch (RemoteException e) {
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -173,9 +167,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 				public void run() {
 					LOG.debug("Updating Lights on Clients" + clients.get(client));
 					try {
-						client.updateBulbs(sender.getBulbList());
-					}
-					catch (RemoteException e) {
+						client.updateBulbs(AddressManager.getInstance().getUsedBulbs());
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -185,24 +178,24 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public Address connectBulb() throws RemoteException {
-		return sender.connectLightBulb();
+		return Sender.getInstance().connectLightBulb();
 	}
 
 	@Override
 	public void addBulbToList(Bulb bulb) throws RemoteException {
-		Sender.getInstance().addToBulbList(bulb);
+		AddressManager.getInstance().registerBulb(bulb);
 		updateLights();
 	}
 
 	@Override
 	public void removeLightFromBulbList(Bulb bulb) throws RemoteException {
-		Sender.getInstance().removeFromBulbList(bulb);
+		AddressManager.getInstance().freeAddress(bulb);
 		updateLights();
 	}
 
 	@Override
 	public ArrayList<Bulb> getBulbList() throws RemoteException {
-		return Sender.getInstance().getBulbList();
+		return AddressManager.getInstance().getUsedBulbs();
 
 	}
 }

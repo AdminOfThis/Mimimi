@@ -20,7 +20,8 @@ import data.State;
 public class Sender {
 
 	private static final Logger		LOG					= Logger.getLogger(Sender.class);
-	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c", "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
+	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c",
+	        "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
 	private static final File		BULB_LIST_FILE		= new File("./bulbs.data");
 	private static final int		SEQUENCE_RANGE		= 255;
 	private static final int		SEQUENCE_SPACE		= 10;
@@ -30,10 +31,8 @@ public class Sender {
 	private Queue<LightCommand>		queue				= new LinkedBlockingQueue<>();
 	private Process					proc;
 	private OutputStreamWriter		writer;
-	private ArrayList<Bulb>			bulbList			= new ArrayList<>();
 	private int						currentColor		= 0;
 	private int						currentBrightness	= 0;
-
 
 	public static Sender getInstance() {
 		if (instance == null) {
@@ -52,11 +51,8 @@ public class Sender {
 		} else {
 			isLinux = true;
 		}
-		bulbList = (ArrayList<Bulb>) FileUtil.loadList(BULB_LIST_FILE);
-		boolean success = AddressManager.getInstance().setUsedAddresses(bulbList);
-		if (!success) {
-			LOG.warn("Unable to import used Bulb Addresses");
-		}
+		int loadedBulbs = AddressManager.getInstance().getUsedBulbs().size();
+		LOG.info("Loaded " + loadedBulbs + " bulbs");
 		checkAndStartSendThread();
 	}
 
@@ -72,6 +68,7 @@ public class Sender {
 							continue;
 						}
 						try {
+
 							if ((proc == null || !proc.isAlive()) && isLinux) {
 								LOG.info("Starting Sender");
 								LOG.debug("Building new process");
@@ -80,8 +77,7 @@ public class Sender {
 									proc = pb.start();
 									OutputStream outStream = proc.getOutputStream();
 									writer = new OutputStreamWriter(outStream);
-								}
-								catch (IOException e) {
+								} catch (IOException e) {
 									LOG.error(e);
 								}
 							}
@@ -99,8 +95,7 @@ public class Sender {
 								}
 							}
 							LOG.trace("Sended, " + queue.size() + " queued");
-						}
-						catch (Exception e) {
+						} catch (Exception e) {
 							LOG.error("Sender crashed", e);
 
 							if (proc != null) {
@@ -109,7 +104,6 @@ public class Sender {
 						}
 					}
 				}
-
 
 			});
 			thread.start();
@@ -141,7 +135,6 @@ public class Sender {
 
 	public Address connectLightBulb() {
 		Address address = AddressManager.getInstance().getNextFreeAddress();
-		AddressManager.getInstance().blockAddress(address);
 		LOG.info("SEND CONNECT");
 		// Send signal for 3 seconds
 		Button btn = null;
@@ -227,24 +220,4 @@ public class Sender {
 		}
 		return Math.abs(newRound);
 	}
-
-	public ArrayList<Bulb> getBulbList() {
-		return new ArrayList<>(bulbList);
-	}
-
-	public void addToBulbList(Bulb bulb) {
-		if (!bulbList.contains(bulb)) {
-			bulbList.add(bulb);
-			FileUtil.saveList(bulbList, BULB_LIST_FILE);
-		}
-	}
-
-	public void removeFromBulbList(Bulb bulb) {
-		if (bulbList.contains(bulb)) {
-			bulbList.remove(bulb);
-			FileUtil.saveList(bulbList, BULB_LIST_FILE);
-		}
-	}
-
-
 }

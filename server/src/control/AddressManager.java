@@ -11,11 +11,13 @@ public class AddressManager {
 
 	private static AddressManager	instance;
 
+	private static final File		BULB_LIST		= new File("./bulbs.data");
 	private ArrayList<Address>		freeAddresses	= new ArrayList<>();
-	private ArrayList<Address>		usedAddresses	= new ArrayList<>();
+	private ArrayList<Bulb>			usedBulbs		= new ArrayList<>();
 	private ArrayList<Remote>		usedRemotes		= new ArrayList<>();
 
 	private AddressManager() {
+		usedBulbs = (ArrayList<Bulb>) FileUtil.loadList(BULB_LIST);
 
 	}
 
@@ -47,30 +49,35 @@ public class AddressManager {
 		return new Remote(usedRemotes.size());
 	}
 
-	public boolean blockAddress(Address a) {
-		if (usedAddresses.contains(a)) { return false; }
-		usedAddresses.add(a);
+	public boolean registerBulb(Bulb a) {
+		if (usedBulbs.contains(a)) {
+			return false;
+		}
+		usedBulbs.add(a);
 		saveAddresses();
 		return true;
 	}
 
 	private void saveAddresses() {
 		ArrayList<String> clearAddresses = new ArrayList<>();
-		for (Address a : usedAddresses) {
-			clearAddresses.add(a.getRemote().toString() + " : " + a.getGroup());
+		for (Bulb b : usedBulbs) {
+			clearAddresses
+			        .add(b.getName() + ": " + b.getAddress().getRemote().toString() + " ," + b.getAddress().getGroup());
 		}
 		FileUtil.saveClearList(clearAddresses, new File("./addresses.txt"));
+		FileUtil.saveList(usedBulbs, BULB_LIST);
+
 	}
 
-	public void freeAddress(Address a) {
+	public void freeAddress(Bulb a) {
 
-		if (usedAddresses.contains(a)) {
-			usedAddresses.remove(a);
-			freeAddresses.add(a);
-			Remote remoteToCheck = a.getRemote();
+		if (usedBulbs.contains(a)) {
+			usedBulbs.remove(a);
+			freeAddresses.add(a.getAddress());
+			Remote remoteToCheck = a.getAddress().getRemote();
 			boolean stillOneUsedAddress = false;
-			for (Address a2 : usedAddresses) {
-				if (a2.getRemote().equals(remoteToCheck)) {
+			for (Bulb bulb : usedBulbs) {
+				if (bulb.getAddress().getRemote().equals(remoteToCheck)) {
 					stillOneUsedAddress = true;
 					break;
 				}
@@ -82,18 +89,12 @@ public class AddressManager {
 		}
 	}
 
-	public boolean setUsedAddresses(ArrayList<Bulb> bulbList) {
-		if (usedAddresses.isEmpty()) {
-			for (Bulb b : bulbList) {
-				usedAddresses.add(b.getAddress());
-			}
-			return true;
-		}
-		return false;
-	}
-
 	public ArrayList<Remote> getAllRemotes() {
 		return new ArrayList<>(usedRemotes);
+	}
+
+	public ArrayList<Bulb> getUsedBulbs() {
+		return new ArrayList<>(usedBulbs);
 	}
 
 }
