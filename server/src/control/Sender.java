@@ -1,6 +1,5 @@
 package control;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -11,7 +10,6 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.log4j.Logger;
 
 import data.Address;
-import data.Bulb;
 import data.Button;
 import data.Command;
 import data.LightCommand;
@@ -22,7 +20,6 @@ public class Sender {
 	private static final Logger		LOG					= Logger.getLogger(Sender.class);
 	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c",
 	        "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
-	private static final File		BULB_LIST_FILE		= new File("./bulbs.data");
 	private static final int		SEQUENCE_RANGE		= 255;
 	private static final int		SEQUENCE_SPACE		= 10;
 	private static Sender			instance;
@@ -41,7 +38,6 @@ public class Sender {
 		return instance;
 	}
 
-	@SuppressWarnings("unchecked")
 	private Sender() {
 		String os = System.getProperty("os.name").toLowerCase();
 		LOG.info("Detected OS: " + os);

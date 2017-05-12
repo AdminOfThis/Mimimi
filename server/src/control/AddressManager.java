@@ -16,9 +16,9 @@ public class AddressManager {
 	private ArrayList<Bulb>			usedBulbs		= new ArrayList<>();
 	private ArrayList<Remote>		usedRemotes		= new ArrayList<>();
 
+	@SuppressWarnings("unchecked")
 	private AddressManager() {
 		usedBulbs = (ArrayList<Bulb>) FileUtil.loadList(BULB_LIST);
-
 	}
 
 	public static AddressManager getInstance() {

@@ -13,8 +13,8 @@ public class SerialScanner extends Module {
 
 	private static final Logger	LOG			= Logger.getLogger(SerialScanner.class);
 	private SerialPort			port;
-	private int					color		= 0;
-	private int					brightness	= 0;
+	//private int					color		= 0;
+	//private int					brightness	= 0;
 
 	public SerialScanner(Server server) {
 		super(server);
@@ -62,7 +62,7 @@ public class SerialScanner extends Module {
 	private void knobToData(String input) {
 		LOG.info("Serial: " + input);
 		//TODO
-		//		String[] cmd = input.split(":");
+//		String[] cmd = input.split(":");
 //		try {
 //			int newColor = Integer.parseInt(cmd[0]);
 //			if (color != newColor) {

@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 
 import data.Bulb;
 import data.LightCommand;
-import data.State;
 
 public abstract class Alarm implements Serializable, LightCommand {
 

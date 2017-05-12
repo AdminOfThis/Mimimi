@@ -4,8 +4,9 @@ import java.io.Serializable;
 
 public class Address implements Serializable {
 
-	private Remote	remote;
-	private int		group;
+	private static final long	serialVersionUID	= 4622780137163075945L;
+	private Remote				remote;
+	private int					group;
 
 	public Address(Remote remote, int group) {
 		this.remote = remote;

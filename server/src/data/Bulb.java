@@ -4,10 +4,9 @@ import java.io.Serializable;
 
 public class Bulb implements Serializable {
 
-
+	private static final long	serialVersionUID	= 87094281771026090L;
 	private Address				address;
 	private String				name;
-
 
 	public Bulb(Address address) {
 		this.address = address;
@@ -39,6 +38,5 @@ public class Bulb implements Serializable {
 	public String toString() {
 		return name;
 	}
-
 
 }

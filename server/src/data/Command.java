@@ -6,8 +6,9 @@ import java.util.Collection;
 
 public class Command implements Serializable, LightCommand {
 
+	private static final long	serialVersionUID	= 316855726837350042L;
 	private State				state;
-	private ArrayList<Address>	addressList	= new ArrayList<>();
+	private ArrayList<Address>	addressList			= new ArrayList<>();
 
 	public Command(State state) {
 		this.state = state;

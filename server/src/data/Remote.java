@@ -4,7 +4,8 @@ import java.io.Serializable;
 
 public class Remote implements Serializable {
 
-	private static final int	START_REMOTE	= 0x0D33;
+	private static final long	serialVersionUID	= 5632451551976912937L;
+	private static final int	START_REMOTE		= 0x0D33;
 	private int					id;
 
 	@Override
