@@ -91,34 +91,14 @@ public class ControlController implements Initializable {
 
 			@Override
 			public void handle(MouseEvent event) {
-				try {
-					State state = new State(Button.BRIGHTNESS);
-					state.setBrightness((int) Math.round(sliderBright.getValue()));
-					Command cmd = new Command(state);
-					for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-						cmd.addAddress(b.getAddress());
-					}
-					GuiClient.getInstance().getServer().update(cmd);
-				} catch (RemoteException e) {
-					LOG.error(e);
-				}
+				updateBrightness((int) Math.round(sliderBright.getValue()), true);
 			}
 		});
 		sliderBright.setOnKeyReleased(new EventHandler<KeyEvent>() {
 
 			@Override
 			public void handle(KeyEvent event) {
-				try {
-					State state = new State(Button.BRIGHTNESS);
-					state.setBrightness((int) Math.round(sliderBright.getValue()));
-					Command cmd = new Command(state);
-					for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-						cmd.addAddress(b.getAddress());
-					}
-					GuiClient.getInstance().getServer().update(cmd);
-				} catch (RemoteException e) {
-					LOG.error(e);
-				}
+				updateBrightness((int) Math.round(sliderBright.getValue()), true);
 			}
 		});
 		circle.setStyle("-fx-fill:" + parseToColor(0));
@@ -158,6 +138,24 @@ public class ControlController implements Initializable {
 
 	}
 
+	private void updateBrightness(int value, boolean send) {
+		if (send) {
+			try {
+				State state = new State(Button.BRIGHTNESS);
+				state.setBrightness((int) Math.round(sliderBright.getValue()));
+				Command cmd = new Command(state);
+				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+					cmd.addAddress(b.getAddress());
+				}
+				GuiClient.getInstance().getServer().update(cmd);
+			} catch (RemoteException e) {
+				LOG.error(e);
+			}
+		} else {
+			sliderBright.setValue(value);
+		}
+	}
+
 	private void updateColor(int value, boolean send) {
 		try {
 			String hexValue = parseToColor(value);
@@ -174,6 +172,8 @@ public class ControlController implements Initializable {
 					cmd.addAddress(b.getAddress());
 				}
 				GuiClient.getInstance().getServer().update(cmd);
+			} else {
+				slider.setValue(value);
 			}
 			color = value;
 		} catch (RemoteException e) {
@@ -212,15 +212,14 @@ public class ControlController implements Initializable {
 		return instance;
 	}
 
-	// TODO Adding icon depending on Message type
-
 	public void notify(Message message) {
-		// TODO Update GUI incase of external Color update
 		switch (message.getType()) {
 		case LIGHT_COLOR:
 			updateColor((int) message.getValue(), false);
 			slider.setValue(color);
 			break;
+		case LIGHT_BRIGHTNESS:
+			updateBrightness((int) message.getValue(), false);
 		default:
 			break;
 		}
@@ -230,10 +229,11 @@ public class ControlController implements Initializable {
 		try {
 			State state = new State(btn);
 			Command cmd = new Command(state);
-			for(Bulb b: lightList.getSelectionModel().getSelectedItems()) {
+			for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
 				cmd.addAddress(b.getAddress());
 			}
-			GuiClient.getInstance().getServer().update(cmd);} catch (RemoteException e) {
+			GuiClient.getInstance().getServer().update(cmd);
+		} catch (RemoteException e) {
 			LOG.error(e);
 		}
 	}
@@ -260,10 +260,11 @@ public class ControlController implements Initializable {
 			int count = modeButton.getItems().indexOf(node);
 			State state = new State(FIELD.MODE, count);
 			Command cmd = new Command(state);
-			for(Bulb b: lightList.getSelectionModel().getSelectedItems()) {
+			for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
 				cmd.addAddress(b.getAddress());
 			}
-			GuiClient.getInstance().getServer().update(cmd);	} catch (Exception ex) {
+			GuiClient.getInstance().getServer().update(cmd);
+		} catch (Exception ex) {
 			LOG.error(ex);
 		}
 	}

@@ -1759,3 +1759,14 @@ Caused by: java.lang.NullPointerException
 2017-05-10 12:36:17 INFO  Main:32 - Starting GUI
 2017-05-10 12:36:18 INFO  MainFrameController:38 - Loading MainFrame
 2017-05-10 12:36:37 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-12 09:19:36 INFO  ServerFinder:131 - Found server on 141.58.57.194
+2017-05-12 09:19:36 INFO  GuiClient:50 - Server: 141.58.57.194
+2017-05-12 09:19:36 INFO  Client:31 - Register Client @ 141.58.57.194
+2017-05-12 09:19:36 INFO  Client:39 - Registered successful
+2017-05-12 09:19:36 INFO  Main:32 - Starting GUI
+2017-05-12 09:19:37 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-12 09:19:48 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-12 09:19:54 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-12 09:21:35 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-12 09:21:44 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-12 10:09:32 INFO  Main:57 - Terminating client
