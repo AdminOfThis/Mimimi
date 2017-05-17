@@ -7,6 +7,7 @@ public class Remote implements Serializable {
 	private static final long	serialVersionUID	= 5632451551976912937L;
 	private static final int	START_REMOTE		= 0x0D33;
 	private int					id;
+	private Address				address;
 
 	@Override
 	public String toString() {
@@ -19,6 +20,11 @@ public class Remote implements Serializable {
 
 	public Remote(int id) {
 		this.id = id;
+		this.address = new Address(this, 0);
+	}
+
+	public Address getAddress() {
+		return address;
 	}
 
 	public int getID() {

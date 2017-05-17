@@ -15,8 +15,12 @@ import control.AddressManager;
 import control.Sender;
 import data.Address;
 import data.Bulb;
+import data.Button;
+import data.Command;
 import data.LightCommand;
 import data.Message;
+import data.Remote;
+import data.State;
 import modules.SerialScanner;
 import modules.WiFiScanner.WiFiScanner;
 import modules.timer.Alarm;
@@ -196,6 +200,13 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	@Override
 	public ArrayList<Bulb> getBulbList() throws RemoteException {
 		return AddressManager.getInstance().getUsedBulbs();
+	}
 
+	public void allBulbsOff() {
+		Command cmd = new Command(new State(Button.ALL_OFF));
+		for (Remote remote : AddressManager.getInstance().getAllRemotes()) {
+			cmd.addAddress(remote.getAddress());
+		}
+		Sender.getInstance().queueFirst(cmd);
 	}
 }

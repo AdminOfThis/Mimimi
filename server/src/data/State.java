@@ -16,7 +16,6 @@ public class State implements Serializable {
 	private int					brightness			= -1;
 	private int					mode				= -1;
 
-
 	public State(Button button) {
 		this.setButton(button);
 	}
@@ -33,6 +32,7 @@ public class State implements Serializable {
 			this.button = Button.BRIGHTNESS;
 			break;
 		case COLOR:
+
 			this.color = value;
 			this.button = Button.COLOR_WHEEL;
 			break;
@@ -67,7 +67,6 @@ public class State implements Serializable {
 		this.button = button;
 	}
 
-
 	public int getBrightness() {
 		return brightness;
 	}
@@ -83,6 +82,5 @@ public class State implements Serializable {
 	public void setMode(int mode) {
 		this.mode = mode;
 	}
-
 
 }

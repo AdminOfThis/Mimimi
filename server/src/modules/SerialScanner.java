@@ -11,10 +11,10 @@ import net.Server;
 
 public class SerialScanner extends Module {
 
-	private static final Logger	LOG			= Logger.getLogger(SerialScanner.class);
+	private static final Logger	LOG	= Logger.getLogger(SerialScanner.class);
 	private SerialPort			port;
-	//private int					color		= 0;
-	//private int					brightness	= 0;
+	// private int color = 0;
+	// private int brightness = 0;
 
 	public SerialScanner(Server server) {
 		super(server);
@@ -61,22 +61,22 @@ public class SerialScanner extends Module {
 
 	private void knobToData(String input) {
 		LOG.info("Serial: " + input);
-		//TODO
-//		String[] cmd = input.split(":");
-//		try {
-//			int newColor = Integer.parseInt(cmd[0]);
-//			if (color != newColor) {
-//				getServer().update(new LightState(newColor));
-//				color = newColor;
-//			}
-//			int newBright = Integer.parseInt(cmd[1].trim());
-//			if (brightness != newBright) {
-//				getServer().update(new LightState(FIELD.BRIGHTNESS, newBright));
-//				brightness = newBright;
-//			}
-//		} catch (NumberFormatException | RemoteException e) {
-//			LOG.error(e);
-//			e.printStackTrace();
-//		}
+		// TODO
+		// String[] cmd = input.split(":");
+		// try {
+		// int newColor = Integer.parseInt(cmd[0]);
+		// if (color != newColor) {
+		// getServer().update(new LightState(newColor));
+		// color = newColor;
+		// }
+		// int newBright = Integer.parseInt(cmd[1].trim());
+		// if (brightness != newBright) {
+		// getServer().update(new LightState(FIELD.BRIGHTNESS, newBright));
+		// brightness = newBright;
+		// }
+		// } catch (NumberFormatException | RemoteException e) {
+		// LOG.error(e);
+		// e.printStackTrace();
+		// }
 	}
 }

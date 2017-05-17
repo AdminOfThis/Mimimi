@@ -61,8 +61,8 @@ public class AddressManager {
 	private void saveAddresses() {
 		ArrayList<String> clearAddresses = new ArrayList<>();
 		for (Bulb b : usedBulbs) {
-			clearAddresses
-			        .add(b.getName() + ": " + b.getAddress().getRemote().toString() + " ," + b.getAddress().getGroup());
+			clearAddresses.add(b.getName() + ": " + b.getAddress().getRemote().getID() + " ("
+			        + b.getAddress().getRemote().toString() + ") ," + b.getAddress().getGroup());
 		}
 		FileUtil.saveClearList(clearAddresses, new File("./addresses.txt"));
 		FileUtil.saveList(usedBulbs, BULB_LIST);

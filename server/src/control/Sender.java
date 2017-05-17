@@ -173,7 +173,7 @@ public class Sender {
 		return command;
 	}
 
-	public String buildCurrentMode(State state) {
+	private String buildCurrentMode(State state) {
 		if (state.getButton() == Button.MODE) {
 			return "B8";
 		} else {
@@ -185,7 +185,7 @@ public class Sender {
 		return address.getRemote().toString();
 	}
 
-	public String buildColorCommand(State state) {
+	private String buildColorCommand(State state) {
 		int color = state.getColor();
 		if (color < 0) {
 			color = currentColor;
