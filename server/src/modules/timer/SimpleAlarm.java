@@ -3,7 +3,7 @@ package modules.timer;
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
-import data.Address;
+import data.Bulb;
 import data.Command;
 import data.State;
 
@@ -41,7 +41,9 @@ public class SimpleAlarm extends Alarm {
 	}
 
 	@Override
-	public ArrayList<Address> getAddressList() {
-		return command.getAddressList();
+	public ArrayList<Bulb> getBulbList() {
+		return command.getBulbList();
 	}
+
+
 }

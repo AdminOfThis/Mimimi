@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import data.Address;
 import data.Bulb;
 import data.Remote;
+import data.State;
 
 public class AddressManager {
 
@@ -50,9 +51,7 @@ public class AddressManager {
 	}
 
 	public boolean registerBulb(Bulb a) {
-		if (usedBulbs.contains(a)) {
-			return false;
-		}
+		if (usedBulbs.contains(a)) { return false; }
 		usedBulbs.add(a);
 		saveAddresses();
 		return true;
@@ -61,8 +60,7 @@ public class AddressManager {
 	private void saveAddresses() {
 		ArrayList<String> clearAddresses = new ArrayList<>();
 		for (Bulb b : usedBulbs) {
-			clearAddresses.add(b.getName() + ": " + b.getAddress().getRemote().getID() + " ("
-			        + b.getAddress().getRemote().toString() + ") ," + b.getAddress().getGroup());
+			clearAddresses.add(b.getName() + ": " + b.getAddress().getRemote().getID() + " (" + b.getAddress().getRemote().toString() + ") ," + b.getAddress().getGroup());
 		}
 		FileUtil.saveClearList(clearAddresses, new File("./addresses.txt"));
 		FileUtil.saveList(usedBulbs, BULB_LIST);
@@ -95,6 +93,17 @@ public class AddressManager {
 
 	public ArrayList<Bulb> getUsedBulbs() {
 		return new ArrayList<>(usedBulbs);
+	}
+
+	public void updateBulbsToState(State state, ArrayList<Bulb> bulbList) {
+		for (Bulb toChange : bulbList) {
+			for (Bulb inList : usedBulbs) {
+				if (toChange.equals(inList)) {
+					inList.setState(state);
+				}
+			}
+		}
+
 	}
 
 }

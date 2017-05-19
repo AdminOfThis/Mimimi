@@ -35,7 +35,7 @@ public abstract class FileUtil {
 		ArrayList<?> result = new ArrayList<>();
 		LOG.info("Loading list from file: " + file.getName());
 		if (!file.exists() || file.isDirectory()) {
-			LOG.warn("Bulb List File not found");
+			LOG.warn("List File " + file.getName() + "not found");
 		} else {
 			try {
 				FileInputStream fos = new FileInputStream(file);

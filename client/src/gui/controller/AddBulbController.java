@@ -104,7 +104,7 @@ public class AddBulbController implements Initializable {
 				btn = data.Button.GROUP4_ON;
 				break;
 			}
-			Command cmd = new Command(new State(btn), address);
+			Command cmd = new Command(new State(btn), new Bulb(address));
 			try {
 				GuiClient.getInstance().getServer().update(cmd);
 			}
@@ -132,7 +132,7 @@ public class AddBulbController implements Initializable {
 				btn = data.Button.GROUP4_OFF;
 				break;
 			}
-			Command cmd = new Command(new State(btn), address);
+			Command cmd = new Command(new State(btn), new Bulb(address));
 			try {
 				GuiClient.getInstance().getServer().update(cmd);
 			}

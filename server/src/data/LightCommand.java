@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 public interface LightCommand {
 
-	// public ArrayList<String> buildCommands();
-
-	public ArrayList<Address> getAddressList();
+	public ArrayList<Bulb> getBulbList();
 
 	public State getState();
+
 }

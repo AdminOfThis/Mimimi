@@ -35,4 +35,13 @@ public class Address implements Serializable {
 		return "Remote: " + remote.toString() + ", Group: " + group;
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Address) {
+			Address other = (Address) obj;
+			return this.getGroup() == other.getGroup() && this.getRemote().equals(other.getRemote());
+		}
+		return super.equals(obj);
+	}
+
 }

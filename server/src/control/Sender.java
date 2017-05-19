@@ -10,16 +10,17 @@ import java.util.concurrent.LinkedBlockingQueue;
 import org.apache.log4j.Logger;
 
 import data.Address;
+import data.Bulb;
 import data.Button;
 import data.Command;
 import data.LightCommand;
 import data.State;
+import net.Server;
 
 public class Sender {
 
 	private static final Logger		LOG					= Logger.getLogger(Sender.class);
-	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c",
-	        "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
+	private static final String[]	ARGS				= new String[] { "sudo", "/bin/bash", "-c", "./openmilight \"B0 0D 33 C2 CA 0F A0\"" };
 	private static final int		SEQUENCE_RANGE		= 255;
 	private static final int		SEQUENCE_SPACE		= 10;
 	private static Sender			instance;
@@ -65,18 +66,7 @@ public class Sender {
 						}
 						try {
 
-							if ((proc == null || !proc.isAlive()) && isLinux) {
-								LOG.info("Starting Sender");
-								LOG.debug("Building new process");
-								ProcessBuilder pb = new ProcessBuilder(ARGS);
-								try {
-									proc = pb.start();
-									OutputStream outStream = proc.getOutputStream();
-									writer = new OutputStreamWriter(outStream);
-								} catch (IOException e) {
-									LOG.error(e);
-								}
-							}
+							checkAndStartSender();
 							LightCommand command = queue.poll();
 							ArrayList<String> rawCommands = buildCommands(command);
 							for (String cmd : rawCommands) {
@@ -91,7 +81,10 @@ public class Sender {
 								}
 							}
 							LOG.trace("Sended, " + queue.size() + " queued");
-						} catch (Exception e) {
+							AddressManager.getInstance().updateBulbsToState(command.getState(), command.getBulbList());
+							Server.getInstance().updateBulbs();
+						}
+						catch (Exception e) {
 							LOG.error("Sender crashed", e);
 
 							if (proc != null) {
@@ -101,8 +94,25 @@ public class Sender {
 					}
 				}
 
+
 			});
 			thread.start();
+		}
+	}
+
+	private void checkAndStartSender() {
+		if ((proc == null || !proc.isAlive()) && isLinux) {
+			LOG.info("Starting Sender");
+			LOG.debug("Building new process");
+			ProcessBuilder pb = new ProcessBuilder(ARGS);
+			try {
+				proc = pb.start();
+				OutputStream outStream = proc.getOutputStream();
+				writer = new OutputStreamWriter(outStream);
+			}
+			catch (IOException e) {
+				LOG.error(e);
+			}
 		}
 	}
 
@@ -148,15 +158,15 @@ public class Sender {
 			btn = Button.GROUP4_ON;
 			break;
 		}
-		Command state = new Command(new State(btn), address);
+		Command state = new Command(new State(btn), new Bulb(address));
 		queueFirst(state);
 		return address;
 	}
 
 	private ArrayList<String> buildCommands(LightCommand cmd) {
 		ArrayList<String> result = new ArrayList<>();
-		for (Address a : cmd.getAddressList()) {
-			result.add(buildCommand(a, cmd.getState()));
+		for (Bulb a : cmd.getBulbList()) {
+			result.add(buildCommand(a.getAddress(), cmd.getState()));
 		}
 		return result;
 	}

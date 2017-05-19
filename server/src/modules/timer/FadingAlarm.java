@@ -5,7 +5,7 @@ import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
-import data.Address;
+import data.Bulb;
 import data.State;
 
 public class FadingAlarm extends Alarm {
@@ -18,7 +18,7 @@ public class FadingAlarm extends Alarm {
 	private int					minutesFading;
 	private int					startColor;
 	private int					endColor;
-	private ArrayList<Address>	addressList			= new ArrayList<>();
+	private ArrayList<Bulb>		bulbList			= new ArrayList<>();
 
 	public FadingAlarm(GregorianCalendar date, int minutesFading, Mode mode, int startColor, int endColor) {
 		super(mode, date);
@@ -38,9 +38,9 @@ public class FadingAlarm extends Alarm {
 	}
 
 	@Override
-	public ArrayList<Address> getAddressList() {
+	public ArrayList<Bulb> getBulbList() {
 		// TODO Auto-generated method stub
-		return addressList;
+		return bulbList;
 	}
 
 	@Override

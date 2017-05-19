@@ -35,9 +35,23 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	private static final long							serialVersionUID	= 2772132741229895918L;
 	private static final Logger							LOG					= Logger.getLogger(Server.class);
+	private static Server								instance;
 	private ConcurrentHashMap<ClientInterface, String>	clients				= new ConcurrentHashMap<>();
 	private WiFiScanner									scanner;
 	private Timer										timer;
+
+	public static Server getInstance() {
+		if (instance == null) {
+			try {
+				instance = new Server();
+			}
+			catch (Exception e) {
+				LOG.error("Unable to start server", e);
+				return null;
+			}
+		}
+		return instance;
+	}
 
 	public Server() throws Exception {
 		LOG.info("Starting registry");
@@ -47,8 +61,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			String address = ServerFinder.getIp();
 			Naming.rebind("rmi://" + address + "/Mimimi", this);
 			LOG.info("Detected IP: " + address);
-		} catch (MalformedURLException | RemoteException e) {
-			LOG.info("Unable to register RMI-Module");
+		}
+		catch (MalformedURLException | RemoteException e) {
 			throw e;
 		}
 		if (Sender.getInstance().isLinux()) {
@@ -69,7 +83,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Notify Client " + clients.get(client));
 					try {
 						client.notify(message);
-					} catch (RemoteException e) {
+					}
+					catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -90,7 +105,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		String clientIP;
 		try {
 			clientIP = getClientHost();
-		} catch (ServerNotActiveException e) {
+		}
+		catch (ServerNotActiveException e) {
 			return -1;
 		}
 		LOG.info("Registering Client " + clientIP + ", # " + clients.size());
@@ -105,7 +121,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			clients.put(clIntf, clientIP);
 			LOG.info("Client " + clientIP + " successful registered");
 			return true;
-		} catch (Exception e) {
+		}
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
@@ -155,7 +172,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Updating Alarms on Clients" + clients.get(client));
 					try {
 						client.updateAlarms(timer.getAlarmList());
-					} catch (RemoteException e) {
+					}
+					catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -163,7 +181,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		}
 	}
 
-	public void updateLights() {
+	public void updateBulbs() {
 		for (ClientInterface client : clients.keySet()) {
 			new Thread() {
 
@@ -172,7 +190,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Updating Lights on Clients" + clients.get(client));
 					try {
 						client.updateBulbs(AddressManager.getInstance().getUsedBulbs());
-					} catch (RemoteException e) {
+					}
+					catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -188,13 +207,13 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	@Override
 	public void addBulbToList(Bulb bulb) throws RemoteException {
 		AddressManager.getInstance().registerBulb(bulb);
-		updateLights();
+		updateBulbs();
 	}
 
 	@Override
 	public void removeLightFromBulbList(Bulb bulb) throws RemoteException {
 		AddressManager.getInstance().freeAddress(bulb);
-		updateLights();
+		updateBulbs();
 	}
 
 	@Override
@@ -205,7 +224,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	public void allBulbsOff() {
 		Command cmd = new Command(new State(Button.ALL_OFF));
 		for (Remote remote : AddressManager.getInstance().getAllRemotes()) {
-			cmd.addAddress(remote.getAddress());
+			cmd.addBulb(new Bulb(remote.getAddress()));
 		}
 		Sender.getInstance().queueFirst(cmd);
 	}

@@ -14,6 +14,8 @@ import data.Message;
 import data.State;
 import data.State.FIELD;
 import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -132,9 +134,23 @@ public class ControlController implements Initializable {
 		lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
 		try {
 			lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
-		} catch (RemoteException e1) {
+		}
+		catch (RemoteException e1) {
 			LOG.error("Unable to load Lights from Server", e1);
 		}
+		lightList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Bulb>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Bulb> observable, Bulb oldValue, Bulb newValue) {
+
+				anchor.setDisable(newValue == null);
+				if (newValue != null && newValue.getState() != null) {
+					updateColor(newValue.getState().getColor(), false);
+					updateBrightness(newValue.getState().getBrightness(), false);
+				}
+
+			}
+		});
 
 	}
 
@@ -145,10 +161,11 @@ public class ControlController implements Initializable {
 				state.setBrightness((int) Math.round(sliderBright.getValue()));
 				Command cmd = new Command(state);
 				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-					cmd.addAddress(b.getAddress());
+					cmd.addBulb(b);
 				}
 				GuiClient.getInstance().getServer().update(cmd);
-			} catch (RemoteException e) {
+			}
+			catch (RemoteException e) {
 				LOG.error(e);
 			}
 		} else {
@@ -169,14 +186,15 @@ public class ControlController implements Initializable {
 				State state = new State(value);
 				Command cmd = new Command(state);
 				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-					cmd.addAddress(b.getAddress());
+					cmd.addBulb(b);
 				}
 				GuiClient.getInstance().getServer().update(cmd);
 			} else {
 				slider.setValue(value);
 			}
 			color = value;
-		} catch (RemoteException e) {
+		}
+		catch (RemoteException e) {
 			LOG.error(e);
 			e.printStackTrace();
 		}
@@ -230,10 +248,11 @@ public class ControlController implements Initializable {
 			State state = new State(btn);
 			Command cmd = new Command(state);
 			for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-				cmd.addAddress(b.getAddress());
+				cmd.addBulb(b);
 			}
 			GuiClient.getInstance().getServer().update(cmd);
-		} catch (RemoteException e) {
+		}
+		catch (RemoteException e) {
 			LOG.error(e);
 		}
 	}
@@ -261,10 +280,11 @@ public class ControlController implements Initializable {
 			State state = new State(FIELD.MODE, count);
 			Command cmd = new Command(state);
 			for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-				cmd.addAddress(b.getAddress());
+				cmd.addBulb(b);
 			}
 			GuiClient.getInstance().getServer().update(cmd);
-		} catch (Exception ex) {
+		}
+		catch (Exception ex) {
 			LOG.error(ex);
 		}
 	}
@@ -361,7 +381,8 @@ public class ControlController implements Initializable {
 			stage.setTitle("Pair Light");
 			stage.setAlwaysOnTop(true);
 			stage.showAndWait();
-		} catch (Exception ex) {
+		}
+		catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}
@@ -371,7 +392,15 @@ public class ControlController implements Initializable {
 
 			@Override
 			public void run() {
+				// ObservableList<Bulb> oldSelected = lightList.getSelectionModel().getSelectedItems();
 				lightList.getItems().setAll(bulbList);
+// for (Bulb b : oldSelected) {
+// for (Bulb b2 : bulbList) {
+// if (b.equals(b2)) {
+// lightList.getSelectionModel().select(b2);
+// }
+// }
+// }
 			}
 		});
 	}
