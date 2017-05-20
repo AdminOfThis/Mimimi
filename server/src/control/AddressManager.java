@@ -47,9 +47,8 @@ public class AddressManager {
 
 	private Remote createNewRemote() {
 		
-		// TODO lückenfinder
 		for(int i=0; i< usedRemotes.size();i++) {
-			if(usedRemotes.get(i).getID()!=i) {
+			if(usedRemotes.get(i).getID()>i) {
 				return new Remote(usedRemotes.size());
 			}
 		}
