@@ -36,7 +36,7 @@ public class AddressManager {
 			return a;
 		} else {
 			Remote r = createNewRemote();
-			usedRemotes.add(r);
+			usedRemotes.add(r.getID(), r);
 			for (int i = 1; i <= 4; i++) {
 				Address a = new Address(r, i);
 				freeAddresses.add(a);
@@ -46,12 +46,20 @@ public class AddressManager {
 	}
 
 	private Remote createNewRemote() {
+		
 		// TODO lückenfinder
+		for(int i=0; i< usedRemotes.size();i++) {
+			if(usedRemotes.get(i).getID()!=i) {
+				return new Remote(usedRemotes.size());
+			}
+		}
 		return new Remote(usedRemotes.size());
 	}
 
 	public boolean registerBulb(Bulb a) {
-		if (usedBulbs.contains(a)) { return false; }
+		if (usedBulbs.contains(a)) {
+			return false;
+		}
 		usedBulbs.add(a);
 		saveAddresses();
 		return true;
@@ -60,7 +68,8 @@ public class AddressManager {
 	private void saveAddresses() {
 		ArrayList<String> clearAddresses = new ArrayList<>();
 		for (Bulb b : usedBulbs) {
-			clearAddresses.add(b.getName() + ": " + b.getAddress().getRemote().getID() + " (" + b.getAddress().getRemote().toString() + ") ," + b.getAddress().getGroup());
+			clearAddresses.add(b.getName() + ": " + b.getAddress().getRemote().getID() + " ("
+			        + b.getAddress().getRemote().toString() + ") ," + b.getAddress().getGroup());
 		}
 		FileUtil.saveClearList(clearAddresses, new File("./addresses.txt"));
 		FileUtil.saveList(usedBulbs, BULB_LIST);
@@ -68,7 +77,6 @@ public class AddressManager {
 	}
 
 	public void freeAddress(Bulb a) {
-
 		if (usedBulbs.contains(a)) {
 			usedBulbs.remove(a);
 			freeAddresses.add(a.getAddress());
