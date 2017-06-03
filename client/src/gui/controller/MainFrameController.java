@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -92,6 +93,24 @@ public class MainFrameController implements Initializable {
 		Parent p = (Parent) loadScene("AddBulb.fxml");
 		stage2.setScene(new Scene(p));
 		stage2.showAndWait();
+	}
+
+	@FXML
+	public void removeBulb(ActionEvent e) {
+		Stage stage2 = new Stage();
+		stage2.initModality(Modality.WINDOW_MODAL);
+		Parent p = (Parent) loadScene("RemoveBulb.fxml");
+		stage2.setScene(new Scene(p));
+		stage2.showAndWait();
+	}
+
+	@FXML
+	public void close(ActionEvent e) {
+		LOG.info("Close requested");
+		// TODO unregister from server
+		Platform.exit();
+		LOG.info("=== Application closed ===");
+		System.exit(0);
 	}
 
 }

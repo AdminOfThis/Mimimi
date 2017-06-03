@@ -212,6 +212,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public void removeLightFromBulbList(Bulb bulb) throws RemoteException {
+		Sender.getInstance().removeLightBulb(bulb);
 		AddressManager.getInstance().freeAddress(bulb);
 		updateBulbs();
 	}

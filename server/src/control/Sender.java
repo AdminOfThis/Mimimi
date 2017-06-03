@@ -163,6 +163,28 @@ public class Sender {
 		return address;
 	}
 
+	public void removeLightBulb(Bulb bulb) {
+		LOG.info("SEND CONNECT");
+		// Send signal for 3 seconds
+		Button btn = null;
+		switch (bulb.getAddress().getGroup()) {
+		case 1:
+			btn = Button.GROUP1_ON;
+			break;
+		case 2:
+			btn = Button.GROUP2_ON;
+			break;
+		case 3:
+			btn = Button.GROUP3_ON;
+			break;
+		case 4:
+			btn = Button.GROUP4_ON;
+			break;
+		}
+		Command state = new Command(new State(btn), bulb);
+		queueFirst(state);
+	}
+
 	private ArrayList<String> buildCommands(LightCommand cmd) {
 		ArrayList<String> result = new ArrayList<>();
 		for (Bulb a : cmd.getBulbList()) {

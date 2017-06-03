@@ -52,6 +52,7 @@ public class Bulb implements Serializable {
 	public boolean equals(Object obj) {
 		if (obj instanceof Bulb) {
 			Bulb other = (Bulb) obj;
+			if (this.getName() == null || other.getName() == null) { return false; }
 			return (this.getName().equals(other.getName()) && this.getAddress().equals(other.getAddress()));
 		}
 		return false;

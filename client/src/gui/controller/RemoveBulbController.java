@@ -9,45 +9,46 @@ import org.apache.log4j.Logger;
 import data.Address;
 import data.Bulb;
 import data.Command;
+import data.Remote;
 import data.State;
 import javafx.animation.AnimationTimer;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
-import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.layout.HBox;
 import main.GuiClient;
 
-public class AddBulbController implements Initializable {
+public class RemoveBulbController implements Initializable {
 
-	private static final Logger	LOG		= Logger.getLogger(AddBulbController.class);
+	private static final Logger	LOG		= Logger.getLogger(RemoveBulbController.class);
 	private static final double	WAIT	= 10000;
 	@FXML
 	private ProgressBar			bar;
 	@FXML
 	private Label				text;
 	@FXML
-	private Button				btnOn, btnOff, saveBulb;
+	private Button				btnOn, btnOff, removeBulb;
 	@FXML
-	private TextField			nameField;
+	private Spinner<Integer>	groupID, remoteID;
+	@FXML
+	private HBox				idBox;
 	Address						address;
-	private long				start	= System.currentTimeMillis();
+	private long				start;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		groupID.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 1000));
+		remoteID.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, 1000));
+		text.setVisible(false);
+		text.setManaged(false);
+		removeBulb.disableProperty().bind(groupID.valueProperty().isNull().or(remoteID.valueProperty().isNull()));
 
-		btnOn.setVisible(false);
-		btnOff.setVisible(false);
-		btnOn.setManaged(false);
-		btnOff.setManaged(false);
-		saveBulb.setManaged(false);
-		btnOff.setManaged(false);
-		nameField.setManaged(false);
-		nameField.setManaged(false);
-		saveBulb.disableProperty().bind(nameField.textProperty().isEmpty());
 		AnimationTimer timer = new AnimationTimer() {
 
 			@Override
@@ -64,25 +65,38 @@ public class AddBulbController implements Initializable {
 						LOG.info("Sending ON MESSAGE");
 						text.setText("Command sent");
 						try {
-							address = GuiClient.getInstance().getServer().connectBulb();
+							GuiClient.getInstance().getServer().removeLightFromBulbList(new Bulb(new Address(new Remote(remoteID.getValue()), groupID.getValue())));
 						}
-						catch (RemoteException e) {
+						catch (Exception e) {
 							LOG.error(e);
 						}
 						btnOn.setVisible(true);
 						btnOff.setVisible(true);
 						btnOn.setManaged(true);
 						btnOff.setManaged(true);
-						saveBulb.setManaged(true);
+						removeBulb.setManaged(true);
 						btnOff.setManaged(true);
-						nameField.setManaged(true);
-						nameField.setManaged(true);
+
 						stop();
 					}
 				}
 			}
 		};
-		timer.start();
+		removeBulb.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				removeBulb.setVisible(false);
+				btnOn.setVisible(false);
+				btnOff.setVisible(false);
+				text.setVisible(true);
+				text.setManaged(true);
+				idBox.setVisible(false);
+				idBox.setManaged(false);
+				start = System.currentTimeMillis();
+				timer.start();
+			}
+		});
 
 	}
 
@@ -142,18 +156,18 @@ public class AddBulbController implements Initializable {
 		}
 	}
 
-	@FXML
-	private void saveBulb(ActionEvent e) {
-		LOG.info("Adding Bulb to Server");
-		if (address != null) {
-			Bulb bulb = new Bulb(address, nameField.getText());
-			try {
-				GuiClient.getInstance().getServer().addBulbToList(bulb);
-			}
-			catch (RemoteException e1) {
-				LOG.error(e1);
-			}
-		}
-		((Stage) saveBulb.getScene().getWindow()).close();
-	}
+// @FXML
+// private void saveBulb(ActionEvent e) {
+// LOG.info("Adding Bulb to Server");
+// if (address != null) {
+// Bulb bulb = new Bulb(address, idField.getText());
+// try {
+// GuiClient.getInstance().getServer().addBulbToList(bulb);
+// }
+// catch (RemoteException e1) {
+// LOG.error(e1);
+// }
+// }
+// ((Stage) removeBulb.getScene().getWindow()).close();
+// }
 }

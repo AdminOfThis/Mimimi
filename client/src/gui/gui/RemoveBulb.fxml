@@ -3,13 +3,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.AddBulbController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.RemoveBulbController">
    <center>
       <StackPane>
          <children>
@@ -20,11 +21,18 @@
             </AnchorPane>
             <VBox alignment="CENTER" spacing="5.0">
                <children>
-                  <Label fx:id="text" styleClass="blackLabel" text="Wait" />
+                  <Label fx:id="text" styleClass="blackLabel" text="Bulb should be removed" />
                   <Button fx:id="btnOn" mnemonicParsing="false" onAction="#btnOn" prefHeight="100.0" prefWidth="200.0" text="Turn Light ON" />
                   <Button fx:id="btnOff" mnemonicParsing="false" onAction="#btnOff" prefHeight="100.0" prefWidth="200.0" text="Turn Light OFF" />
-                  <TextField fx:id="nameField" maxWidth="200.0" prefWidth="200.0" />
-                  <Button fx:id="saveBulb" mnemonicParsing="false" onAction="#saveBulb" text="Save Bulb" />
+                  <HBox fx:id="idBox" alignment="CENTER" spacing="5.0">
+                     <children>
+                        <Label text="Remote_ID:" />
+                        <Spinner fx:id="remoteID" editable="true" prefWidth="75.0" />
+                        <Label text="Group:" />
+                        <Spinner fx:id="groupID" editable="true" prefWidth="75.0" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="removeBulb" mnemonicParsing="false" text="Save Bulb" />
                </children>
             </VBox>
          </children>
