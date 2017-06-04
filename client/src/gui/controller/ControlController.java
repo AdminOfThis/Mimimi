@@ -16,6 +16,8 @@ import data.State.FIELD;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -201,7 +203,7 @@ public class ControlController implements Initializable {
 	}
 
 	public static String parseToColor(int initialValue) {
-		int value = initialValue; // correction, so 0x00 is pure red
+		int value = initialValue - 0x1B; // correction, so 0x00 is pure red
 		int[] color = new int[3];
 		String[] colorString = new String[3];
 		if (value < 0) {
@@ -392,15 +394,15 @@ public class ControlController implements Initializable {
 
 			@Override
 			public void run() {
-				// ObservableList<Bulb> oldSelected = lightList.getSelectionModel().getSelectedItems();
+				ObservableList<Bulb> oldSelected = FXCollections.observableArrayList(lightList.getSelectionModel().getSelectedItems());
 				lightList.getItems().setAll(bulbList);
-// for (Bulb b : oldSelected) {
-// for (Bulb b2 : bulbList) {
-// if (b.equals(b2)) {
-// lightList.getSelectionModel().select(b2);
-// }
-// }
-// }
+				for (Bulb b : oldSelected) {
+					for (Bulb b2 : bulbList) {
+						if (b.equals(b2)) {
+							lightList.getSelectionModel().select(b2);
+						}
+					}
+				}
 			}
 		});
 	}
