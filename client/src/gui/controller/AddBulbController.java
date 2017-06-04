@@ -24,7 +24,7 @@ import main.GuiClient;
 public class AddBulbController implements Initializable {
 
 	private static final Logger	LOG		= Logger.getLogger(AddBulbController.class);
-	private static final double	WAIT	= 10000;
+	private static final double	WAIT	= 2000;
 	@FXML
 	private ProgressBar			bar;
 	@FXML

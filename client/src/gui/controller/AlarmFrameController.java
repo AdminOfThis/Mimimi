@@ -9,7 +9,6 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
-import data.Command;
 import data.State;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -59,7 +58,8 @@ public class AlarmFrameController implements Initializable {
 
 		try {
 			alarmList.getItems().setAll(GuiClient.getInstance().getServer().getAlarmList());
-		} catch (RemoteException e) {
+		}
+		catch (RemoteException e) {
 			LOG.error("Unable to load alarms from server", e);
 		}
 		alarmList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Alarm>() {
@@ -77,7 +77,8 @@ public class AlarmFrameController implements Initializable {
 					Alarm alarm = alarmList.getSelectionModel().getSelectedItem();
 					try {
 						GuiClient.getInstance().getServer().removeAlarm(alarm);
-					} catch (RemoteException e) {
+					}
+					catch (RemoteException e) {
 						LOG.error("Unable to remove alarm", e);
 					}
 				}
@@ -90,7 +91,8 @@ public class AlarmFrameController implements Initializable {
 			try {
 				loadAlarmGUI("SimpleAlarm");
 				controller.showAlarm(newValue);
-			} catch (IOException e) {
+			}
+			catch (IOException e) {
 				LOG.error("Unable to load Simple Alarm GUI", e);
 			}
 		}
@@ -113,10 +115,11 @@ public class AlarmFrameController implements Initializable {
 	private void addAlarm(ActionEvent e) {
 		GregorianCalendar cal = new GregorianCalendar();
 		cal.add(GregorianCalendar.DAY_OF_MONTH, 1);
-		Alarm a = new SimpleAlarm(cal, Mode.ONCE, new Command(new State(0x00)));
+		Alarm a = new SimpleAlarm(cal, Mode.ONCE, new State(0x00));
 		try {
 			GuiClient.getInstance().getServer().addAlarm(a);
-		} catch (RemoteException e1) {
+		}
+		catch (RemoteException e1) {
 			LOG.error("Unable to send alarm to server", e1);
 		}
 	}

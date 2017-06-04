@@ -70,15 +70,8 @@ public class Sender {
 							LightCommand command = queue.poll();
 							ArrayList<String> rawCommands = buildCommands(command);
 							for (String cmd : rawCommands) {
-								System.out.println(cmd);
-								LOG.debug(cmd);
-								if (isLinux()) {
-									for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
-										writer.write(cmd + " " + Integer.toHexString(SEQUENCE_SPACE * run) + "\n");
-										writer.flush();
-										Thread.sleep(50);
-									}
-								}
+								sendRawCommand(cmd);
+								Thread.yield();
 							}
 							LOG.trace("Sended, " + queue.size() + " queued");
 							AddressManager.getInstance().updateBulbsToState(command.getState(), command.getBulbList());
@@ -97,6 +90,18 @@ public class Sender {
 
 			});
 			thread.start();
+		}
+	}
+
+	private void sendRawCommand(String cmd) throws IOException, InterruptedException {
+		System.out.println(cmd);
+		LOG.debug(cmd);
+		if (isLinux()) {
+			for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
+				writer.write(cmd + " " + Integer.toHexString(SEQUENCE_SPACE * run) + "\n");
+				writer.flush();
+				Thread.sleep(50);
+			}
 		}
 	}
 
