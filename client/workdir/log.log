@@ -1759,6 +1759,201 @@ Caused by: java.lang.NullPointerException
 2017-05-10 12:36:17 INFO  Main:32 - Starting GUI
 2017-05-10 12:36:18 INFO  MainFrameController:38 - Loading MainFrame
 2017-05-10 12:36:37 INFO  AddBulbController:65 - Sending ON MESSAGE
+<<<<<<< .mine
+2017-05-11 22:21:39 ERROR ServerFinder:135 - No server found
+2017-05-11 22:21:39 ERROR GuiClient:46 - Unable to find Server
+2017-05-11 22:21:39 WARN  Main:35 - No Server found, will exit
+2017-05-11 22:34:31 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 22:34:31 INFO  GuiClient:49 - Server: 192.168.0.240
+2017-05-11 22:34:31 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 22:34:31 INFO  Client:39 - Registered successful
+2017-05-11 22:34:31 INFO  Main:32 - Starting GUI
+2017-05-11 22:34:31 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 22:34:47 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 22:53:07 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 22:53:07 INFO  GuiClient:49 - Server: 192.168.0.240
+2017-05-11 22:53:07 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 22:53:07 INFO  Client:39 - Registered successful
+2017-05-11 22:53:07 INFO  Main:32 - Starting GUI
+2017-05-11 22:53:07 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 22:54:44 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 22:56:06 ERROR AddBulbController:70 - java.rmi.UnmarshalException: Error unmarshaling return header; nested exception is: 
+	java.net.SocketException: Connection reset
+2017-05-11 22:56:16 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 22:56:16 INFO  GuiClient:49 - Server: 192.168.0.240
+2017-05-11 22:56:16 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 22:56:16 INFO  Client:39 - Registered successful
+2017-05-11 22:56:16 INFO  Main:32 - Starting GUI
+2017-05-11 22:56:16 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 22:56:29 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 22:59:46 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:01:14 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:01:14 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:01:14 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:01:14 INFO  Client:39 - Registered successful
+2017-05-11 23:01:14 INFO  Main:32 - Starting GUI
+2017-05-11 23:01:14 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:02:53 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:02:53 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:02:53 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:02:53 INFO  Client:39 - Registered successful
+2017-05-11 23:02:53 INFO  Main:32 - Starting GUI
+2017-05-11 23:02:53 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:05:37 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 23:06:24 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:08:08 INFO  Main:57 - Terminating client
+2017-05-11 23:08:11 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:08:11 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:08:11 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:08:11 INFO  Client:39 - Registered successful
+2017-05-11 23:08:11 INFO  Main:32 - Starting GUI
+2017-05-11 23:08:12 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:08:20 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 23:08:30 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:09:34 INFO  Main:57 - Terminating client
+2017-05-11 23:14:05 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:14:05 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:14:05 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:14:05 INFO  Client:39 - Registered successful
+2017-05-11 23:14:05 INFO  Main:32 - Starting GUI
+2017-05-11 23:14:05 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:14:10 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 23:14:13 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:14:22 INFO  Main:57 - Terminating client
+2017-05-11 23:14:39 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:14:39 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:14:39 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:14:39 INFO  Client:39 - Registered successful
+2017-05-11 23:14:39 INFO  Main:32 - Starting GUI
+2017-05-11 23:14:39 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:14:45 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 23:14:50 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:15:09 INFO  Main:57 - Terminating client
+2017-05-11 23:15:16 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:15:16 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:15:16 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:15:16 INFO  Client:39 - Registered successful
+2017-05-11 23:15:16 INFO  Main:32 - Starting GUI
+2017-05-11 23:15:16 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:15:21 INFO  AddBulbController:65 - Sending ON MESSAGE
+2017-05-11 23:15:25 INFO  AddBulbController:145 - Adding Bulb to Server
+2017-05-11 23:18:37 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:18:37 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:18:37 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:18:37 INFO  Client:39 - Registered successful
+2017-05-11 23:18:37 INFO  Main:32 - Starting GUI
+2017-05-11 23:18:37 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:18:44 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:18:48 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:18:57 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:19:03 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:20:06 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-11 23:20:06 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-11 23:20:06 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-11 23:20:06 INFO  Client:39 - Registered successful
+2017-05-11 23:20:06 INFO  Main:32 - Starting GUI
+2017-05-11 23:20:06 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-11 23:20:18 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:20:21 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:20:30 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:20:37 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:20:42 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:20:45 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:20:52 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:20:55 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:21:04 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-11 23:21:12 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-11 23:22:36 INFO  Main:57 - Terminating client
+2017-05-19 20:20:00 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:20:00 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:20:00 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:20:00 INFO  Client:39 - Registered successful
+2017-05-19 20:20:00 INFO  Main:32 - Starting GUI
+2017-05-19 20:20:01 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:21:19 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:21:19 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:21:19 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:21:19 INFO  Client:39 - Registered successful
+2017-05-19 20:21:19 INFO  Main:32 - Starting GUI
+2017-05-19 20:21:19 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:21:25 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-19 20:21:37 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-19 20:21:47 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-19 20:21:54 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-19 20:23:12 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:23:12 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:23:12 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:23:12 INFO  Client:39 - Registered successful
+2017-05-19 20:23:12 INFO  Main:32 - Starting GUI
+2017-05-19 20:23:12 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:25:32 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:25:32 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:25:32 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:25:32 INFO  Client:39 - Registered successful
+2017-05-19 20:25:32 INFO  Main:32 - Starting GUI
+2017-05-19 20:25:32 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:25:35 INFO  ControlController:85 - Dont update state
+2017-05-19 20:25:36 INFO  ControlController:85 - Dont update state
+2017-05-19 20:25:37 INFO  ControlController:85 - Dont update state
+2017-05-19 20:25:38 INFO  ControlController:85 - Dont update state
+2017-05-19 20:25:39 INFO  ControlController:85 - Dont update state
+2017-05-19 20:25:55 INFO  ControlController:85 - Dont update state
+2017-05-19 20:28:56 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:28:56 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:28:56 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:28:56 INFO  Client:39 - Registered successful
+2017-05-19 20:28:56 INFO  Main:32 - Starting GUI
+2017-05-19 20:28:57 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:29:23 INFO  ControlController:85 - Dont update state
+2017-05-19 20:30:09 INFO  ControlController:85 - Dont update state
+2017-05-19 20:30:10 INFO  ControlController:85 - Dont update state
+2017-05-19 20:31:17 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:24 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:28 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:30 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:31 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:33 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:36 INFO  ControlController:85 - Dont update state
+2017-05-19 20:33:37 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:07 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:31 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:34:31 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:34:31 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:34:31 INFO  Client:39 - Registered successful
+2017-05-19 20:34:31 INFO  Main:32 - Starting GUI
+2017-05-19 20:34:31 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:34:34 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:38 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:41 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:43 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:46 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:47 INFO  ControlController:85 - Dont update state
+2017-05-19 20:34:47 INFO  ControlController:85 - Dont update state
+2017-05-19 20:35:47 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:12 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:19 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:21 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:21 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:23 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:23 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:24 INFO  ControlController:85 - Dont update state
+2017-05-19 20:36:25 INFO  ControlController:85 - Dont update state
+2017-05-19 20:37:34 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:37:34 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:37:34 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:37:34 INFO  Client:39 - Registered successful
+2017-05-19 20:37:34 INFO  Main:32 - Starting GUI
+2017-05-19 20:37:35 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:37:43 INFO  ControlController:85 - Dont update state
+2017-05-19 20:37:55 INFO  ControlController:85 - Dont update state
+2017-05-19 20:38:21 INFO  ControlController:85 - Dont update state
+2017-05-19 20:38:33 INFO  ControlController:85 - Dont update state
+2017-05-19 20:38:37 INFO  ControlController:85 - Dont update state
+2017-05-19 20:38:41 INFO  ControlController:85 - Dont update state
+2017-05-19 20:38:45 INFO  ControlController:85 - Dont update state
+2017-05-19 20:39:39 INFO  ControlController:85 - Dont update state
+2017-05-19 20:40:10 INFO  ControlController:85 - Dont update state
+=======
 2017-05-12 09:19:36 INFO  ServerFinder:131 - Found server on 141.58.57.194
 2017-05-12 09:19:36 INFO  GuiClient:50 - Server: 141.58.57.194
 2017-05-12 09:19:36 INFO  Client:31 - Register Client @ 141.58.57.194
@@ -1770,3 +1965,1807 @@ Caused by: java.lang.NullPointerException
 2017-05-12 09:21:35 INFO  AddBulbController:64 - Sending ON MESSAGE
 2017-05-12 09:21:44 INFO  AddBulbController:147 - Adding Bulb to Server
 2017-05-12 10:09:32 INFO  Main:57 - Terminating client
+>>>>>>> .r49
+2017-05-19 20:54:17 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:54:17 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:54:17 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:54:17 INFO  Client:39 - Registered successful
+2017-05-19 20:54:17 INFO  Main:32 - Starting GUI
+2017-05-19 20:56:57 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:56:57 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:56:57 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:56:57 INFO  Client:39 - Registered successful
+2017-05-19 20:56:57 INFO  Main:32 - Starting GUI
+2017-05-19 20:56:57 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:57:05 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-19 20:57:20 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-19 20:58:54 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 20:58:54 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 20:58:54 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 20:58:54 INFO  Client:39 - Registered successful
+2017-05-19 20:58:54 INFO  Main:32 - Starting GUI
+2017-05-19 20:58:55 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 20:59:20 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-05-19 20:59:27 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-05-19 21:01:23 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 21:01:23 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 21:01:23 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 21:01:23 INFO  Client:39 - Registered successful
+2017-05-19 21:01:23 INFO  Main:32 - Starting GUI
+2017-05-19 21:01:23 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 21:01:26 INFO  ControlController:149 - No Update
+2017-05-19 21:01:26 INFO  ControlController:149 - No Update
+2017-05-19 21:01:27 INFO  ControlController:149 - No Update
+2017-05-19 21:01:28 INFO  ControlController:149 - No Update
+2017-05-19 21:01:29 INFO  ControlController:149 - No Update
+2017-05-19 21:01:30 INFO  ControlController:149 - No Update
+2017-05-19 21:01:31 INFO  ControlController:149 - No Update
+2017-05-19 21:01:31 INFO  ControlController:149 - No Update
+2017-05-19 21:02:51 INFO  ControlController:149 - No Update
+2017-05-19 21:09:45 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 21:09:45 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 21:09:45 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 21:09:45 INFO  Client:39 - Registered successful
+2017-05-19 21:09:45 INFO  Main:32 - Starting GUI
+2017-05-19 21:09:46 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 21:09:48 INFO  ControlController:149 - No Update
+2017-05-19 21:10:02 INFO  ControlController:149 - No Update
+2017-05-19 21:10:05 INFO  ControlController:149 - No Update
+2017-05-19 21:10:06 INFO  ControlController:149 - No Update
+2017-05-19 21:10:13 INFO  ControlController:149 - No Update
+2017-05-19 21:10:19 INFO  ControlController:149 - No Update
+2017-05-19 21:10:22 INFO  ControlController:149 - No Update
+2017-05-19 21:10:29 INFO  ControlController:149 - No Update
+2017-05-19 21:12:01 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 21:12:01 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 21:12:01 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 21:12:01 INFO  Client:39 - Registered successful
+2017-05-19 21:12:01 INFO  Main:32 - Starting GUI
+2017-05-19 21:12:02 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 21:15:28 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-05-19 21:15:28 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-05-19 21:15:28 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-05-19 21:15:28 INFO  Client:39 - Registered successful
+2017-05-19 21:15:28 INFO  Main:32 - Starting GUI
+2017-05-19 21:15:28 INFO  MainFrameController:38 - Loading MainFrame
+2017-05-19 21:16:39 INFO  Main:57 - Terminating client
+2017-06-03 21:14:43 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:14:43 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:14:43 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:14:43 INFO  Client:39 - Registered successful
+2017-06-03 21:14:43 INFO  Main:32 - Starting GUI
+2017-06-03 21:14:43 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:14:47 INFO  MainFrameController:105 - Close requested
+2017-06-03 21:14:48 INFO  MainFrameController:114 - === Application closed ===
+2017-06-03 21:14:59 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:14:59 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:14:59 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:14:59 INFO  Client:39 - Registered successful
+2017-06-03 21:14:59 INFO  Main:32 - Starting GUI
+2017-06-03 21:14:59 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:15:05 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:15:34 ERROR ServerFinder:135 - No server found
+2017-06-03 21:15:34 ERROR GuiClient:47 - Unable to find Server
+2017-06-03 21:15:34 WARN  Main:35 - No Server found, will exit
+2017-06-03 21:15:41 ERROR ServerFinder:135 - No server found
+2017-06-03 21:15:41 ERROR GuiClient:47 - Unable to find Server
+2017-06-03 21:15:41 WARN  Main:35 - No Server found, will exit
+2017-06-03 21:15:52 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:15:52 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:15:52 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:15:52 INFO  Client:39 - Registered successful
+2017-06-03 21:15:52 INFO  Main:32 - Starting GUI
+2017-06-03 21:15:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:16:11 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:16:50 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:16:50 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:16:50 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:16:50 INFO  Client:39 - Registered successful
+2017-06-03 21:16:50 INFO  Main:32 - Starting GUI
+2017-06-03 21:16:50 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:17:00 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:19:42 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:19:43 ERROR AddBulbController:70 - java.rmi.ConnectException: Connection refused to host: 192.168.0.240; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-03 21:19:55 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:19:55 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:19:55 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:19:55 INFO  Client:39 - Registered successful
+2017-06-03 21:19:55 INFO  Main:32 - Starting GUI
+2017-06-03 21:19:56 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:20:01 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:21:24 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:23:41 ERROR MainFrameController:84 - Unable to load Module
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/RemoveBulb.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.removeBulb(MainFrameController.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at gui.controller.RemoveBulbController.initialize(RemoveBulbController.java:48)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 57 more
+2017-06-03 21:24:09 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:24:09 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:24:09 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:24:09 INFO  Client:39 - Registered successful
+2017-06-03 21:24:09 INFO  Main:32 - Starting GUI
+2017-06-03 21:24:09 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:24:12 ERROR MainFrameController:84 - Unable to load Module
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/RemoveBulb.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.removeBulb(MainFrameController.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at gui.controller.RemoveBulbController.initialize(RemoveBulbController.java:48)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 57 more
+2017-06-03 21:24:55 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:24:55 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:24:55 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:24:55 INFO  Client:39 - Registered successful
+2017-06-03 21:24:55 INFO  Main:32 - Starting GUI
+2017-06-03 21:24:55 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:25:01 INFO  RemoveBulbController:62 - Sending ON MESSAGE
+2017-06-03 21:25:40 INFO  RemoveBulbController:60 - Sending ON MESSAGE
+2017-06-03 21:27:28 INFO  RemoveBulbController:60 - Sending ON MESSAGE
+2017-06-03 21:28:14 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:28:14 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:28:14 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:28:14 INFO  Client:39 - Registered successful
+2017-06-03 21:28:14 INFO  Main:32 - Starting GUI
+2017-06-03 21:28:15 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:28:17 ERROR MainFrameController:84 - Unable to load Module
+javafx.fxml.LoadException: Error resolving onAction='#saveBulb', either the event handler is not in the Namespace or there is an error in the script.
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/RemoveBulb.fxml:27
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.removeBulb(MainFrameController.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+2017-06-03 21:28:27 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:28:27 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:28:28 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:28:28 INFO  Client:39 - Registered successful
+2017-06-03 21:28:28 INFO  Main:32 - Starting GUI
+2017-06-03 21:28:28 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:28:30 INFO  Main:57 - Terminating client
+2017-06-03 21:28:35 ERROR MainFrameController:84 - Unable to load Module
+javafx.fxml.LoadException: Error resolving onAction='#saveBulb', either the event handler is not in the Namespace or there is an error in the script.
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/RemoveBulb.fxml:27
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2597)
+	at javafx.fxml.FXMLLoader.access$100(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$Element.processEventHandlerAttributes(FXMLLoader.java:610)
+	at javafx.fxml.FXMLLoader$ValueElement.processEndElement(FXMLLoader.java:770)
+	at javafx.fxml.FXMLLoader.processEndElement(FXMLLoader.java:2823)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2532)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.removeBulb(MainFrameController.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+2017-06-03 21:29:07 ERROR ServerFinder:135 - No server found
+2017-06-03 21:29:07 ERROR GuiClient:47 - Unable to find Server
+2017-06-03 21:29:07 WARN  Main:35 - No Server found, will exit
+2017-06-03 21:29:14 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:29:14 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:29:14 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:29:14 INFO  Client:39 - Registered successful
+2017-06-03 21:29:14 INFO  Main:32 - Starting GUI
+2017-06-03 21:29:15 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:29:24 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:30:22 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:32:02 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:33:03 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:33:03 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:33:03 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:33:03 INFO  Client:39 - Registered successful
+2017-06-03 21:33:03 INFO  Main:32 - Starting GUI
+2017-06-03 21:33:04 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:33:09 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 21:33:18 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:33:54 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:33:55 ERROR RemoveBulbController:65 - java.rmi.ConnectException: Connection refused to host: 192.168.0.240; nested exception is: 
+	java.net.ConnectException: Connection refused: connect
+2017-06-03 21:34:05 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:34:05 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:34:05 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:34:05 INFO  Client:39 - Registered successful
+2017-06-03 21:34:05 INFO  Main:32 - Starting GUI
+2017-06-03 21:34:05 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:34:27 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:34:55 INFO  RemoveBulbController:59 - Sending ON MESSAGE
+2017-06-03 21:35:05 INFO  Main:57 - Terminating client
+2017-06-03 21:41:15 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:41:15 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:41:15 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:41:15 INFO  Client:39 - Registered successful
+2017-06-03 21:41:15 INFO  Main:32 - Starting GUI
+2017-06-03 21:41:15 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:41:40 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:41:40 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:41:40 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:41:40 INFO  Client:39 - Registered successful
+2017-06-03 21:41:40 INFO  Main:32 - Starting GUI
+2017-06-03 21:41:40 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:42:33 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:42:33 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:42:34 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:42:34 INFO  Client:39 - Registered successful
+2017-06-03 21:42:34 INFO  Main:32 - Starting GUI
+2017-06-03 21:42:34 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:45:24 INFO  Main:57 - Terminating client
+2017-06-03 21:45:26 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:45:26 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:45:26 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:45:26 INFO  Client:39 - Registered successful
+2017-06-03 21:45:26 INFO  Main:32 - Starting GUI
+2017-06-03 21:45:27 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:45:36 INFO  RemoveBulbController:65 - Sending ON MESSAGE
+2017-06-03 21:56:43 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:56:43 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:56:43 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:56:43 INFO  Client:39 - Registered successful
+2017-06-03 21:56:43 INFO  Main:32 - Starting GUI
+2017-06-03 21:56:43 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 21:56:57 ERROR AlarmFrameController:94 - Unable to load Simple Alarm GUI
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/SimpleAlarm.fxml:13
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.access$700(FXMLLoader.java:103)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:922)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.AlarmFrameController.loadAlarmGUI(AlarmFrameController.java:101)
+	at gui.controller.AlarmFrameController.updateAlarmEditor(AlarmFrameController.java:91)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:69)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: gui.controller.SimpleAlarmController
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:920)
+	... 69 more
+2017-06-03 21:59:13 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-03 21:59:13 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-03 21:59:14 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 21:59:14 INFO  Client:39 - Registered successful
+2017-06-03 21:59:14 INFO  Main:32 - Starting GUI
+2017-06-03 21:59:14 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 23:27:06 INFO  Main:57 - Terminating client
+2017-06-03 23:27:22 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-03 23:27:22 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-03 23:27:22 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 23:27:22 INFO  Client:39 - Registered successful
+2017-06-03 23:27:22 INFO  Main:32 - Starting GUI
+2017-06-03 23:27:22 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 23:27:44 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 23:27:52 INFO  Main:57 - Terminating client
+2017-06-03 23:31:22 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-03 23:31:22 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-03 23:31:22 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 23:31:22 INFO  Client:39 - Registered successful
+2017-06-03 23:31:22 INFO  Main:32 - Starting GUI
+2017-06-03 23:31:22 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 23:31:32 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 23:35:58 INFO  Main:57 - Terminating client
+2017-06-03 23:36:03 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-03 23:36:03 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-03 23:36:03 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-03 23:36:03 INFO  Client:39 - Registered successful
+2017-06-03 23:36:03 INFO  Main:32 - Starting GUI
+2017-06-03 23:36:04 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-03 23:36:09 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-03 23:36:20 INFO  Main:57 - Terminating client
+2017-06-04 00:01:02 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:01:02 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:01:02 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:01:02 INFO  Client:39 - Registered successful
+2017-06-04 00:01:02 INFO  Main:32 - Starting GUI
+2017-06-04 00:01:02 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:01:11 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-04 00:01:37 INFO  Main:57 - Terminating client
+2017-06-04 00:01:42 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:01:42 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:01:42 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:01:42 INFO  Client:39 - Registered successful
+2017-06-04 00:01:42 INFO  Main:32 - Starting GUI
+2017-06-04 00:01:42 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:01:48 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-04 00:01:50 INFO  Main:57 - Terminating client
+2017-06-04 00:04:16 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:04:16 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:04:16 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:04:16 INFO  Client:39 - Registered successful
+2017-06-04 00:04:16 INFO  Main:32 - Starting GUI
+2017-06-04 00:04:16 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:04:22 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-04 00:04:43 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-06-04 00:17:30 INFO  AddBulbController:64 - Sending ON MESSAGE
+2017-06-04 00:17:39 INFO  AddBulbController:147 - Adding Bulb to Server
+2017-06-04 00:19:45 INFO  Main:57 - Terminating client
+2017-06-04 00:19:49 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:19:49 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:19:49 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:19:49 INFO  Client:39 - Registered successful
+2017-06-04 00:19:49 INFO  Main:32 - Starting GUI
+2017-06-04 00:19:49 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:20:21 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:20:21 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:20:21 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:20:21 INFO  Client:39 - Registered successful
+2017-06-04 00:20:21 INFO  Main:32 - Starting GUI
+2017-06-04 00:20:21 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:23:17 INFO  Main:57 - Terminating client
+2017-06-04 00:23:34 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:23:34 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:23:34 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:23:34 INFO  Client:39 - Registered successful
+2017-06-04 00:23:34 INFO  Main:32 - Starting GUI
+2017-06-04 00:23:35 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:23:56 INFO  Main:57 - Terminating client
+2017-06-04 00:23:58 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 00:23:58 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 00:23:58 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 00:23:58 INFO  Client:39 - Registered successful
+2017-06-04 00:23:58 INFO  Main:32 - Starting GUI
+2017-06-04 00:23:59 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 00:26:33 INFO  Main:57 - Terminating client
+2017-06-04 21:59:56 ERROR ServerFinder:135 - No server found
+2017-06-04 21:59:56 ERROR GuiClient:47 - Unable to find Server
+2017-06-04 21:59:56 WARN  Main:35 - No Server found, will exit
+2017-06-04 22:00:04 ERROR ServerFinder:135 - No server found
+2017-06-04 22:00:04 ERROR GuiClient:47 - Unable to find Server
+2017-06-04 22:00:04 WARN  Main:35 - No Server found, will exit
+2017-06-04 22:00:48 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 22:00:48 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 22:00:48 INFO  Client:31 - Register Client @ 192.168.0.239
+2017-06-04 22:00:48 INFO  Client:39 - Registered successful
+2017-06-04 22:00:48 INFO  Main:32 - Starting GUI
+2017-06-04 22:00:48 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:01:26 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 22:01:26 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 22:01:26 INFO  Client:31 - Register Client @ 192.168.0.239
+2017-06-04 22:01:26 INFO  Client:39 - Registered successful
+2017-06-04 22:01:26 INFO  Main:32 - Starting GUI
+2017-06-04 22:01:26 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:04:25 INFO  Main:57 - Terminating client
+2017-06-04 22:04:29 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 22:04:29 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 22:04:29 INFO  Client:31 - Register Client @ 192.168.0.239
+2017-06-04 22:04:29 INFO  Client:39 - Registered successful
+2017-06-04 22:04:29 INFO  Main:32 - Starting GUI
+2017-06-04 22:04:29 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:09:22 INFO  Main:57 - Terminating client
+2017-06-04 22:09:26 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 22:09:26 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 22:09:26 INFO  Client:31 - Register Client @ 192.168.0.239
+2017-06-04 22:09:26 INFO  Client:39 - Registered successful
+2017-06-04 22:09:26 INFO  Main:32 - Starting GUI
+2017-06-04 22:09:26 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:12:58 INFO  Main:57 - Terminating client
+2017-06-04 22:13:03 INFO  ServerFinder:131 - Found server on 192.168.0.209
+2017-06-04 22:13:03 INFO  GuiClient:50 - Server: 192.168.0.209
+2017-06-04 22:13:03 INFO  Client:31 - Register Client @ 192.168.0.239
+2017-06-04 22:13:03 INFO  Client:39 - Registered successful
+2017-06-04 22:13:03 INFO  Main:32 - Starting GUI
+2017-06-04 22:13:04 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:13:50 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:13:50 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:14:29 ERROR Client:45 - Unable to register Client on Registry
+2017-06-04 22:14:29 INFO  Main:32 - Starting GUI
+2017-06-04 22:14:29 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:14:47 INFO  Main:57 - Terminating client
+2017-06-04 22:16:36 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:16:36 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:16:36 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:16:36 INFO  Client:39 - Registered successful
+2017-06-04 22:16:36 INFO  Main:32 - Starting GUI
+2017-06-04 22:16:37 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:21:53 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:21:53 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:21:53 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:21:53 INFO  Client:39 - Registered successful
+2017-06-04 22:21:53 INFO  Main:32 - Starting GUI
+2017-06-04 22:21:54 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:24:25 INFO  Main:57 - Terminating client
+2017-06-04 22:24:29 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:24:29 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:24:29 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:24:29 INFO  Client:39 - Registered successful
+2017-06-04 22:24:29 INFO  Main:32 - Starting GUI
+2017-06-04 22:24:29 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:28:59 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:28:59 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:28:59 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:28:59 INFO  Client:39 - Registered successful
+2017-06-04 22:28:59 INFO  Main:32 - Starting GUI
+2017-06-04 22:28:59 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:29:10 INFO  Main:57 - Terminating client
+2017-06-04 22:29:33 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:29:33 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:29:33 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:29:33 INFO  Client:39 - Registered successful
+2017-06-04 22:29:33 INFO  Main:32 - Starting GUI
+2017-06-04 22:29:33 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:32:10 INFO  Main:57 - Terminating client
+2017-06-04 22:32:13 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:32:13 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:32:13 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:32:13 INFO  Client:39 - Registered successful
+2017-06-04 22:32:13 INFO  Main:32 - Starting GUI
+2017-06-04 22:32:14 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:32:22 INFO  Main:57 - Terminating client
+2017-06-04 22:34:52 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:34:52 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:34:52 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:34:52 INFO  Client:39 - Registered successful
+2017-06-04 22:34:52 INFO  Main:32 - Starting GUI
+2017-06-04 22:34:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:38:32 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:38:32 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:38:32 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:38:32 INFO  Client:39 - Registered successful
+2017-06-04 22:38:32 INFO  Main:32 - Starting GUI
+2017-06-04 22:38:33 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:41:19 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:41:19 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:41:20 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:41:20 INFO  Client:39 - Registered successful
+2017-06-04 22:41:20 INFO  Main:32 - Starting GUI
+2017-06-04 22:41:20 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:41:48 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:41:48 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:41:48 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:41:48 INFO  Client:39 - Registered successful
+2017-06-04 22:41:48 INFO  Main:32 - Starting GUI
+2017-06-04 22:41:49 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:43:09 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:43:09 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:43:09 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:43:09 INFO  Client:39 - Registered successful
+2017-06-04 22:43:09 INFO  Main:32 - Starting GUI
+2017-06-04 22:43:09 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:46:39 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:46:39 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:46:39 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:46:39 INFO  Client:39 - Registered successful
+2017-06-04 22:46:39 INFO  Main:32 - Starting GUI
+2017-06-04 22:46:39 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:47:25 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:47:25 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:47:25 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:47:25 INFO  Client:39 - Registered successful
+2017-06-04 22:47:25 INFO  Main:32 - Starting GUI
+2017-06-04 22:47:25 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:47:26 INFO  Main:57 - Terminating client
+2017-06-04 22:48:32 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:48:32 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:48:32 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:48:32 INFO  Client:39 - Registered successful
+2017-06-04 22:48:32 INFO  Main:32 - Starting GUI
+2017-06-04 22:48:33 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:49:26 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:49:26 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:49:26 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:49:26 INFO  Client:39 - Registered successful
+2017-06-04 22:49:26 INFO  Main:32 - Starting GUI
+2017-06-04 22:49:26 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:52:56 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:52:56 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:52:56 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:52:56 INFO  Client:39 - Registered successful
+2017-06-04 22:52:56 INFO  Main:32 - Starting GUI
+2017-06-04 22:52:56 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:52:58 ERROR MainFrameController:84 - Unable to load Module
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/Alarm.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.loadModule(MainFrameController.java:66)
+	at gui.controller.MainFrameController.access$1(MainFrameController.java:62)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:52)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$SingleChange.fireValueChangedEvent(ExpressionHelper.java:182)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: cannot assign instance of data.Command to field modules.timer.SimpleAlarm.command of type data.State in instance of modules.timer.SimpleAlarm
+	at java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2133)
+	at java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1305)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2251)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2169)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2136)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at sun.rmi.server.UnicastRef.unmarshalValue(UnicastRef.java:326)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:175)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy1.getAlarmList(Unknown Source)
+	at gui.controller.AlarmFrameController.initialize(AlarmFrameController.java:60)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 63 more
+2017-06-04 22:55:51 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:55:51 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:55:51 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:55:52 INFO  Client:39 - Registered successful
+2017-06-04 22:55:52 INFO  Main:32 - Starting GUI
+2017-06-04 22:55:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 22:57:19 INFO  Main:57 - Terminating client
+2017-06-04 22:57:24 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-04 22:57:24 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-04 22:57:25 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-04 22:57:25 INFO  Client:39 - Registered successful
+2017-06-04 22:57:25 INFO  Main:32 - Starting GUI
+2017-06-04 22:57:25 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-04 23:02:55 INFO  Main:57 - Terminating client
+2017-06-05 14:25:48 ERROR ServerFinder:135 - No server found
+2017-06-05 14:25:48 ERROR GuiClient:47 - Unable to find Server
+2017-06-05 14:25:48 WARN  Main:35 - No Server found, will exit
+2017-06-05 14:26:19 ERROR ServerFinder:135 - No server found
+2017-06-05 14:26:19 ERROR GuiClient:47 - Unable to find Server
+2017-06-05 14:26:19 WARN  Main:35 - No Server found, will exit
+2017-06-05 14:29:47 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 14:29:47 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 14:29:47 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 14:29:48 INFO  Client:39 - Registered successful
+2017-06-05 14:29:48 INFO  Main:32 - Starting GUI
+2017-06-05 14:29:48 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 14:32:09 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 14:32:09 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 14:32:09 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 14:32:09 INFO  Client:39 - Registered successful
+2017-06-05 14:32:09 INFO  Main:32 - Starting GUI
+2017-06-05 14:32:10 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 14:32:37 INFO  Main:57 - Terminating client
+2017-06-05 14:32:41 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 14:32:41 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 14:32:41 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 14:32:41 INFO  Client:39 - Registered successful
+2017-06-05 14:32:41 INFO  Main:32 - Starting GUI
+2017-06-05 14:32:41 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 14:32:51 INFO  Main:57 - Terminating client
+2017-06-05 14:32:57 ERROR ServerFinder:135 - No server found
+2017-06-05 14:32:57 ERROR GuiClient:47 - Unable to find Server
+2017-06-05 14:32:57 WARN  Main:35 - No Server found, will exit
+2017-06-05 14:36:40 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 14:36:40 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 14:36:40 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 14:36:40 INFO  Client:39 - Registered successful
+2017-06-05 14:36:40 INFO  Main:32 - Starting GUI
+2017-06-05 14:36:40 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 14:36:44 INFO  Main:57 - Terminating client
+2017-06-05 14:36:50 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 14:36:50 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 14:36:50 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 14:36:50 INFO  Client:39 - Registered successful
+2017-06-05 14:36:50 INFO  Main:32 - Starting GUI
+2017-06-05 14:36:51 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 16:14:11 INFO  Main:57 - Terminating client
+2017-06-05 21:40:23 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-05 21:40:23 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-05 21:40:23 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-05 21:40:24 INFO  Client:39 - Registered successful
+2017-06-05 21:40:24 INFO  Main:32 - Starting GUI
+2017-06-05 21:40:24 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-05 22:35:30 INFO  Main:57 - Terminating client
+2017-06-06 17:17:52 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:17:52 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:17:52 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:17:52 ERROR Client:45 - Unable to register Client on Registry
+2017-06-06 17:17:52 INFO  Main:32 - Starting GUI
+2017-06-06 17:17:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:20:58 INFO  Main:57 - Terminating client
+2017-06-06 17:22:59 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:22:59 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:22:59 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:22:59 INFO  Client:39 - Registered successful
+2017-06-06 17:22:59 INFO  Main:32 - Starting GUI
+2017-06-06 17:22:59 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:30:25 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:30:25 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:30:26 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:30:26 INFO  Client:39 - Registered successful
+2017-06-06 17:30:26 INFO  Main:32 - Starting GUI
+2017-06-06 17:30:26 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:33:22 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:33:22 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:33:22 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:33:22 INFO  Client:39 - Registered successful
+2017-06-06 17:33:22 INFO  Main:32 - Starting GUI
+2017-06-06 17:33:22 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:37:29 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:37:29 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:37:29 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:37:29 INFO  Client:39 - Registered successful
+2017-06-06 17:37:29 INFO  Main:32 - Starting GUI
+2017-06-06 17:37:29 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:37:53 INFO  Main:57 - Terminating client
+2017-06-06 17:38:03 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:38:03 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:38:03 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:38:03 INFO  Client:39 - Registered successful
+2017-06-06 17:38:03 INFO  Main:32 - Starting GUI
+2017-06-06 17:38:03 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 17:41:20 INFO  Main:57 - Terminating client
+2017-06-06 17:41:52 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 17:41:52 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 17:41:52 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 17:41:52 INFO  Client:39 - Registered successful
+2017-06-06 17:41:52 INFO  Main:32 - Starting GUI
+2017-06-06 17:41:53 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 18:05:39 INFO  Main:57 - Terminating client
+2017-06-06 18:06:23 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 18:06:23 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 18:06:23 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 18:06:23 INFO  Client:39 - Registered successful
+2017-06-06 18:06:23 INFO  Main:32 - Starting GUI
+2017-06-06 18:06:23 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 18:06:48 INFO  Main:57 - Terminating client
+2017-06-06 18:06:51 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 18:06:51 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 18:06:51 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 18:06:51 INFO  Client:39 - Registered successful
+2017-06-06 18:06:51 INFO  Main:32 - Starting GUI
+2017-06-06 18:06:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 18:47:59 INFO  Main:57 - Terminating client
+2017-06-06 20:25:43 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-06 20:25:43 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-06 20:25:43 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-06 20:25:43 INFO  Client:39 - Registered successful
+2017-06-06 20:25:43 INFO  Main:32 - Starting GUI
+2017-06-06 20:25:43 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-06 20:25:50 INFO  Main:57 - Terminating client
+2017-06-28 23:32:06 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:32:06 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:32:06 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-28 23:32:06 INFO  Client:39 - Registered successful
+2017-06-28 23:32:06 INFO  Main:32 - Starting GUI
+2017-06-28 23:32:06 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-28 23:33:09 INFO  Main:57 - Terminating client
+2017-06-28 23:34:18 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:34:18 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:34:18 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-28 23:34:18 INFO  Client:39 - Registered successful
+2017-06-28 23:34:18 INFO  Main:32 - Starting GUI
+2017-06-28 23:34:18 INFO  MainFrameController:41 - Loading MainFrame
+2017-06-28 23:34:22 INFO  Main:57 - Terminating client
+2017-06-28 23:34:30 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:34:30 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:34:30 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-28 23:34:30 INFO  Client:39 - Registered successful
+2017-06-28 23:34:30 INFO  Main:32 - Starting GUI
+2017-06-28 23:34:30 INFO  MainFrameController:41 - Loading MainFrame
+2017-06-28 23:47:53 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:47:53 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:47:53 INFO  Client:33 - Register Client @ 192.168.0.240
+2017-06-28 23:47:53 INFO  Client:41 - Registered successful
+2017-06-28 23:47:53 INFO  Main:32 - Starting GUI
+2017-06-28 23:47:54 INFO  MainFrameController:42 - Loading MainFrame
+2017-06-28 23:48:41 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:48:41 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:48:41 INFO  Client:33 - Register Client @ 192.168.0.240
+2017-06-28 23:48:41 INFO  Client:41 - Registered successful
+2017-06-28 23:48:41 INFO  Main:32 - Starting GUI
+2017-06-28 23:48:41 INFO  MainFrameController:42 - Loading MainFrame
+2017-06-28 23:49:21 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:49:21 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:49:21 INFO  Client:33 - Register Client @ 192.168.0.240
+2017-06-28 23:49:21 INFO  Client:41 - Registered successful
+2017-06-28 23:49:21 INFO  Main:32 - Starting GUI
+2017-06-28 23:49:21 INFO  MainFrameController:42 - Loading MainFrame
+2017-06-28 23:50:26 INFO  Main:57 - Terminating client
+2017-06-28 23:50:34 INFO  ServerFinder:131 - Found server on 192.168.0.240
+2017-06-28 23:50:34 INFO  GuiClient:50 - Server: 192.168.0.240
+2017-06-28 23:50:34 INFO  Client:33 - Register Client @ 192.168.0.240
+2017-06-28 23:50:34 INFO  Client:41 - Registered successful
+2017-06-28 23:50:34 INFO  Main:32 - Starting GUI
+2017-06-28 23:50:34 INFO  MainFrameController:42 - Loading MainFrame
+2017-06-28 23:55:22 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-28 23:55:22 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-28 23:55:22 INFO  Client:33 - Register Client @ 192.168.0.240
+2017-06-28 23:55:22 INFO  Client:41 - Registered successful
+2017-06-28 23:55:22 INFO  Main:32 - Starting GUI
+2017-06-28 23:55:22 INFO  MainFrameController:42 - Loading MainFrame
+2017-06-29 11:11:14 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 11:11:14 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 11:11:14 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 11:11:14 INFO  Client:39 - Registered successful
+2017-06-29 11:11:14 INFO  Main:32 - Starting GUI
+2017-06-29 11:11:14 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 11:11:28 INFO  Main:57 - Terminating client
+2017-06-29 11:19:48 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 11:19:48 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 11:19:48 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 11:19:48 INFO  Client:39 - Registered successful
+2017-06-29 11:19:48 INFO  Main:32 - Starting GUI
+2017-06-29 11:19:48 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 11:28:42 ERROR ServerFinder:135 - No server found
+2017-06-29 11:28:42 ERROR GuiClient:47 - Unable to find Server
+2017-06-29 11:28:42 WARN  Main:35 - No Server found, will exit
+2017-06-29 11:28:48 ERROR ServerFinder:135 - No server found
+2017-06-29 11:28:48 ERROR GuiClient:47 - Unable to find Server
+2017-06-29 11:28:48 WARN  Main:35 - No Server found, will exit
+2017-06-29 12:50:11 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:50:11 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:50:11 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:50:11 INFO  Client:39 - Registered successful
+2017-06-29 12:50:11 INFO  Main:32 - Starting GUI
+2017-06-29 12:50:11 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:50:33 INFO  Main:57 - Terminating client
+2017-06-29 12:55:24 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:55:24 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:55:24 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:55:24 INFO  Client:39 - Registered successful
+2017-06-29 12:55:24 INFO  Main:32 - Starting GUI
+2017-06-29 12:55:24 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:55:27 INFO  Main:57 - Terminating client
+2017-06-29 12:55:52 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:55:52 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:55:52 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:55:52 INFO  Client:39 - Registered successful
+2017-06-29 12:55:52 INFO  Main:32 - Starting GUI
+2017-06-29 12:55:52 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:56:10 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:56:10 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:56:10 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:56:10 INFO  Client:39 - Registered successful
+2017-06-29 12:56:10 INFO  Main:32 - Starting GUI
+2017-06-29 12:56:10 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:56:13 INFO  Main:57 - Terminating client
+2017-06-29 12:56:42 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:56:42 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:56:42 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:56:42 INFO  Client:39 - Registered successful
+2017-06-29 12:56:42 INFO  Main:32 - Starting GUI
+2017-06-29 12:56:42 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:56:45 INFO  Main:57 - Terminating client
+2017-06-29 12:57:08 INFO  ServerFinder:131 - Found server on 192.168.0.210
+2017-06-29 12:57:08 INFO  GuiClient:50 - Server: 192.168.0.210
+2017-06-29 12:57:08 INFO  Client:31 - Register Client @ 192.168.0.240
+2017-06-29 12:57:08 INFO  Client:39 - Registered successful
+2017-06-29 12:57:08 INFO  Main:32 - Starting GUI
+2017-06-29 12:57:09 INFO  MainFrameController:39 - Loading MainFrame
+2017-06-29 12:57:13 INFO  Main:57 - Terminating client
+2017-06-29 12:59:03 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 12:59:03 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 12:59:03 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 12:59:03 INFO  39 :Client                         - Registered successful
+2017-06-29 12:59:03 INFO  32 :Main                           - Starting GUI
+2017-06-29 12:59:03 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 12:59:09 INFO  64 :AddBulbController              - Sending ON MESSAGE
+2017-06-29 12:59:13 INFO  147:AddBulbController              - Adding Bulb to Server
+2017-06-29 12:59:19 INFO  64 :AddBulbController              - Sending ON MESSAGE
+2017-06-29 12:59:23 INFO  147:AddBulbController              - Adding Bulb to Server
+2017-06-29 13:02:24 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 13:02:24 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 13:02:24 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 13:02:24 INFO  39 :Client                         - Registered successful
+2017-06-29 13:02:24 INFO  32 :Main                           - Starting GUI
+2017-06-29 13:02:24 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 13:31:45 INFO  57 :Main                           - Terminating client
+2017-06-29 20:43:12 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 20:43:12 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 20:43:12 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 20:43:12 INFO  39 :Client                         - Registered successful
+2017-06-29 20:43:12 INFO  32 :Main                           - Starting GUI
+2017-06-29 20:43:13 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 20:43:25 INFO  64 :AddBulbController              - Sending ON MESSAGE
+2017-06-29 20:43:33 INFO  57 :Main                           - Terminating client
+2017-06-29 20:43:36 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 20:43:36 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 20:43:36 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 20:43:36 INFO  39 :Client                         - Registered successful
+2017-06-29 20:43:36 INFO  32 :Main                           - Starting GUI
+2017-06-29 20:43:36 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 20:44:22 INFO  57 :Main                           - Terminating client
+2017-06-29 22:14:12 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:14:12 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:14:12 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:14:12 INFO  39 :Client                         - Registered successful
+2017-06-29 22:14:12 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:14:13 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:14:15 INFO  57 :Main                           - Terminating client
+2017-06-29 22:18:38 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:18:38 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:18:38 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:18:38 INFO  39 :Client                         - Registered successful
+2017-06-29 22:18:38 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:18:38 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:18:45 ERROR 110:SimpleAlarmController          - Unable to load Controller
+java.lang.NullPointerException
+	at gui.controller.SimpleAlarmController.loadContoller(SimpleAlarmController.java:103)
+	at gui.controller.SimpleAlarmController.initialize(SimpleAlarmController.java:95)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.AlarmFrameController.loadAlarmGUI(AlarmFrameController.java:103)
+	at gui.controller.AlarmFrameController.updateAlarmEditor(AlarmFrameController.java:92)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:69)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+2017-06-29 22:18:58 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:18:58 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:18:58 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:18:58 INFO  39 :Client                         - Registered successful
+2017-06-29 22:18:58 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:18:58 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:19:07 ERROR 110:SimpleAlarmController          - Unable to load Controller
+java.lang.NullPointerException
+	at gui.controller.SimpleAlarmController.loadContoller(SimpleAlarmController.java:103)
+	at gui.controller.SimpleAlarmController.initialize(SimpleAlarmController.java:95)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.AlarmFrameController.loadAlarmGUI(AlarmFrameController.java:103)
+	at gui.controller.AlarmFrameController.updateAlarmEditor(AlarmFrameController.java:92)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:69)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+2017-06-29 22:19:54 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:19:54 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:19:54 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:19:54 INFO  39 :Client                         - Registered successful
+2017-06-29 22:19:54 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:19:54 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:20:12 INFO  57 :Main                           - Terminating client
+2017-06-29 22:20:54 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:20:54 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:20:54 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:20:54 INFO  39 :Client                         - Registered successful
+2017-06-29 22:20:54 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:20:54 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:20:57 ERROR 96 :AlarmFrameController           - Unable to load Simple Alarm GUI
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/SimpleAlarm.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.AlarmFrameController.loadAlarmGUI(AlarmFrameController.java:103)
+	at gui.controller.AlarmFrameController.updateAlarmEditor(AlarmFrameController.java:92)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:69)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at gui.controller.SimpleAlarmController.initialize(SimpleAlarmController.java:52)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 64 more
+2017-06-29 22:22:49 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:22:49 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:22:49 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:22:49 INFO  39 :Client                         - Registered successful
+2017-06-29 22:22:49 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:22:49 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:22:52 ERROR 96 :AlarmFrameController           - Unable to load Simple Alarm GUI
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/SimpleAlarm.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.AlarmFrameController.loadAlarmGUI(AlarmFrameController.java:103)
+	at gui.controller.AlarmFrameController.updateAlarmEditor(AlarmFrameController.java:92)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:69)
+	at gui.controller.AlarmFrameController$1.changed(AlarmFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException
+	at gui.controller.SimpleAlarmController.initialize(SimpleAlarmController.java:52)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 64 more
+2017-06-29 22:23:24 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:23:24 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:23:24 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:23:24 INFO  39 :Client                         - Registered successful
+2017-06-29 22:23:24 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:23:24 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:23:51 INFO  57 :Main                           - Terminating client
+2017-06-29 22:23:52 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:23:52 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:23:52 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:23:53 INFO  39 :Client                         - Registered successful
+2017-06-29 22:23:53 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:23:53 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:24:24 INFO  57 :Main                           - Terminating client
+2017-06-29 22:25:24 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:25:24 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:25:24 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:25:25 INFO  39 :Client                         - Registered successful
+2017-06-29 22:25:25 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:25:25 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:26:23 INFO  57 :Main                           - Terminating client
+2017-06-29 22:28:21 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:28:21 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:28:21 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:28:21 INFO  39 :Client                         - Registered successful
+2017-06-29 22:28:21 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:28:21 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:29:00 INFO  57 :Main                           - Terminating client
+2017-06-29 22:34:03 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:34:03 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:34:03 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:34:03 INFO  39 :Client                         - Registered successful
+2017-06-29 22:34:03 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:34:03 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:35:41 INFO  57 :Main                           - Terminating client
+2017-06-29 22:35:42 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:35:42 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:35:42 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:35:42 INFO  39 :Client                         - Registered successful
+2017-06-29 22:35:42 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:35:42 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:37:45 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:37:45 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:37:45 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:37:45 INFO  39 :Client                         - Registered successful
+2017-06-29 22:37:45 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:37:45 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:41:05 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:41:05 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:41:06 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:41:06 INFO  39 :Client                         - Registered successful
+2017-06-29 22:41:06 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:41:06 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:42:43 INFO  57 :Main                           - Terminating client
+2017-06-29 22:42:57 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:42:57 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:42:57 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:42:57 INFO  39 :Client                         - Registered successful
+2017-06-29 22:42:57 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:42:57 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:43:05 INFO  57 :Main                           - Terminating client
+2017-06-29 22:43:28 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:43:28 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:43:28 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:43:28 INFO  39 :Client                         - Registered successful
+2017-06-29 22:43:28 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:43:28 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:44:46 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:44:46 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:44:46 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:44:46 INFO  39 :Client                         - Registered successful
+2017-06-29 22:44:46 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:44:46 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:44:47 INFO  57 :Main                           - Terminating client
+2017-06-29 22:46:48 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:46:48 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:46:48 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:46:48 INFO  39 :Client                         - Registered successful
+2017-06-29 22:46:48 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:46:48 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:49:07 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:49:07 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:49:07 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:49:07 INFO  39 :Client                         - Registered successful
+2017-06-29 22:49:07 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:49:08 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:49:10 INFO  190:ControlController              - Select only Bulb <Bulb2>
+2017-06-29 22:49:20 INFO  190:ControlController              - Select only Bulb <Bulb1>
+2017-06-29 22:49:30 INFO  190:ControlController              - Select only Bulb <Bulb2>
+2017-06-29 22:49:42 INFO  190:ControlController              - Select only Bulb <Bulb1>
+2017-06-29 22:50:08 INFO  190:ControlController              - Select only Bulb <Bulb1>
+2017-06-29 22:50:17 INFO  190:ControlController              - Select only Bulb <Bulb2>
+2017-06-29 22:50:22 INFO  57 :Main                           - Terminating client
+2017-06-29 22:50:26 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:50:26 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:50:27 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:50:27 INFO  39 :Client                         - Registered successful
+2017-06-29 22:50:27 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:50:27 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:50:30 INFO  190:ControlController              - Select only Bulb <Bulb1>
+2017-06-29 22:51:23 INFO  57 :Main                           - Terminating client
+2017-06-29 22:51:36 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 22:51:36 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 22:51:36 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 22:51:36 INFO  39 :Client                         - Registered successful
+2017-06-29 22:51:36 INFO  32 :Main                           - Starting GUI
+2017-06-29 22:51:37 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 22:52:18 INFO  190:ControlController              - Select only Bulb <Bulb2>
+2017-06-29 22:52:25 INFO  190:ControlController              - Select only Bulb <Bulb1>
+2017-06-29 23:02:02 INFO  131:ServerFinder                   - Found server on 192.168.0.210
+2017-06-29 23:02:02 INFO  50 :GuiClient                      - Server: 192.168.0.210
+2017-06-29 23:02:02 INFO  31 :Client                         - Register Client @ 192.168.0.240
+2017-06-29 23:02:02 INFO  39 :Client                         - Registered successful
+2017-06-29 23:02:02 INFO  32 :Main                           - Starting GUI
+2017-06-29 23:02:02 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 23:02:03 ERROR 84 :MainFrameController            - Unable to load Module
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/Alarm.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.loadModule(MainFrameController.java:66)
+	at gui.controller.MainFrameController.access$1(MainFrameController.java:62)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:52)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$SingleChange.fireValueChangedEvent(ExpressionHelper.java:182)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: cannot assign instance of data.State to field modules.timer.SimpleAlarm.command of type data.Command in instance of modules.timer.SimpleAlarm
+	at java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2133)
+	at java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1305)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2251)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2169)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2136)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at sun.rmi.server.UnicastRef.unmarshalValue(UnicastRef.java:326)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:175)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy1.getAlarmList(Unknown Source)
+	at gui.controller.AlarmFrameController.initialize(AlarmFrameController.java:61)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 63 more
+2017-06-29 23:30:35 INFO  131:ServerFinder                   - Found server on 192.168.0.209
+2017-06-29 23:30:35 INFO  50 :GuiClient                      - Server: 192.168.0.209
+2017-06-29 23:33:11 INFO  131:ServerFinder                   - Found server on 192.168.0.209
+2017-06-29 23:33:11 INFO  50 :GuiClient                      - Server: 192.168.0.209
+2017-06-29 23:33:11 INFO  31 :Client                         - Register Client @ 192.168.0.239
+2017-06-29 23:33:11 INFO  39 :Client                         - Registered successful
+2017-06-29 23:33:11 INFO  32 :Main                           - Starting GUI
+2017-06-29 23:33:12 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 23:33:13 ERROR 84 :MainFrameController            - Unable to load Module
+javafx.fxml.LoadException: 
+/D:/Users/Florian/Dokumente/WORKSPACE/Mimimi-Gui/bin/gui/gui/Alarm.fxml
+
+	at javafx.fxml.FXMLLoader.constructLoadException(FXMLLoader.java:2601)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2579)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at gui.controller.MainFrameController.loadScene(MainFrameController.java:77)
+	at gui.controller.MainFrameController.loadModule(MainFrameController.java:66)
+	at gui.controller.MainFrameController.access$1(MainFrameController.java:62)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:52)
+	at gui.controller.MainFrameController$1.changed(MainFrameController.java:1)
+	at com.sun.javafx.binding.ExpressionHelper$SingleChange.fireValueChangedEvent(ExpressionHelper.java:182)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyObjectPropertyBase.fireValueChangedEvent(ReadOnlyObjectPropertyBase.java:74)
+	at javafx.beans.property.ReadOnlyObjectWrapper.fireValueChangedEvent(ReadOnlyObjectWrapper.java:102)
+	at javafx.beans.property.ObjectPropertyBase.markInvalid(ObjectPropertyBase.java:112)
+	at javafx.beans.property.ObjectPropertyBase.set(ObjectPropertyBase.java:146)
+	at javafx.scene.control.SelectionModel.setSelectedItem(SelectionModel.java:102)
+	at javafx.scene.control.MultipleSelectionModelBase.lambda$new$34(MultipleSelectionModelBase.java:67)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.beans.property.ReadOnlyIntegerPropertyBase.fireValueChangedEvent(ReadOnlyIntegerPropertyBase.java:72)
+	at javafx.beans.property.ReadOnlyIntegerWrapper.fireValueChangedEvent(ReadOnlyIntegerWrapper.java:102)
+	at javafx.beans.property.IntegerPropertyBase.markInvalid(IntegerPropertyBase.java:113)
+	at javafx.beans.property.IntegerPropertyBase.set(IntegerPropertyBase.java:147)
+	at javafx.scene.control.SelectionModel.setSelectedIndex(SelectionModel.java:68)
+	at javafx.scene.control.MultipleSelectionModelBase.select(MultipleSelectionModelBase.java:404)
+	at javafx.scene.control.MultipleSelectionModelBase.clearAndSelect(MultipleSelectionModelBase.java:356)
+	at javafx.scene.control.ListView$ListViewBitSetSelectionModel.clearAndSelect(ListView.java:1403)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.simpleSelect(CellBehaviorBase.java:256)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.doSelect(CellBehaviorBase.java:220)
+	at com.sun.javafx.scene.control.behavior.CellBehaviorBase.mousePressed(CellBehaviorBase.java:150)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:95)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassCastException: cannot assign instance of data.State to field modules.timer.SimpleAlarm.command of type data.Command in instance of modules.timer.SimpleAlarm
+	at java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2133)
+	at java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1305)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2251)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2169)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at java.util.ArrayList.readObject(ArrayList.java:791)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2136)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2027)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1535)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:422)
+	at sun.rmi.server.UnicastRef.unmarshalValue(UnicastRef.java:326)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:175)
+	at java.rmi.server.RemoteObjectInvocationHandler.invokeRemoteMethod(RemoteObjectInvocationHandler.java:227)
+	at java.rmi.server.RemoteObjectInvocationHandler.invoke(RemoteObjectInvocationHandler.java:179)
+	at com.sun.proxy.$Proxy1.getAlarmList(Unknown Source)
+	at gui.controller.AlarmFrameController.initialize(AlarmFrameController.java:61)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548)
+	... 63 more
+2017-06-29 23:36:16 INFO  131:ServerFinder                   - Found server on 192.168.0.209
+2017-06-29 23:36:16 INFO  50 :GuiClient                      - Server: 192.168.0.209
+2017-06-29 23:36:16 INFO  31 :Client                         - Register Client @ 192.168.0.239
+2017-06-29 23:36:16 INFO  39 :Client                         - Registered successful
+2017-06-29 23:36:16 INFO  32 :Main                           - Starting GUI
+2017-06-29 23:36:16 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 23:37:29 INFO  57 :Main                           - Terminating client
+2017-06-29 23:37:34 INFO  131:ServerFinder                   - Found server on 192.168.0.209
+2017-06-29 23:37:34 INFO  50 :GuiClient                      - Server: 192.168.0.209
+2017-06-29 23:37:34 INFO  31 :Client                         - Register Client @ 192.168.0.239
+2017-06-29 23:37:34 INFO  39 :Client                         - Registered successful
+2017-06-29 23:37:34 INFO  32 :Main                           - Starting GUI
+2017-06-29 23:37:34 INFO  39 :MainFrameController            - Loading MainFrame
+2017-06-29 23:38:15 INFO  57 :Main                           - Terminating client

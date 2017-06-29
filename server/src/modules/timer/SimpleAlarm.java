@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 
 import data.Bulb;
+import data.Command;
 import data.State;
 
 public class SimpleAlarm extends Alarm {
@@ -12,9 +13,9 @@ public class SimpleAlarm extends Alarm {
 	 * 
 	 */
 	private static final long	serialVersionUID	= 4346675791191520129L;
-	private State				command;
+	private Command				command;
 
-	public SimpleAlarm(GregorianCalendar date, Mode mode, State Command) {
+	public SimpleAlarm(GregorianCalendar date, Mode mode, Command Command) {
 		super(mode, date);
 		this.command = Command;
 	}
@@ -25,7 +26,7 @@ public class SimpleAlarm extends Alarm {
 	}
 
 
-	public void setState(State Command) {
+	public void setCommand(Command Command) {
 		this.command = Command;
 	}
 
@@ -34,14 +35,16 @@ public class SimpleAlarm extends Alarm {
 		return System.currentTimeMillis() >= getDate().getTimeInMillis();
 	}
 
-	@Override
-	public State getState() {
-		return command;
-	}
 
 	@Override
 	public ArrayList<Bulb> getBulbList() {
-		return super.getBulbList();
+		return command.getBulbList();
+	}
+
+	@Override
+	public State getState() {
+		// TODO Auto-generated method stub
+		return command.getState();
 	}
 
 

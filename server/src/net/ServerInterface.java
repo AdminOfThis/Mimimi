@@ -13,7 +13,9 @@ public interface ServerInterface extends Remote {
 
 	public int createClientID() throws RemoteException;
 
-	public boolean clientRegister(int index) throws RemoteException;
+	public boolean registerClient(int index) throws RemoteException;
+
+	public void unregisterClient(int index) throws RemoteException;
 
 	public void update(LightCommand state) throws RemoteException;
 

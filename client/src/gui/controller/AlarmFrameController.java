@@ -9,6 +9,7 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
+import data.Command;
 import data.State;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
@@ -115,7 +116,7 @@ public class AlarmFrameController implements Initializable {
 	private void addAlarm(ActionEvent e) {
 		GregorianCalendar cal = new GregorianCalendar();
 		cal.add(GregorianCalendar.DAY_OF_MONTH, 1);
-		Alarm a = new SimpleAlarm(cal, Mode.ONCE, new State(0x00));
+		Alarm a = new SimpleAlarm(cal, Mode.ONCE, new Command(new State(0x00)));
 		try {
 			GuiClient.getInstance().getServer().addAlarm(a);
 		}

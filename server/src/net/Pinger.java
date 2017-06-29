@@ -7,10 +7,10 @@ import org.apache.log4j.Logger;
 
 public class Pinger extends Thread {
 
-	private static final Logger LOG = Logger.getLogger(Pinger.class);
-	private Server server;
-	private boolean finish = false;
-	private long delay = 1000;
+	private static final Logger	LOG		= Logger.getLogger(Pinger.class);
+	private Server				server;
+	private boolean				finish	= false;
+	private long				delay	= 1000;
 
 	public Pinger(Server server) {
 		this.server = server;
@@ -34,12 +34,14 @@ public class Pinger extends Thread {
 					removeList.add(client);
 				}
 			}
-			server.removeClients(removeList);
-			try {
-				Thread.sleep(delay);
-			}
-			catch (InterruptedException e) {
-				LOG.error("Pinger is tired, but unable to sleep :( ", e);
+			for (ClientInterface i : removeList) {
+				server.removeClient(i);
+				try {
+					Thread.sleep(delay);
+				}
+				catch (InterruptedException e) {
+					LOG.error("Pinger is tired, but unable to sleep :( ", e);
+				}
 			}
 		}
 	}

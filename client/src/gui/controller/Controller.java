@@ -7,11 +7,11 @@ import javafx.fxml.Initializable;
 
 public abstract class Controller implements Initializable {
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-	initialize();
-    }
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		initialize();
+	}
 
-    public abstract void initialize();
+	public abstract void initialize();
 
 }

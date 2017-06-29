@@ -2,13 +2,10 @@ package modules.timer;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.GregorianCalendar;
 
 import org.apache.log4j.Logger;
 
-import data.Bulb;
 import data.LightCommand;
 
 public abstract class Alarm implements Serializable, LightCommand {
@@ -27,7 +24,6 @@ public abstract class Alarm implements Serializable, LightCommand {
 
 	private Mode				mode;
 	private GregorianCalendar	date;
-	private ArrayList<Bulb>		bulbList	= new ArrayList<>();
 
 	public Alarm(Mode m, GregorianCalendar d) {
 		this.mode = m;
@@ -104,24 +100,5 @@ public abstract class Alarm implements Serializable, LightCommand {
 			return this.getID() == other.getID();
 		}
 		return false;
-	}
-
-	public ArrayList<Bulb> getBulbList() {
-		return new ArrayList<>(bulbList);
-	}
-
-	public void addBulb(Bulb bulb) {
-		if (!bulbList.contains(bulb)) {
-			bulbList.add(bulb);
-		}
-	}
-
-	public void removeBulb(Bulb bulb) {
-		bulbList.remove(bulb);
-	}
-
-	public void setAllBulbs(Collection<Bulb> bulbs) {
-		bulbList.clear();
-		bulbList.addAll(bulbs);
 	}
 }

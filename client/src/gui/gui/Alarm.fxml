@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.AlarmFrameController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.AlarmFrameController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -26,7 +26,7 @@
             </ToolBar>
          </top>
          <center>
-            <SplitPane dividerPositions="0.5" BorderPane.alignment="CENTER">
+            <SplitPane dividerPositions="0.3" BorderPane.alignment="CENTER">
               <items>
                   <ListView fx:id="alarmList" editable="true" prefWidth="150.0" SplitPane.resizableWithParent="false" />
                   <VBox>

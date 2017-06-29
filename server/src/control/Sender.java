@@ -94,7 +94,6 @@ public class Sender {
 	}
 
 	private void sendRawCommand(String cmd) throws IOException, InterruptedException {
-		System.out.println(cmd);
 		LOG.debug(cmd);
 		if (isLinux()) {
 			for (int run = 0; run < SEQUENCE_RANGE / SEQUENCE_SPACE; run++) {
@@ -200,7 +199,6 @@ public class Sender {
 
 	private String buildCommand(Address address, State state) {
 		String command = "";
-		// return "B" + Integer.toHexString(currentMode) + " " + addressString + " " + colorString + " " + brightString + " " + buttonString;
 
 		command = buildCurrentMode(state);
 		command += " " + buildRemoteCommand(address);

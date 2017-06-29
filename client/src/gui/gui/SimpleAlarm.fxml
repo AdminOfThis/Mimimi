@@ -4,8 +4,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -43,11 +41,6 @@
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
          </padding>
       </GridPane>
-      <SplitPane dividerPositions="0.29797979797979796">
-        <items>
-            <ListView fx:id="bulbList" />
-            <AnchorPane fx:id="controllerAnchor" prefHeight="200.0" prefWidth="200.0" />
-        </items>
-      </SplitPane>
+      <AnchorPane fx:id="controllerPane" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
    </children>
 </VBox>

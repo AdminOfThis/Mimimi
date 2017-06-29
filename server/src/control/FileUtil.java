@@ -19,7 +19,7 @@ public abstract class FileUtil {
 	private static final Logger LOG = Logger.getLogger(FileUtil.class);
 
 	public static void saveList(List<?> list, File file) {
-		LOG.info("Saving list to file: " + file.getName());
+		LOG.info("Saving list to file <" + file.getName() + ">");
 		try {
 			FileOutputStream fos = new FileOutputStream(file);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -35,13 +35,13 @@ public abstract class FileUtil {
 		ArrayList<?> result = new ArrayList<>();
 		LOG.info("Loading list from file: " + file.getName());
 		if (!file.exists() || file.isDirectory()) {
-			LOG.warn("List File " + file.getName() + "not found");
+			LOG.warn("List File <" + file.getName() + "> not found");
 		} else {
 			try {
 				FileInputStream fos = new FileInputStream(file);
 				ObjectInputStream oos = new ObjectInputStream(fos);
 				result = (ArrayList<?>) oos.readObject();
-				LOG.info("Loaded " + result.size() + " objects from list");
+				LOG.info("Loaded <" + result.size() + "> objects from list");
 				oos.close();
 			}
 			catch (InvalidClassException e) {
@@ -50,7 +50,7 @@ public abstract class FileUtil {
 			}
 			catch (Exception e) {
 
-				LOG.error("Error while reading list from file " + file.getName(), e);
+				LOG.error("Error while reading list from file >" + file.getName() + ">", e);
 			}
 		}
 		return result;

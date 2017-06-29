@@ -14,10 +14,9 @@ import data.Message;
 import data.State;
 import data.State.FIELD;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -28,9 +27,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.control.Slider;
 import javafx.scene.control.SplitMenuButton;
+import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -39,14 +38,16 @@ import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Callback;
 import main.GuiClient;
 
 public class ControlController implements Initializable {
 
-	public static final String			MAIN_NAME	= "../gui/Mimimi.fxml";
-	private static final Logger			LOG			= Logger.getLogger(ControlController.class);
-	private static final double			COLORS		= 255;
+	public static final String			MAIN_NAME		= "../gui/Mimimi.fxml";
+	private static final Logger			LOG				= Logger.getLogger(ControlController.class);
+	private static final double			COLORS			= 255;
 	private static ControlController	instance;
+	private boolean						sendRawData		= true;
 	@FXML
 	private Slider						slider, sliderBright;
 	@FXML
@@ -57,11 +58,11 @@ public class ControlController implements Initializable {
 	private Circle						circle;
 	@FXML
 	private ListView<Bulb>				lightList;
-
+	private ArrayList<Bulb>				selectedBulbs	= new ArrayList<>();
 	@FXML
 	private SplitMenuButton				modeButton;
 	/* Alarm Section */
-	private int							color		= 0;
+	private int							color			= 0;
 
 	public ControlController() throws RemoteException {
 		super();
@@ -133,7 +134,10 @@ public class ControlController implements Initializable {
 			color.setStyle("-fx-background-color:#" + bri + bri + bri);
 			brightnessPane.getChildren().add(color);
 		}
-		lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+		initList();
+	}
+
+	private void initList() {
 		try {
 			lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
 		}
@@ -153,7 +157,45 @@ public class ControlController implements Initializable {
 
 			}
 		});
+		lightList.setCellFactory(CheckBoxListCell.forListView(new Callback<Bulb, ObservableValue<Boolean>>() {
 
+			@Override
+			public ObservableValue<Boolean> call(Bulb item) {
+				boolean prop = selectedBulbs.contains(item);
+
+
+				SimpleBooleanProperty isActiveOnAlarm = new SimpleBooleanProperty(prop);
+				isActiveOnAlarm.addListener(new ChangeListener<Boolean>() {
+
+					@Override
+					public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+
+						if (newValue) {
+							selectedBulbs.add(item);
+						} else {
+							selectedBulbs.remove(item);
+						}
+					}
+				});
+				return isActiveOnAlarm;
+			}
+		}));
+		lightList.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+			@Override
+			public void handle(MouseEvent event) {
+				if (event.getClickCount() == 2) {
+					Bulb b = lightList.getSelectionModel().getSelectedItem();
+					if (b != null) {
+						LOG.info("Select only Bulb <" + b.getName() + ">");
+						selectedBulbs.clear();
+						selectedBulbs.add(b);
+						lightList.refresh();
+					}
+				}
+
+			}
+		});
 	}
 
 	private void updateBrightness(int value, boolean send) {
@@ -162,9 +204,7 @@ public class ControlController implements Initializable {
 				State state = new State(Button.BRIGHTNESS);
 				state.setBrightness((int) Math.round(sliderBright.getValue()));
 				Command cmd = new Command(state);
-				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-					cmd.addBulb(b);
-				}
+				cmd.addBulbs(selectedBulbs);
 				GuiClient.getInstance().getServer().update(cmd);
 			}
 			catch (RemoteException e) {
@@ -187,9 +227,7 @@ public class ControlController implements Initializable {
 			if (send) {
 				State state = new State(value);
 				Command cmd = new Command(state);
-				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-					cmd.addBulb(b);
-				}
+				cmd.addBulbs(selectedBulbs);
 				GuiClient.getInstance().getServer().update(cmd);
 			} else {
 				slider.setValue(value);
@@ -200,6 +238,17 @@ public class ControlController implements Initializable {
 			LOG.error(e);
 			e.printStackTrace();
 		}
+	}
+
+	public Command getCommand() {
+		State state = new State((int) slider.getValue());
+		state.setBrightness((int) sliderBright.getValue());
+		Command cmd = new Command(state);
+		for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+			cmd.addBulb(b);
+		}
+		return cmd;
+
 	}
 
 	public static String parseToColor(int initialValue) {
@@ -394,17 +443,26 @@ public class ControlController implements Initializable {
 
 			@Override
 			public void run() {
-				ObservableList<Bulb> oldSelected = FXCollections.observableArrayList(lightList.getSelectionModel().getSelectedItems());
-				lightList.getItems().setAll(bulbList);
-				for (Bulb b : oldSelected) {
-					for (Bulb b2 : bulbList) {
-						if (b.equals(b2)) {
-							lightList.getSelectionModel().select(b2);
-						}
+				Bulb oldSelected = lightList.getSelectionModel().getSelectedItem();
+				ArrayList<Bulb> oldSelectedList = new ArrayList<>(selectedBulbs);
+				selectedBulbs.clear();
+				for (Bulb b : oldSelectedList) {
+					if (bulbList.contains(b)) {
+						selectedBulbs.add(b);
 					}
+				}
+				lightList.getItems().setAll(bulbList);
+
+				if (oldSelected != null) {
+					lightList.getSelectionModel().select(oldSelected);
 				}
 			}
 		});
+	}
+
+	public void setBulbs(ArrayList<Bulb> bulbList) {
+		lightList.getItems().setAll(bulbList);
+
 	}
 
 }

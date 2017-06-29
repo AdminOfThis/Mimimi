@@ -65,7 +65,9 @@ public class GuiClient extends Client {
 
 	@Override
 	public void updateAlarms(ArrayList<Alarm> alarmList) throws RemoteException {
-		AlarmFrameController.getInstance().updateAlarms(alarmList);
+		if (AlarmFrameController.getInstance() != null) {
+			AlarmFrameController.getInstance().updateAlarms(alarmList);
+		}
 	}
 
 	@Override
@@ -77,7 +79,9 @@ public class GuiClient extends Client {
 
 	@Override
 	public void notify(Message message) throws RemoteException {
-		ControlController.getInstance().notify(message);
+		if (ControlController.getInstance() != null) {
+			ControlController.getInstance().notify(message);
+		}
 	}
 
 }

@@ -114,7 +114,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	@Override
-	public boolean clientRegister(int index) throws RemoteException {
+	public boolean registerClient(int index) throws RemoteException {
 		try {
 			String clientIP = getClientHost();
 			ClientInterface clIntf = (ClientInterface) Naming.lookup("rmi://" + clientIP + "/" + index);
@@ -132,10 +132,9 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		return clients;
 	}
 
-	public void removeClients(ArrayList<ClientInterface> removeList) {
-		for (ClientInterface intf : removeList) {
-			clients.remove(intf);
-		}
+	public void removeClient(ClientInterface c) {
+		clients.remove(c);
+
 	}
 
 	@Override
@@ -228,5 +227,11 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			cmd.addBulb(new Bulb(remote.getAddress()));
 		}
 		Sender.getInstance().queueFirst(cmd);
+	}
+
+	@Override
+	public void unregisterClient(int index) throws RemoteException {
+		// TODO
+
 	}
 }

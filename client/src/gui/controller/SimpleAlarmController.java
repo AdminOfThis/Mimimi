@@ -10,18 +10,13 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
-import data.Bulb;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.ListView;
-import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Callback;
 import main.GuiClient;
 import modules.timer.Alarm;
 import modules.timer.Alarm.Mode;
@@ -29,6 +24,7 @@ import modules.timer.SimpleAlarm;
 
 public class SimpleAlarmController implements Initializable, AlarmController {
 
+	private ControlController	controlCon;
 	private static final Logger	LOG	= Logger.getLogger(SimpleAlarmController.class);
 	@FXML
 	private ComboBox<Mode>		modeBox;
@@ -37,50 +33,13 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 	@FXML
 	private DatePicker			datePicker;
 	@FXML
-	private ListView<Bulb>		bulbList;
-	@FXML
 	private AnchorPane			controllerPane;
 	private SimpleAlarm			alarm;
 
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		try {
-			bulbList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
-		}
 
-		catch (RemoteException e) {
-			LOG.error("Unable to load Bulbs from Server", e);
-		}
-		bulbList.setCellFactory(CheckBoxListCell.forListView(new Callback<Bulb, ObservableValue<Boolean>>() {
-
-			@Override
-			public ObservableValue<Boolean> call(Bulb item) {
-				boolean prop = false;
-				if (alarm != null) {
-					for (Bulb b : alarm.getBulbList()) {
-						if (b.equals(item)) {
-							prop = true;
-							break;
-						}
-					}
-				}
-				SimpleBooleanProperty isActiveOnAlarm = new SimpleBooleanProperty(prop);
-				isActiveOnAlarm.addListener(new ChangeListener<Boolean>() {
-
-					@Override
-					public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-
-						if (newValue) {
-							alarm.addBulb(item);
-						} else {
-							alarm.removeBulb(item);
-						}
-					}
-				});
-				return isActiveOnAlarm;
-			}
-		}));
 		modeBox.getItems().setAll(Mode.values());
 		modeBox.getSelectionModel().select(0);
 		for (int i = 0; i <= 24; i++) {
@@ -89,7 +48,30 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 		for (int i = 0; i <= 60; i++) {
 			timeMinute.getItems().add(i);
 		}
+		loadContoller();
+		try {
+			controlCon.setBulbs(GuiClient.getInstance().getServer().getBulbList());
+		}
 
+		catch (RemoteException e) {
+			LOG.error("Unable to load Bulbs from Server", e);
+		}
+	}
+
+	private void loadContoller() {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/gui/Control.fxml"));
+			Parent p = loader.load();
+			controlCon = loader.getController();
+			controllerPane.getChildren().add(p);
+			AnchorPane.setBottomAnchor(p, 0.0);
+			AnchorPane.setTopAnchor(p, 0.0);
+			AnchorPane.setLeftAnchor(p, 0.0);
+			AnchorPane.setRightAnchor(p, 0.0);
+		}
+		catch (Exception e) {
+			LOG.error("Unable to load Controller", e);
+		}
 	}
 
 	@Override
@@ -104,6 +86,7 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 			GuiClient.getInstance().getServer().removeAlarm(alarm);
 			alarm.setDate(cal);
 			alarm.setMode(modeBox.getValue());
+			alarm.setCommand(controlCon.getCommand());
 			GuiClient.getInstance().getServer().addAlarm(alarm);
 
 		}
@@ -123,7 +106,6 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 		timeHour.setValue(date.get(GregorianCalendar.HOUR_OF_DAY));
 		timeMinute.setValue(date.get(GregorianCalendar.MINUTE));
 		modeBox.setValue(alarm.getMode());
-		bulbList.refresh();
 
 	}
 

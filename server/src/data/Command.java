@@ -49,5 +49,13 @@ public class Command implements Serializable, LightCommand {
 		}
 	}
 
+	public void addBulbs(Collection<Bulb> bulbs) {
+		for (Bulb b : bulbs) {
+			if (!addressList.contains(b)) {
+				addressList.add(b);
+			}
+		}
+	}
+
 
 }
