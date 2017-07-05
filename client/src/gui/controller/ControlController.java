@@ -244,7 +244,7 @@ public class ControlController implements Initializable {
 		State state = new State((int) slider.getValue());
 		state.setBrightness((int) sliderBright.getValue());
 		Command cmd = new Command(state);
-		for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+		for (Bulb b : selectedBulbs) {
 			cmd.addBulb(b);
 		}
 		return cmd;
