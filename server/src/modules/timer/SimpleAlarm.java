@@ -43,7 +43,6 @@ public class SimpleAlarm extends Alarm {
 
 	@Override
 	public State getState() {
-		// TODO Auto-generated method stub
 		return command.getState();
 	}
 
