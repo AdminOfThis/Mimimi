@@ -11,6 +11,8 @@ import modules.timer.Alarm;
 
 public interface ServerInterface extends Remote {
 
+	public void turnWiFiDetectorOn(boolean value) throws RemoteException;
+	
 	public int createClientID() throws RemoteException;
 
 	public boolean registerClient(int index) throws RemoteException;

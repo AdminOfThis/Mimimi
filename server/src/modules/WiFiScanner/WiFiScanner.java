@@ -23,6 +23,8 @@ public class WiFiScanner extends Module {
 	private ArrayList<String>		macs			= new ArrayList<>();
 	private int						failures		= 0;
 
+	boolean							active			= true;
+
 	public WiFiScanner(Server server) {
 		super(server);
 		macs.add("90:E7:C4:C9:6A:CF");
@@ -74,15 +76,19 @@ public class WiFiScanner extends Module {
 	}
 
 	private void disconnected() throws RemoteException {
-		LOG.info("Device disconnected");
-		// getServer().update(new Command(Button.ALL_OFF));
-		getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
+		if (active) {
+			LOG.info("Device disconnected");
+			// getServer().update(new Command(Button.ALL_OFF));
+			getServer().notifyClients(new Message(MessageType.WIFI, "No WiFi-Device connected"));
+		}
 	}
 
 	private void connected() throws RemoteException {
-		LOG.info("Device connected");
-		// getServer().update(new LightState(Button.ALL_ON));
-		getServer().notifyClients(new Message(MessageType.WIFI, "WiFi-Device connected"));
+		if (active) {
+			LOG.info("Device connected");
+			// getServer().update(new LightState(Button.ALL_ON));
+			getServer().notifyClients(new Message(MessageType.WIFI, "WiFi-Device connected"));
+		}
 	}
 
 	public void addNetworkDevice(String mac) {
@@ -93,5 +99,9 @@ public class WiFiScanner extends Module {
 
 	public ArrayList<String> getNetworkDevices() {
 		return new ArrayList<>(macs);
+	}
+
+	public void setActive(boolean value) {
+		active = value;
 	}
 }

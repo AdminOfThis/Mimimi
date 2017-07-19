@@ -2,6 +2,7 @@ package gui.controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.rmi.RemoteException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
@@ -18,10 +19,12 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
+import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import main.GuiClient;
 
 public class MainFrameController implements Initializable {
 
@@ -31,6 +34,9 @@ public class MainFrameController implements Initializable {
 	private ListView<String>		moduleList;
 	@FXML
 	private BorderPane				content;
+	@FXML
+	private ToggleButton			wiFiButton;
+
 	private HashMap<String, String>	modules			= new HashMap<>();
 	private HashMap<String, Node>	loadedModules	= new HashMap<>();
 
@@ -79,8 +85,7 @@ public class MainFrameController implements Initializable {
 			AnchorPane.setTopAnchor(node, 0.0);
 			AnchorPane.setRightAnchor(node, 0.0);
 			AnchorPane.setBottomAnchor(node, 0.0);
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			LOG.error("Unable to load Module", e);
 		}
 		return node;
@@ -113,4 +118,13 @@ public class MainFrameController implements Initializable {
 		System.exit(0);
 	}
 
+	@FXML
+	private void wiFiToggle(ActionEvent e) {
+		LOG.info("Toggle Wifi Detection on server");
+		try {
+			GuiClient.getInstance().getServer().turnWiFiDetectorOn(wiFiButton.isSelected());
+		} catch (RemoteException e1) {
+			LOG.warn("Unable to change Status of WiFi Scanner", e1);
+		}
+	}
 }

@@ -234,4 +234,10 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		// TODO
 
 	}
+
+	@Override
+	public void turnWiFiDetectorOn(boolean value) throws RemoteException {
+		LOG.info("Activated WiFi-Detector: " + (value?"ON":"OFF"));
+		scanner.setActive(value);
+	}
 }
