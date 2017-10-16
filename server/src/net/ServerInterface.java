@@ -12,7 +12,7 @@ import modules.timer.Alarm;
 public interface ServerInterface extends Remote {
 
 	public void turnWiFiDetectorOn(boolean value) throws RemoteException;
-	
+
 	public int createClientID() throws RemoteException;
 
 	public boolean registerClient(int index) throws RemoteException;
@@ -44,4 +44,8 @@ public interface ServerInterface extends Remote {
 	public void removeLightFromBulbList(Bulb bulb) throws RemoteException;
 
 	public ArrayList<Bulb> getBulbList() throws RemoteException;
+
+	public boolean sendData(String filename, byte[] data, int len) throws RemoteException;
+
+	public void updateServer() throws RemoteException;
 }

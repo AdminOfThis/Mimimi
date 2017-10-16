@@ -1,8 +1,11 @@
 package gui.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
@@ -22,6 +25,8 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.FileChooser;
+import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import main.GuiClient;
@@ -35,7 +40,7 @@ public class MainFrameController implements Initializable {
 	@FXML
 	private BorderPane				content;
 	@FXML
-	private ToggleButton			wiFiButton;
+	private ToggleButton			wiFiToggle;
 
 	private HashMap<String, String>	modules			= new HashMap<>();
 	private HashMap<String, Node>	loadedModules	= new HashMap<>();
@@ -85,7 +90,8 @@ public class MainFrameController implements Initializable {
 			AnchorPane.setTopAnchor(node, 0.0);
 			AnchorPane.setRightAnchor(node, 0.0);
 			AnchorPane.setBottomAnchor(node, 0.0);
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			LOG.error("Unable to load Module", e);
 		}
 		return node;
@@ -122,9 +128,42 @@ public class MainFrameController implements Initializable {
 	private void wiFiToggle(ActionEvent e) {
 		LOG.info("Toggle Wifi Detection on server");
 		try {
-			GuiClient.getInstance().getServer().turnWiFiDetectorOn(wiFiButton.isSelected());
-		} catch (RemoteException e1) {
+			GuiClient.getInstance().getServer().turnWiFiDetectorOn(wiFiToggle.isSelected());
+		}
+		catch (RemoteException e1) {
 			LOG.warn("Unable to change Status of WiFi Scanner", e1);
+		}
+	}
+
+	@FXML
+	private void updateServer(ActionEvent e) {
+		FileChooser chooser = new FileChooser();
+		chooser.setTitle("Please choose new server jar");
+		chooser.setInitialDirectory(new File("."));
+		ArrayList<String> extensionList = new ArrayList<>();
+		extensionList.add("*.jar");
+		chooser.setSelectedExtensionFilter(new ExtensionFilter("Jar", extensionList));
+		File jar = chooser.showOpenDialog(content.getScene().getWindow());
+		if (jar != null && jar.exists() && jar.getName().endsWith(".jar")) {
+			LOG.info("Updating server: " + jar.getPath());
+			try {
+				FileInputStream in = new FileInputStream(jar);
+				byte[] mydata = new byte[1024 * 1024];
+				int mylen = in.read(mydata);
+				while (mylen > 0) {
+					GuiClient.getInstance().getServer().sendData("mimimi_new.jar", mydata, mylen);
+					mylen = in.read(mydata);
+				}
+			}
+			catch (Exception ex) {
+				LOG.error("Unable to send file", ex);
+			}
+			try {
+				GuiClient.getInstance().getServer().updateServer();
+			}
+			catch (RemoteException e1) {
+				LOG.error("Unable to update server", e1);
+			}
 		}
 	}
 }

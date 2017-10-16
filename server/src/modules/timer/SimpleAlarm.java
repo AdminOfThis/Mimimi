@@ -30,6 +30,10 @@ public class SimpleAlarm extends Alarm {
 		this.command = Command;
 	}
 
+	public Command getCommand() {
+		return this.command;
+	}
+
 	@Override
 	public boolean isDone() {
 		return System.currentTimeMillis() >= getDate().getTimeInMillis();

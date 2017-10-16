@@ -63,6 +63,7 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/gui/Control.fxml"));
 			Parent p = loader.load();
 			controlCon = loader.getController();
+			controlCon.setSendRawData(false);
 			controllerPane.getChildren().add(p);
 			AnchorPane.setBottomAnchor(p, 0.0);
 			AnchorPane.setTopAnchor(p, 0.0);
@@ -98,7 +99,6 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 
 	@Override
 	public void showAlarm(Alarm alarm) {
-
 		this.alarm = (SimpleAlarm) alarm;
 		GregorianCalendar date = alarm.getDate();
 		LocalDate localDate = date.getTime().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
@@ -106,7 +106,7 @@ public class SimpleAlarmController implements Initializable, AlarmController {
 		timeHour.setValue(date.get(GregorianCalendar.HOUR_OF_DAY));
 		timeMinute.setValue(date.get(GregorianCalendar.MINUTE));
 		modeBox.setValue(alarm.getMode());
-
+		controlCon.showCommand(this.alarm.getCommand());
 	}
 
 }

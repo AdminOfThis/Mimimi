@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="content" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFrameController">
+<BorderPane fx:id="content" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controller.MainFrameController">
    <top>
       <VBox BorderPane.alignment="CENTER">
          <children>
@@ -20,6 +20,7 @@
               <menus>
                 <Menu mnemonicParsing="false" text="File">
                   <items>
+                        <MenuItem mnemonicParsing="false" onAction="#updateServer" text="Update Server" />
                     <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
                   </items>
                 </Menu>

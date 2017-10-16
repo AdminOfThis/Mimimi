@@ -199,13 +199,15 @@ public class ControlController implements Initializable {
 	}
 
 	private void updateBrightness(int value, boolean send) {
-		if (send) {
+		if (send && sendRawData) {
 			try {
 				State state = new State(Button.BRIGHTNESS);
 				state.setBrightness((int) Math.round(sliderBright.getValue()));
 				Command cmd = new Command(state);
 				cmd.addBulbs(selectedBulbs);
+
 				GuiClient.getInstance().getServer().update(cmd);
+
 			}
 			catch (RemoteException e) {
 				LOG.error(e);
@@ -224,7 +226,7 @@ public class ControlController implements Initializable {
 					subNode.setStyle("-fx-background-color:" + hexValue);
 				}
 			}
-			if (send) {
+			if (send && sendRawData) {
 				State state = new State(value);
 				Command cmd = new Command(state);
 				cmd.addBulbs(selectedBulbs);
@@ -295,16 +297,19 @@ public class ControlController implements Initializable {
 	}
 
 	private void sendBtn(Button btn) {
-		try {
-			State state = new State(btn);
-			Command cmd = new Command(state);
-			for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
-				cmd.addBulb(b);
+		if (sendRawData) {
+			try {
+				State state = new State(btn);
+				Command cmd = new Command(state);
+				for (Bulb b : lightList.getSelectionModel().getSelectedItems()) {
+					cmd.addBulb(b);
+				}
+
+				GuiClient.getInstance().getServer().update(cmd);
 			}
-			GuiClient.getInstance().getServer().update(cmd);
-		}
-		catch (RemoteException e) {
-			LOG.error(e);
+			catch (RemoteException e) {
+				LOG.error(e);
+			}
 		}
 	}
 
@@ -438,7 +443,7 @@ public class ControlController implements Initializable {
 		}
 	}
 
-	public void updateBulbs(ArrayList<Bulb> bulbList) throws RemoteException {
+	public void updateBulbs(ArrayList<Bulb> bulbList) {
 		Platform.runLater(new Runnable() {
 
 			@Override
@@ -462,7 +467,19 @@ public class ControlController implements Initializable {
 
 	public void setBulbs(ArrayList<Bulb> bulbList) {
 		lightList.getItems().setAll(bulbList);
-
 	}
 
+	public void setSendRawData(boolean value) {
+		sendRawData = value;
+	}
+
+	public boolean getSendRawData() {
+		return sendRawData;
+	}
+
+	public void showCommand(Command cmd) {
+		selectedBulbs = new ArrayList<>(cmd.getBulbList());
+		updateBrightness(cmd.getState().getBrightness(), false);
+		updateColor(cmd.getState().getColor(), false);
+	}
 }

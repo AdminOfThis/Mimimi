@@ -1,5 +1,8 @@
 package net;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
@@ -39,6 +42,8 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	private ConcurrentHashMap<ClientInterface, String>	clients				= new ConcurrentHashMap<>();
 	private WiFiScanner									scanner;
 	private Timer										timer;
+
+	private static final String							UPDATE_CMD			= "java -jar updater.jar";
 
 	public static Server getInstance() {
 		if (instance == null) {
@@ -237,7 +242,39 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 
 	@Override
 	public void turnWiFiDetectorOn(boolean value) throws RemoteException {
-		LOG.info("Activated WiFi-Detector: " + (value?"ON":"OFF"));
+		LOG.info("Activated WiFi-Detector: " + (value ? "ON" : "OFF"));
 		scanner.setActive(value);
+	}
+
+	@Override
+	public boolean sendData(String filename, byte[] data, int len) throws RemoteException {
+		LOG.info("Receiving new File \"" + filename + "\"");
+		try {
+			File f = new File(filename);
+			f.createNewFile();
+			FileOutputStream out = new FileOutputStream(f, true);
+			out.write(data, 0, len);
+			out.flush();
+			out.close();
+			LOG.info("File sucessfully received");
+		}
+		catch (Exception e) {
+			LOG.error("Unable to receive file", e);
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public void updateServer() {
+		try {
+			LOG.info("Starting update process");
+			Process p = Runtime.getRuntime().exec(UPDATE_CMD);
+			LOG.info("Exiting now");
+			System.exit(0);
+		}
+		catch (IOException e) {
+			LOG.error("", e);
+		}
 	}
 }
