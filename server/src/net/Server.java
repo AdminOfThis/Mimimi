@@ -1,7 +1,5 @@
 package net;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -24,6 +22,8 @@ import data.LightCommand;
 import data.Message;
 import data.Remote;
 import data.State;
+import modules.FileManager;
+import modules.FileManager.FileCategory;
 import modules.SerialScanner;
 import modules.WiFiScanner.WiFiScanner;
 import modules.timer.Alarm;
@@ -49,8 +49,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		if (instance == null) {
 			try {
 				instance = new Server();
-			}
-			catch (Exception e) {
+			} catch (Exception e) {
 				LOG.error("Unable to start server", e);
 				return null;
 			}
@@ -66,8 +65,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			String address = ServerFinder.getIp();
 			Naming.rebind("rmi://" + address + "/Mimimi", this);
 			LOG.info("Detected IP: " + address);
-		}
-		catch (MalformedURLException | RemoteException e) {
+		} catch (MalformedURLException | RemoteException e) {
 			throw e;
 		}
 		if (Sender.getInstance().isLinux()) {
@@ -88,8 +86,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Notify Client " + clients.get(client));
 					try {
 						client.notify(message);
-					}
-					catch (RemoteException e) {
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -110,8 +107,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		String clientIP;
 		try {
 			clientIP = getClientHost();
-		}
-		catch (ServerNotActiveException e) {
+		} catch (ServerNotActiveException e) {
 			return -1;
 		}
 		LOG.info("Registering Client " + clientIP + ", # " + clients.size());
@@ -126,8 +122,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 			clients.put(clIntf, clientIP);
 			LOG.info("Client " + clientIP + " successful registered");
 			return true;
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
@@ -176,8 +171,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Updating Alarms on Clients" + clients.get(client));
 					try {
 						client.updateAlarms(timer.getAlarmList());
-					}
-					catch (RemoteException e) {
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -194,8 +188,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 					LOG.debug("Updating Lights on Clients" + clients.get(client));
 					try {
 						client.updateBulbs(AddressManager.getInstance().getUsedBulbs());
-					}
-					catch (RemoteException e) {
+					} catch (RemoteException e) {
 						LOG.error("Unable to notify Client " + client);
 					}
 				};
@@ -249,31 +242,17 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	@Override
 	public boolean sendData(String filename, byte[] data, int len) throws RemoteException {
 		LOG.info("Receiving new File \"" + filename + "\"");
-		try {
-			File f = new File(filename);
-			f.createNewFile();
-			FileOutputStream out = new FileOutputStream(f, true);
-			out.write(data, 0, len);
-			out.flush();
-			out.close();
-			LOG.info("File sucessfully received");
-		}
-		catch (Exception e) {
-			LOG.error("Unable to receive file", e);
-			return false;
-		}
-		return true;
+		return FileManager.getInstance().addFile(FileCategory.ROOT, filename, data, len);
 	}
 
 	@Override
 	public void updateServer() {
 		try {
 			LOG.info("Starting update process");
-			Process p = Runtime.getRuntime().exec(UPDATE_CMD);
+			Runtime.getRuntime().exec(UPDATE_CMD);
 			LOG.info("Exiting now");
 			System.exit(0);
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			LOG.error("", e);
 		}
 	}
