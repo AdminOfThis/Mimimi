@@ -46,9 +46,9 @@ public class AddressManager {
 	}
 
 	private Remote createNewRemote() {
-		
-		for(int i=0; i< usedRemotes.size();i++) {
-			if(usedRemotes.get(i).getID()>i) {
+
+		for (int i = 0; i < usedRemotes.size(); i++) {
+			if (usedRemotes.get(i).getID() > i) {
 				return new Remote(usedRemotes.size());
 			}
 		}
@@ -111,6 +111,22 @@ public class AddressManager {
 			}
 		}
 
+	}
+
+	public void updateBulb(Bulb newValue) {
+		Address a = newValue.getAddress();
+		Bulb oldBulb = null;
+		for (Bulb b : usedBulbs) {
+			if (b.getAddress().equals(a)) {
+				oldBulb = b;
+				break;
+			}
+		}
+		if (oldBulb != null) {
+			int index = usedBulbs.indexOf(oldBulb);
+			usedBulbs.remove(oldBulb);
+			usedBulbs.add(index, newValue);
+		}
 	}
 
 }

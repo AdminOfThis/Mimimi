@@ -159,7 +159,7 @@ public class MainFrameController implements Initializable {
 				LOG.error("Unable to send file", ex);
 			}
 			try {
-				GuiClient.getInstance().getServer().updateServer();
+				GuiClient.getInstance().getServer().restartServer();
 			}
 			catch (RemoteException e1) {
 				LOG.error("Unable to update server", e1);

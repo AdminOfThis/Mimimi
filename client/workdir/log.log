@@ -3769,3 +3769,85 @@ Caused by: java.lang.ClassCastException: cannot assign instance of data.State to
 2017-06-29 23:37:34 INFO  32 :Main                           - Starting GUI
 2017-06-29 23:37:34 INFO  39 :MainFrameController            - Loading MainFrame
 2017-06-29 23:38:15 INFO  57 :Main                           - Terminating client
+2017-07-19 15:16:28 ERROR 135:ServerFinder                   - No server found
+2017-07-19 15:16:28 ERROR 47 :GuiClient                      - Unable to find Server
+2017-07-19 15:16:28 WARN  35 :Main                           - No Server found, will exit
+2017-07-19 15:16:43 INFO  131:ServerFinder                   - Found server on 127.0.0.1
+2017-07-19 15:16:43 INFO  50 :GuiClient                      - Server: 127.0.0.1
+2017-07-19 15:16:45 INFO  31 :Client                         - Register Client @ 10.121.203.213
+2017-07-19 15:16:45 INFO  39 :Client                         - Registered successful
+2017-07-19 15:16:45 INFO  32 :Main                           - Starting GUI
+2017-07-19 15:16:46 INFO  43 :MainFrameController            - Loading MainFrame
+2017-07-19 15:16:50 INFO  122:MainFrameController            - Toggle Wifi Detection on server
+2017-07-19 15:19:47 INFO  57 :Main                           - Terminating client
+2017-10-17 16:37:53 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:37:53 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:37:53 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:37:53 INFO  39 :Client                         - Registered successful
+2017-10-17 16:37:53 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:37:54 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:38:04 INFO  190:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:38:05 INFO  190:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:38:18 INFO  190:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:38:19 INFO  190:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:38:27 INFO  57 :Main                           - Terminating client
+2017-10-17 16:40:32 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:40:32 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:40:32 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:40:32 INFO  39 :Client                         - Registered successful
+2017-10-17 16:40:32 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:40:33 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:40:41 INFO  57 :Main                           - Terminating client
+2017-10-17 16:41:28 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:41:28 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:41:28 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:41:28 INFO  39 :Client                         - Registered successful
+2017-10-17 16:41:28 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:41:28 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:41:36 INFO  169:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:41:39 INFO  57 :Main                           - Terminating client
+2017-10-17 16:43:32 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:43:32 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:43:32 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:43:32 INFO  39 :Client                         - Registered successful
+2017-10-17 16:43:32 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:43:32 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:43:37 INFO  170:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:43:38 INFO  170:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:43:39 INFO  170:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:43:40 INFO  170:ControlController              - Select only Bulb <Bulb 1.1>
+2017-10-17 16:43:42 INFO  57 :Main                           - Terminating client
+2017-10-17 16:44:50 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:44:50 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:44:51 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:44:51 INFO  39 :Client                         - Registered successful
+2017-10-17 16:44:51 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:44:51 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:57:35 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:57:35 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:57:35 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:57:35 INFO  39 :Client                         - Registered successful
+2017-10-17 16:57:35 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:57:36 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:57:50 INFO  57 :Main                           - Terminating client
+2017-10-17 16:57:55 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 16:57:55 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 16:57:55 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 16:57:55 INFO  39 :Client                         - Registered successful
+2017-10-17 16:57:55 INFO  32 :Main                           - Starting GUI
+2017-10-17 16:57:56 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 16:58:03 INFO  57 :Main                           - Terminating client
+2017-10-17 17:06:31 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 17:06:31 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 17:06:31 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 17:06:31 INFO  39 :Client                         - Registered successful
+2017-10-17 17:06:31 INFO  32 :Main                           - Starting GUI
+2017-10-17 17:06:33 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 17:06:43 INFO  57 :Main                           - Terminating client
+2017-10-17 17:06:50 INFO  131:ServerFinder                   - Found server on 141.58.56.130
+2017-10-17 17:06:50 INFO  50 :GuiClient                      - Server: 141.58.56.130
+2017-10-17 17:06:50 INFO  31 :Client                         - Register Client @ 141.58.56.130
+2017-10-17 17:06:50 INFO  39 :Client                         - Registered successful
+2017-10-17 17:06:50 INFO  32 :Main                           - Starting GUI
+2017-10-17 17:06:51 INFO  50 :MainFrameController            - Loading MainFrame
+2017-10-17 17:07:08 INFO  57 :Main                           - Terminating client

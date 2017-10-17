@@ -221,3 +221,60 @@ Caused by: java.net.BindException: Address already in use: JVM_Bind
 2017-07-19 15:16:45 INFO  Server:112 - Registering Client 10.121.203.213, # 0
 2017-07-19 15:16:45 INFO  Server:122 - Client 10.121.203.213 successful registered
 2017-07-19 15:19:47 WARN  Pinger:33 - Unable to ping Client 10.121.203.213, gets removed
+2017-10-17 16:37:27 INFO  Main:21 - Starting server
+2017-10-17 16:37:28 INFO  Server:61 - Starting registry
+2017-10-17 16:37:28 INFO  ServerFinder:38 - Starting broadcast server
+2017-10-17 16:37:29 INFO  Server:67 - Detected IP: 127.0.0.1
+2017-10-17 16:37:29 INFO  Sender:44 - Detected OS: windows 10
+2017-10-17 16:37:29 WARN  Sender:46 - !!!=== Will only simulate Sender ===!!!
+2017-10-17 16:37:29 INFO  FileUtil:36 - Loading list from file: bulbs.data
+2017-10-17 16:37:29 INFO  FileUtil:44 - Loaded <2> objects from list
+2017-10-17 16:37:29 INFO  Sender:52 - Loaded 2 bulbs
+2017-10-17 16:37:30 INFO  Pinger:22 - Starting pinger
+2017-10-17 16:37:30 INFO  SerialScanner:26 - Starting serial scanner
+2017-10-17 16:37:30 INFO  FileUtil:36 - Loading list from file: alarms.data
+2017-10-17 16:37:30 INFO  FileUtil:44 - Loaded <0> objects from list
+2017-10-17 16:37:30 INFO  Timer:37 - Starting timer
+2017-10-17 16:37:31 INFO  Main:26 - === STARTED ===
+2017-10-17 16:37:53 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:37:53 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:38:27 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:40:32 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:40:32 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:40:42 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:41:28 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:41:28 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:41:40 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:43:32 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:43:32 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:43:42 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:44:51 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:44:51 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:46:36 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:57:35 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:57:35 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:57:50 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 16:57:55 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 16:57:55 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 16:58:03 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 17:06:25 INFO  Main:21 - Starting server
+2017-10-17 17:06:27 INFO  Server:61 - Starting registry
+2017-10-17 17:06:27 INFO  ServerFinder:38 - Starting broadcast server
+2017-10-17 17:06:28 INFO  Server:67 - Detected IP: 127.0.0.1
+2017-10-17 17:06:28 INFO  Sender:44 - Detected OS: windows 10
+2017-10-17 17:06:28 WARN  Sender:46 - !!!=== Will only simulate Sender ===!!!
+2017-10-17 17:06:28 INFO  FileUtil:36 - Loading list from file: bulbs.data
+2017-10-17 17:06:28 INFO  FileUtil:44 - Loaded <2> objects from list
+2017-10-17 17:06:28 INFO  Sender:52 - Loaded 2 bulbs
+2017-10-17 17:06:28 INFO  Pinger:22 - Starting pinger
+2017-10-17 17:06:28 INFO  SerialScanner:26 - Starting serial scanner
+2017-10-17 17:06:28 INFO  FileUtil:36 - Loading list from file: alarms.data
+2017-10-17 17:06:28 INFO  FileUtil:44 - Loaded <0> objects from list
+2017-10-17 17:06:28 INFO  Timer:37 - Starting timer
+2017-10-17 17:06:29 INFO  Main:26 - === STARTED ===
+2017-10-17 17:06:31 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 17:06:31 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 17:06:43 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-17 17:06:50 INFO  Server:113 - Registering Client 127.0.0.1, # 0
+2017-10-17 17:06:50 INFO  Server:123 - Client 127.0.0.1 successful registered
+2017-10-17 17:07:08 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed

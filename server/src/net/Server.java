@@ -246,7 +246,7 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 	}
 
 	@Override
-	public void updateServer() {
+	public void restartServer() {
 		try {
 			LOG.info("Starting update process");
 			Runtime.getRuntime().exec(UPDATE_CMD);
@@ -255,5 +255,10 @@ public class Server extends UnicastRemoteObject implements ServerInterface {
 		} catch (IOException e) {
 			LOG.error("", e);
 		}
+	}
+
+	@Override
+	public void updateBulb(Bulb newValue) throws RemoteException {
+		AddressManager.getInstance().updateBulb(newValue);
 	}
 }
