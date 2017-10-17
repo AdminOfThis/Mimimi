@@ -85,4 +85,20 @@ public class FileManager {
 		return true;
 	}
 
+	public String[] getListOfCategory(FileCategory cat) {
+		File catFolder = new File(cat.toString());
+		return catFolder.list();
+	}
+
+	public File getFile(FileCategory cat, String fileName) {
+		File file = new File(cat.toString() + "/" + fileName);
+		if (file.exists()) {
+			return file;
+		} else {
+			LOG.info("Requested file \"" + fileName + "\" does not exist");
+			return null;
+		}
+
+	}
+
 }
