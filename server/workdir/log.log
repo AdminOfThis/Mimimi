@@ -278,3 +278,20 @@ Caused by: java.net.BindException: Address already in use: JVM_Bind
 2017-10-17 17:06:50 INFO  Server:113 - Registering Client 127.0.0.1, # 0
 2017-10-17 17:06:50 INFO  Server:123 - Client 127.0.0.1 successful registered
 2017-10-17 17:07:08 WARN  Pinger:33 - Unable to ping Client 127.0.0.1, gets removed
+2017-10-25 19:30:10 INFO  Main:21 - Starting server
+2017-10-25 19:30:10 INFO  Server:63 - Starting registry
+2017-10-25 19:30:10 INFO  ServerFinder:38 - Starting broadcast server
+2017-10-25 19:30:10 INFO  Server:69 - Detected IP: 192.168.0.239
+2017-10-25 19:30:10 INFO  Sender:44 - Detected OS: windows 10
+2017-10-25 19:30:10 WARN  Sender:46 - !!!=== Will only simulate Sender ===!!!
+2017-10-25 19:30:10 INFO  FileUtil:36 - Loading list from file: bulbs.data
+2017-10-25 19:30:10 INFO  FileUtil:44 - Loaded <2> objects from list
+2017-10-25 19:30:10 INFO  Sender:52 - Loaded 2 bulbs
+2017-10-25 19:30:10 INFO  Pinger:22 - Starting pinger
+2017-10-25 19:30:10 INFO  FileUtil:36 - Loading list from file: alarms.data
+2017-10-25 19:30:10 INFO  FileUtil:44 - Loaded <0> objects from list
+2017-10-25 19:30:10 INFO  RestServer:21 - REST-Server starting
+2017-10-25 19:30:10 INFO  Timer:37 - Starting timer
+2017-10-25 19:30:10 INFO  SerialScanner:26 - Starting serial scanner
+2017-10-25 19:30:12 INFO  RestServer:34 - REST-Server started
+2017-10-25 19:30:13 INFO  Main:26 - === STARTED ===
