@@ -25,6 +25,12 @@ public interface ServerInterface extends Remote {
 
 	public ArrayList<String> getNetworkDevices() throws RemoteException;
 
+	/**
+	 * Adds an alarm to the server which gets executed in Time by the Timer
+	 * 
+	 * @param a
+	 * @throws RemoteException
+	 */
 	public void addAlarm(Alarm a) throws RemoteException;
 
 	public void removeAlarm(Alarm alarm) throws RemoteException;
@@ -41,8 +47,5 @@ public interface ServerInterface extends Remote {
 
 	public boolean sendData(String filename, byte[] data, int len) throws RemoteException;
 
-	public void restartServer() throws RemoteException;
-
-	public void updateBulb(Bulb newValue) throws RemoteException;
-	
+	public void updateServer() throws RemoteException;
 }
