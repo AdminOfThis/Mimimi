@@ -14,6 +14,7 @@ import data.Message;
 import data.State;
 import data.State.FIELD;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -26,11 +27,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.MenuItem;
-import javafx.scene.control.SelectionMode;
 import javafx.scene.control.Slider;
 import javafx.scene.control.SplitMenuButton;
-import javafx.scene.control.ListView.EditEvent;
-import javafx.scene.control.cell.TextFieldListCell;
+import javafx.scene.control.cell.CheckBoxListCell;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
@@ -39,7 +38,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import javafx.util.StringConverter;
+import javafx.util.Callback;
 import main.GuiClient;
 
 public class ControlController implements Initializable {
@@ -141,7 +140,8 @@ public class ControlController implements Initializable {
 	private void initList() {
 		try {
 			lightList.getItems().setAll(GuiClient.getInstance().getServer().getBulbList());
-		} catch (RemoteException e1) {
+		}
+		catch (RemoteException e1) {
 			LOG.error("Unable to load Lights from Server", e1);
 		}
 		lightList.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Bulb>() {
@@ -157,39 +157,46 @@ public class ControlController implements Initializable {
 
 			}
 		});
-		lightList.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-		lightList.setEditable(true);
-		lightList.setCellFactory(e -> {
-			TextFieldListCell<Bulb> cell = new TextFieldListCell<Bulb>();
-			cell.setConverter(new StringConverter<Bulb>() {
+		lightList.setCellFactory(CheckBoxListCell.forListView(new Callback<Bulb, ObservableValue<Boolean>>() {
 
-				@Override
-				public String toString(Bulb object) {
-					return object.getName();
-				}
-
-				@Override
-				public Bulb fromString(String string) {
-					Bulb b = cell.getItem();
-					b.setName(string);
-					return b;
-				}
-
-			});
-			return cell;
-		});
-		lightList.setOnEditCommit(new EventHandler<ListView.EditEvent<Bulb>>() {
-			
 			@Override
-			public void handle(EditEvent<Bulb> event) {
-				try {
-					GuiClient.getInstance().getServer().updateBulb(event.getNewValue());
-				} catch (RemoteException e) {
-					LOG.error("Unable to reach Server", e);
+			public ObservableValue<Boolean> call(Bulb item) {
+				boolean prop = selectedBulbs.contains(item);
+
+
+				SimpleBooleanProperty isActiveOnAlarm = new SimpleBooleanProperty(prop);
+				isActiveOnAlarm.addListener(new ChangeListener<Boolean>() {
+
+					@Override
+					public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+
+						if (newValue) {
+							selectedBulbs.add(item);
+						} else {
+							selectedBulbs.remove(item);
+						}
+					}
+				});
+				return isActiveOnAlarm;
+			}
+		}));
+		lightList.setOnMouseClicked(new EventHandler<MouseEvent>() {
+
+			@Override
+			public void handle(MouseEvent event) {
+				if (event.getClickCount() == 2) {
+					Bulb b = lightList.getSelectionModel().getSelectedItem();
+					if (b != null) {
+						LOG.info("Select only Bulb <" + b.getName() + ">");
+						selectedBulbs.clear();
+						selectedBulbs.add(b);
+						lightList.refresh();
+					}
 				}
+
 			}
 		});
-			}
+	}
 
 	private void updateBrightness(int value, boolean send) {
 		if (send && sendRawData) {
@@ -201,7 +208,8 @@ public class ControlController implements Initializable {
 
 				GuiClient.getInstance().getServer().update(cmd);
 
-			} catch (RemoteException e) {
+			}
+			catch (RemoteException e) {
 				LOG.error(e);
 			}
 		} else {
@@ -227,7 +235,8 @@ public class ControlController implements Initializable {
 				slider.setValue(value);
 			}
 			color = value;
-		} catch (RemoteException e) {
+		}
+		catch (RemoteException e) {
 			LOG.error(e);
 			e.printStackTrace();
 		}
@@ -297,7 +306,8 @@ public class ControlController implements Initializable {
 				}
 
 				GuiClient.getInstance().getServer().update(cmd);
-			} catch (RemoteException e) {
+			}
+			catch (RemoteException e) {
 				LOG.error(e);
 			}
 		}
@@ -329,7 +339,8 @@ public class ControlController implements Initializable {
 				cmd.addBulb(b);
 			}
 			GuiClient.getInstance().getServer().update(cmd);
-		} catch (Exception ex) {
+		}
+		catch (Exception ex) {
 			LOG.error(ex);
 		}
 	}
@@ -426,7 +437,8 @@ public class ControlController implements Initializable {
 			stage.setTitle("Pair Light");
 			stage.setAlwaysOnTop(true);
 			stage.showAndWait();
-		} catch (Exception ex) {
+		}
+		catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}

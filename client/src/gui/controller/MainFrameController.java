@@ -154,12 +154,13 @@ public class MainFrameController implements Initializable {
 					GuiClient.getInstance().getServer().sendData("mimimi_new.jar", mydata, mylen);
 					mylen = in.read(mydata);
 				}
+				in.close();
 			}
 			catch (Exception ex) {
 				LOG.error("Unable to send file", ex);
 			}
 			try {
-				GuiClient.getInstance().getServer().restartServer();
+				GuiClient.getInstance().getServer().updateServer();
 			}
 			catch (RemoteException e1) {
 				LOG.error("Unable to update server", e1);
