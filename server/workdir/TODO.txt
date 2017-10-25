@@ -1,9 +1,0 @@
--Make it disappear in TaskBar
--add mode controls
--add speed controls
--turn on/off device detector
--mail detector
--ruhezeiten
--performance
--zeiten mit sequenzen verbessern
--add versions check
